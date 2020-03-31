@@ -1,0 +1,27 @@
+This is the grading rubric for the Site Survey programming assignment.
+
+================
+If the program fails to compile, crashes, or hangs then the program
+automatically gets a 0.
+================
+
+Functionality	     10
+ - the program reads input according to the instructions.txt
+ - the program calculates the average correctly
+ - the program calculates the fastest time correctly
+ - the program calculates the slowest time correctly
+ - the program outputs all times values in the correct format
+
+Implementation	    4
+ - uses a do-while loop to read in values
+ - uses setw and setfill to output the time values
+
+Design		     2
+ - no global variables
+ - all variables are given meaningful names
+
+Style		     4
+ - no use of "break" or "continue"
+ - no use of "goto"
+
+Total:		    20
