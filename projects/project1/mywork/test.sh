@@ -22,17 +22,21 @@ echo "Test 1"
 
 EOF
 
-# 0 45
-# 1 15
-# 1 45
-# 0 0
-
 echo "Test 2"
 
 ./${PROGRAM_NAME} <<EOF
-0 45
-0 15
-1 45
+
+0 16
+1 4
+2 13
+7 8
+0 2
+2 0
+6 7
+5 14
+3 26
+4 15
+ 
 0 0
 EOF
 
@@ -42,5 +46,11 @@ echo "Test 3"
 1 45
 1 15
 0 45
+0 0
+EOF
+
+echo "Test 4"
+
+./${PROGRAM_NAME} << EOF
 0 0
 EOF

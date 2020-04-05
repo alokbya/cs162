@@ -1,23 +1,21 @@
 /*  Name:           Alaa Alokby
-    Assumptions:    Most importantly, this application assumes that the user will enter numbers into the 
-                    console in exactly the right format. That format is <int> <space> <int>. That is, if the
-                    user is trying to enter one minute and seven seconds as a lap time, their input will 
-                    be 1 7, and not 01 07. Leading zeros will be output to the user, but this application
-                    is not expecting the user to enter leading zeros for single digit numbers. This program
-                    was not tested against other types of input, as the instructions explicitly stated that
-                    "Your program does not need to worry about invalid values."
-                    Another important assumtion that is made is that the granularity of lap time does not
-                    exceed seconds. Any time that is entered will round down to the nearest second. Because of 
-                    downward rounding, the lap time will dispaly a value of seconds that has been achieved by 
-                    the user. For instance, if the user enters 0 14, 0 15, 0 15, an accurate average calculation
-                    to three significant digits will yield a value of 14.667. This program rounds down and will 
-                    yield a value of 14 seconds, as the average of those time entries. This is because the user did
-                    not achieve an average of 15 but they did achieve a value of 14 seconds.
+    Class:          CS 162
+    Assignment:     Project 1 - Splits
+    Assumptions:    -   User will enter numbers in correct format
+                    -   The correct format is <int><space><int>
+                            -   e.g. 1 7 is good, 01 07 is bad
+                            -   15 7 is good, 15 07 is bad, etc.
+                    -   Negative values are not valid
+                    -   Special characters are not valid (+, -, *, /, %, etc.)
+                    -   The program will round average lap time down to the 
+                        nearest second.
+                    -   Output formatting is exactly as written in instructions.txt
     Details:        This program calculates the total laps, average lap time, fastest lap time, fastest lap number,
                     slowest lap time, and slowest lap number based on the number of entries the user inputs, 
                     as well as the values that the user inputs for each entry.
     Sources:        http://www.cplusplus.com/reference/iomanip/
                     https://www.learncpp.com/cpp-tutorial/73-passing-arguments-by-reference/
+                    http://www.csgnetwork.com/race_lap_time_calculator.html (for validation)
 */
 
 #include <iostream>
@@ -53,7 +51,6 @@ int main()
         UpdateData(lapTimeSeconds, fastestTimeSeconds, slowestTimeSeconds, totalTimeSeconds, numberOfLaps, fastestLapNumber, slowestLapNumber);
     
     } while (inputMinutes > 0 || inputSeconds > 0);
-    
     // Output Data
     OutputData(totalTimeSeconds, fastestTimeSeconds, slowestTimeSeconds, numberOfLaps, fastestLapNumber, slowestLapNumber); 
     return 0;
@@ -64,11 +61,13 @@ int main()
 /*  *** OutputTimeInCorrectFormat ***
     This function accepts an integer that is in units of seconds. The function will then 
     breakdown the sum of seconds into units of minutes and seconds, and then properly 
-    format them into output to the console. 
+    format them into output to the console. Generally I would have this function return
+    a string which could then be output to console, but I am not entirely familiar with
+    cstrings yet.
 */
 void OutputTimeInCorrectFormat(int totalSeconds)
-{   
-    cout << setfill('0') << setw(2) << totalSeconds / 60 << ":" << setw(2) << totalSeconds % 60;
+{
+        cout << setfill('0') << setw(2) << totalSeconds / 60 << ":" << setw(2) << totalSeconds % 60;
 }
 
 /*  *** UpdateFastestTime ***
@@ -154,7 +153,10 @@ void OutputData(int totalSeconds, int fastestTime, int slowestTime, int totalLap
 {
     cout << "Total Laps: " << totalLaps << endl;
     cout << "Average lap time: ";
-    OutputTimeInCorrectFormat((totalSeconds / (totalLaps)));
+    if (totalLaps == 0)
+        OutputTimeInCorrectFormat(totalSeconds);    // Handle floating point exception if user enters 0 0 on first lap
+    else
+        OutputTimeInCorrectFormat((totalSeconds / (totalLaps)));
     cout << endl << "Fastest lap was #" << fastLap << endl << "Fastest Lap Time: ";
     OutputTimeInCorrectFormat(fastestTime);
     cout << endl << "Slowest lap was #" << slowLap << endl << "Slowest Lap Time: ";
