@@ -1,6 +1,9 @@
 /*  Name:           Alaa Alokby
     Assumptions:    Most importantly, this application assumes that the user will enter numbers into the 
-                    console in exactly the right format. That format is <int> <space> <int>. This program
+                    console in exactly the right format. That format is <int> <space> <int>. That is, if the
+                    user is trying to enter one minute and seven seconds as a lap time, their input will 
+                    be 1 7, and not 01 07. Leading zeros will be output to the user, but this application
+                    is not expecting the user to enter leading zeros for single digit numbers. This program
                     was not tested against other types of input, as the instructions explicitly stated that
                     "Your program does not need to worry about invalid values."
                     Another important assumtion that is made is that the granularity of lap time does not
@@ -27,7 +30,7 @@ void OutputTimeInCorrectFormat(int seconds);
 void UpdateFastestTime(int &newMinutes, int &newSeconds, int &fastestSeconds);
 void UpdateSlowestTime(int &newMinutes, int &newSeconds, int &slowestSeconds);
 void UpdateData(int &newSeconds, int &fastestSeconds, int &slowestSeconds, int &totalSeconds, int &numberOfLaps, int &fastestLap, int &slowestLap);
-void ReadInTimes(int &inputMinutes, int &inputSeconds, int &totalTimeSeconds);
+void ReadInTimes(int &inputMinutes, int &inputSeconds, int &totalTimeSeconds, int &lapTimeSeconds);
 void OutputData(int totalSeconds, int fastestTime, int slowestTime, int totalLaps, int fastLap, int slowLap);
 
 int main()
@@ -35,6 +38,7 @@ int main()
     // Declare, Initialize Local Variables
     int inputMinutes = 0;
     int inputSeconds = 0;
+    int lapTimeSeconds = 0;
     int fastestTimeSeconds = 0;
     int slowestTimeSeconds = 0;
     int numberOfLaps = 0;
@@ -45,8 +49,8 @@ int main()
     // Get Data
     do {
         
-        ReadInTimes(inputMinutes, inputSeconds, totalTimeSeconds);
-        UpdateData(inputSeconds, fastestTimeSeconds, slowestTimeSeconds, totalTimeSeconds, numberOfLaps, fastestLapNumber, slowestLapNumber);
+        ReadInTimes(inputMinutes, inputSeconds, totalTimeSeconds, lapTimeSeconds);
+        UpdateData(lapTimeSeconds, fastestTimeSeconds, slowestTimeSeconds, totalTimeSeconds, numberOfLaps, fastestLapNumber, slowestLapNumber);
     
     } while (inputMinutes > 0 || inputSeconds > 0);
     
@@ -63,7 +67,7 @@ int main()
     format them into output to the console. 
 */
 void OutputTimeInCorrectFormat(int totalSeconds)
-{
+{   
     cout << setfill('0') << setw(2) << totalSeconds / 60 << ":" << setw(2) << totalSeconds % 60;
 }
 
@@ -93,7 +97,7 @@ void UpdateFastestTime(int &newSeconds, int &fastestSeconds, int &numberOfLaps, 
     slowest lap number is also updated to reflect the lap number with the slowest time. 
 */
 void UpdateSlowestTime(int &newSeconds, int &slowestSeconds, int &numberOfLaps, int &slowestLap)
-{
+{   
     if (newSeconds > slowestSeconds) {
         slowestSeconds = newSeconds;
         slowestLap = numberOfLaps;
@@ -133,11 +137,12 @@ void UpdateData(int &newSeconds, int &fastestSeconds, int &slowestSeconds, int &
     It is important to note that there is no validation performed on the user input. This entire program
     assumes that the user knows what they are doing and will only enter valid values.
 */
-void ReadInTimes(int &inputMinutes, int &inputSeconds, int &totalSeconds)
+void ReadInTimes(int &inputMinutes, int &inputSeconds, int &totalSeconds, int &lapTimeSeconds)
 {
     cout << "Enter lap time (MM SS): ";
     cin >> inputMinutes >> inputSeconds;
     totalSeconds += inputSeconds + inputMinutes * 60;
+    lapTimeSeconds = inputSeconds + inputMinutes * 60;
 }
 
 /*  *** OutputData ***
