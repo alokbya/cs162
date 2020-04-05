@@ -1,10 +1,21 @@
-// Alaa Alokby
-// Assumptions: This program assumes that the user only enters time in the correct format (mm ss).
-// If the user does not need two digits to express minutes or seconds, then the program will not 
-// account for an extra digit (e.g. user enters '2' instead of '02').
-// Details: This program calculates the total laps, average lap time, fastest lap time, and 
-// slowest lap time based on the number of entries the user inputs, as well as the values that 
-// the user inputs for each entry.
+/*  Name:           Alaa Alokby
+    Assumptions:    Most importantly, this application assumes that the user will enter numbers into the 
+                    console in exactly the right format. That format is <int> <space> <int>. This program
+                    was not tested against other types of input, as the instructions explicitly stated that
+                    "Your program does not need to worry about invalid values."
+                    Another important assumtion that is made is that the granularity of lap time does not
+                    exceed seconds. Any time that is entered will round down to the nearest second. Because of 
+                    downward rounding, the lap time will dispaly a value of seconds that has been achieved by 
+                    the user. For instance, if the user enters 0 14, 0 15, 0 15, an accurate average calculation
+                    to three significant digits will yield a value of 14.667. This program rounds down and will 
+                    yield a value of 14 seconds, as the average of those time entries. This is because the user did
+                    not achieve an average of 15 but they did achieve a value of 14 seconds.
+    Details:        This program calculates the total laps, average lap time, fastest lap time, fastest lap number,
+                    slowest lap time, and slowest lap number based on the number of entries the user inputs, 
+                    as well as the values that the user inputs for each entry.
+    Sources:        http://www.cplusplus.com/reference/iomanip/
+                    https://www.learncpp.com/cpp-tutorial/73-passing-arguments-by-reference/
+*/
 
 #include <iostream>
 #include <iomanip>  // for mm : ss output
@@ -12,120 +23,136 @@
 using namespace std;
 
 // Function Prototypes
-void OutputTimeInCorrectFormat(int minutes, int seconds);
-int GetAverageTime(int totalSeconds, int numberOfLaps);
-void FormatAverageTimeOutput(int averageTimeInSeconds);
-void UpdateFastestTime(int &newMinutes, int &newSeconds, int &fastestMinutes, int &fastestSeconds);
-void UpdateSlowestTime(int &newMinutes, int &newSeconds, int &slowestMinutes, int &slowestSeconds);
-void UpdateData(int &newMinutes, int &newSeconds, int &fastestMinutes, int &fastestSeconds, int &slowestMinutes, int &slowestSeconds, int &totalSeconds, int &numberOfLaps, int &fastestLap, int &slowestLap);
+void OutputTimeInCorrectFormat(int seconds);
+void UpdateFastestTime(int &newMinutes, int &newSeconds, int &fastestSeconds);
+void UpdateSlowestTime(int &newMinutes, int &newSeconds, int &slowestSeconds);
+void UpdateData(int &newSeconds, int &fastestSeconds, int &slowestSeconds, int &totalSeconds, int &numberOfLaps, int &fastestLap, int &slowestLap);
+void ReadInTimes(int &inputMinutes, int &inputSeconds, int &totalTimeSeconds);
+void OutputData(int totalSeconds, int fastestTime, int slowestTime, int totalLaps, int fastLap, int slowLap);
 
 int main()
 {
-    int minutes = 0;
-    int seconds = 0;
-    int fastestTimeMinutes = 0;
+    // Declare, Initialize Local Variables
+    int inputMinutes = 0;
+    int inputSeconds = 0;
     int fastestTimeSeconds = 0;
-    int slowestTimeMinutes = 0;
     int slowestTimeSeconds = 0;
     int numberOfLaps = 0;
-    int averageLapTimeMinutes = 0;
-    int averageLapTimeSeconds = 0;
     int totalTimeSeconds = 0;
-    int fastestLap = 0;
-    int slowestLap = 0;
+    int fastestLapNumber = 0;
+    int slowestLapNumber = 0;
     
+    // Get Data
     do {
-        cout << "Enter lap time (mm ss): ";
-        cin >> minutes >> seconds;
-       
-
-        UpdateData(minutes, seconds, fastestTimeMinutes, fastestTimeSeconds, slowestTimeMinutes, slowestTimeSeconds, totalTimeSeconds, numberOfLaps, fastestLap, slowestLap);
-        // Set fastest, slowest times accordingly on first lap
-        // Calculations for average time
-
-        cout << "AVERAGE TIME: ";
-        int averageTimeInSeconds = GetAverageTime(totalTimeSeconds, numberOfLaps);
-        FormatAverageTimeOutput(averageTimeInSeconds);
-        cout << endl;
         
-    } while (minutes > 0 || seconds > 0);
+        ReadInTimes(inputMinutes, inputSeconds, totalTimeSeconds);
+        UpdateData(inputSeconds, fastestTimeSeconds, slowestTimeSeconds, totalTimeSeconds, numberOfLaps, fastestLapNumber, slowestLapNumber);
     
-    numberOfLaps -= 1;
-    cout << numberOfLaps << endl;
-    cout << "END RACE" << endl;
-
+    } while (inputMinutes > 0 || inputSeconds > 0);
+    
+    // Output Data
+    OutputData(totalTimeSeconds, fastestTimeSeconds, slowestTimeSeconds, numberOfLaps, fastestLapNumber, slowestLapNumber); 
     return 0;
 }
 
-// Function Definitions
+//  ********** Function Definitions **********  
 
-// OutputTimeInCorrectFormat
-// Passed in values are output to console in correct lap time format.
-void OutputTimeInCorrectFormat(int minutes, int seconds)
+/*  *** OutputTimeInCorrectFormat ***
+    This function accepts an integer that is in units of seconds. The function will then 
+    breakdown the sum of seconds into units of minutes and seconds, and then properly 
+    format them into output to the console. 
+*/
+void OutputTimeInCorrectFormat(int totalSeconds)
 {
-    cout << setfill('0') << setw(2) << minutes << ":" << setw(2) <<  seconds;
+    cout << setfill('0') << setw(2) << totalSeconds / 60 << ":" << setw(2) << totalSeconds % 60;
 }
 
-int GetAverageTime(int totalSeconds, int numberOfLaps)
+/*  *** UpdateFastestTime ***
+    This function accepts the most recently input lap time in units of seconds, the variable
+    holding the value of fastst lap in seconds, the variable holding the value of the total
+    number of laps, and then the variable holding the value of the lap number for which the 
+    fastest lap was entered. This function then checks to see if the newly input lap time value
+    is faster than the previously held record for fastest time. If so, the fastest lap time 
+    is updated with the most recent entry, and the fastest lap number is updated with the 
+    most recent entry's respective lap number.
+*/
+void UpdateFastestTime(int &newSeconds, int &fastestSeconds, int &numberOfLaps, int &fastestLap)
 {
-    int totalTimeInSeconds = totalSeconds;
-    int averageTotalTimeInSeconds = totalSeconds / numberOfLaps;
-
-    cout << "TOTAL MINUTES: " << totalSeconds / 60 << endl;
-    cout << "TOTAL SECONDS: " << totalSeconds % 60 << endl;
-    cout << "TOTAL LAPS: " << numberOfLaps << endl;
-    cout << "TOTAL TIME IN SECONDS: " << totalSeconds << endl;
-    cout << "AVG TOTAL IN SECONDS: " << totalSeconds / numberOfLaps << endl; 
-    return totalSeconds / numberOfLaps;
-}
-
-void FormatAverageTimeOutput(int averageTimeInSeconds)
-{
-    int averageMinutes = 0;
-    int averageSeconds = 0;
-    // Math here
-    averageMinutes = averageTimeInSeconds / 60;
-    averageSeconds = averageTimeInSeconds % 60;
-    OutputTimeInCorrectFormat(averageMinutes, averageSeconds);
-}
-
-void UpdateFastestTime(int &newMinutes, int &newSeconds, int &fastestMinutes, int &fastestSeconds, int &numberOfLaps, int &fastestLap)
-{
-    if (newMinutes < fastestMinutes) {
-        fastestMinutes = newMinutes;
-        fastestSeconds = newSeconds;
-        fastestLap = numberOfLaps;
-    }
-    else if (newMinutes == fastestMinutes && newSeconds < fastestSeconds) {
+    if (newSeconds < fastestSeconds) {
         fastestSeconds = newSeconds;
         fastestLap = numberOfLaps;
     }
 }
-void UpdateSlowestTime(int &newMinutes, int &newSeconds, int &slowestMinutes, int &slowestSeconds, int &numberOfLaps, int &slowestLap)
+
+/*  *** UpdateSlowestTime ***
+    This function accepts the most recently input lap time value in units of seconds, the variable 
+    for the slowest lap time recorded, in seconds, the total number of laps that have been entered,
+    and the slowest lap number that is associated with the slowest lap time. The function determines
+    if the most recent lap time input is slower than the previously recorded slowest lap time. If 
+    this is the case, then the slowest lap time is updated with the most recent entry. The 
+    slowest lap number is also updated to reflect the lap number with the slowest time. 
+*/
+void UpdateSlowestTime(int &newSeconds, int &slowestSeconds, int &numberOfLaps, int &slowestLap)
 {
-    if (newMinutes > slowestMinutes) {
-        slowestMinutes = newMinutes;
-        slowestSeconds = newSeconds;
-        slowestLap = numberOfLaps;
-    }
-    else if (newMinutes == slowestMinutes && newSeconds > slowestSeconds) {
+    if (newSeconds > slowestSeconds) {
         slowestSeconds = newSeconds;
         slowestLap = numberOfLaps;
     }
 }
 
-void UpdateData(int &newMinutes, int &newSeconds, int &fastestMinutes, int &fastestSeconds, int &slowestMinutes, int &slowestSeconds, int &totalSeconds, int &numberOfLaps, int &fastestLap, int &slowestLap)
+/*  *** UpdateData ***
+    This function accepts the most recently entered value for lap time in seconds, the value for the fastest 
+    lap time, slowest lap time, total seconds elapsed while running laps, the number of laps, the fastest 
+    lap number, and the slowest lap number. Firstly, this function evaluates whether or not only one lap time
+    has been entered, and if so the function will assign this single value to the fastest and slowest lap times,
+    as well as mark the first lap number as the fastest and slowest lap. This is an edge case. 
+    In all other circumstances (if more than one lap is entered) the function increments the number of laps, 
+    and then calls functions UpdateFastestTime() and UpdateSlowestTime() to update the fastest and slowest 
+    lap times respectively, if necessary. Lastly, this function the most recently entered lap time to the total 
+    time (the sum of all lap times).
+*/
+void UpdateData(int &newSeconds, int &fastestSeconds, int &slowestSeconds, int &totalSeconds, int &numberOfLaps, int &fastestLap, int &slowestLap)
 {
-    UpdateFastestTime(newMinutes, newSeconds, fastestMinutes, fastestSeconds, numberOfLaps, fastestLap);
-    UpdateSlowestTime(newMinutes, newSeconds, slowestMinutes, slowestSeconds, numberOfLaps, slowestLap);
-    totalSeconds += newMinutes * 60 + newSeconds;
-    numberOfLaps++;
-    if (numberOfLaps == 0) {
-        //fastestMinutes = newMinutes;
-        //fastestSeconds = newSeconds;
-        //slowestMinutes = newMinutes;
-        //slowestSeconds = newSeconds;
-        fastestMinutes, slowestMinutes = newMinutes;
-        fastestSeconds, slowestSeconds = newSeconds;
+    if (numberOfLaps == 0 ) {
+        fastestSeconds = newSeconds;
+        slowestSeconds = newSeconds;
+        fastestLap = 1; 
+        slowestLap = 1;
     }
+    if (newSeconds > 0) {
+        numberOfLaps++;
+        UpdateFastestTime(newSeconds, fastestSeconds, numberOfLaps, fastestLap);
+        UpdateSlowestTime(newSeconds, slowestSeconds, numberOfLaps, slowestLap);
+    }
+}
+
+/*  *** ReadInTimes ***
+    This function accepts the reference to the most recenly entered value for minutes and seconds, as well 
+    as the reference to the value for the total amount of seconds entered as lap time. The function reads
+    in user input for minutes and seconds, and then accordingly increments the total number of seconds.
+    It is important to note that there is no validation performed on the user input. This entire program
+    assumes that the user knows what they are doing and will only enter valid values.
+*/
+void ReadInTimes(int &inputMinutes, int &inputSeconds, int &totalSeconds)
+{
+    cout << "Enter lap time (MM SS): ";
+    cin >> inputMinutes >> inputSeconds;
+    totalSeconds += inputSeconds + inputMinutes * 60;
+}
+
+/*  *** OutputData ***
+    This function is used to output all relevant data to the console for the user to read. All parameters
+    are passed by value because this is the last function to be called in main() and no variables require 
+    modification. 
+*/
+void OutputData(int totalSeconds, int fastestTime, int slowestTime, int totalLaps, int fastLap, int slowLap)
+{
+    cout << "Total Laps: " << totalLaps << endl;
+    cout << "Average lap time: ";
+    OutputTimeInCorrectFormat((totalSeconds / (totalLaps)));
+    cout << endl << "Fastest lap was #" << fastLap << endl << "Fastest Lap Time: ";
+    OutputTimeInCorrectFormat(fastestTime);
+    cout << endl << "Slowest lap was #" << slowLap << endl << "Slowest Lap Time: ";
+    OutputTimeInCorrectFormat(slowestTime);
+    cout << endl;
 }
