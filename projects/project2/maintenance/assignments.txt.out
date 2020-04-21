@@ -85,9 +85,13 @@ Errors due to overlaps:
   5;Clean waste recylers;3;Kelli Weeberly
   6;Clean waste recylers;3;Sarah Klein
   6;Computer system diagnostic;2;Richard Moody
+  7;Clean waste recylers;3;Kelli Weeberly
+  7;Calibrate centripetal wheel rotations;5;Kelli Weeberly
   9;Adjust fuel rods;3;Gail Lawhead
   11;Domestic maintenance robotics;5;Gail Lawhead
   13;Hull debris sweep;4;Richard Moody
+  14;Replace ventalation filters;2;Karma Thames
+  14;Replace ventalation filters;2;Richard Moody
   14;Surface static discharge;3;Robbie Mitchell
   15;Water purification routine maintenance;4;Sarah Klein
   15;Surface static discharge;3;Gail Lawhead

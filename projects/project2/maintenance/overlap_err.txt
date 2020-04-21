@@ -27,6 +27,15 @@
 10;Replace ventalation filters;2;Karma Thames
 11;Hull debris sweep;4;Karma Thames
 
+# same person, different jobs, assigned on the same day
+# Expected errors:
+#   7;Clean waste recylers;3;Kelli Weeberly
+#   7;Calibrate centripetal wheel rotations;5;Kelli Weeberly
+#   (also expect a duplicate assignment error)
+
+7;Clean waste recylers;3;Kelli Weeberly
+7;Calibrate centripetal wheel rotations;5;Kelli Weeberly
+
 # Not an overlap
 
 12;Replace ventalation filters;2;Richard Moody
