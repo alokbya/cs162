@@ -74,6 +74,33 @@ void ReadDuplicateErrors(ErrorList duplicateErrors) {
 }
 
 
+void FindDups(day cal[], ErrorList& duplicateErrors)
+{
+
+	// clean out duplicate errors list
+	
+
+	for (int i = CAL_DAYS; i >=0 ; i--)		// to get that reverse order list...
+	{
+		for (int j = 0; j < 2; j++)
+		{
+			if ((strcmp(cal[i].taskname[j], cal[i].taskname[j+1]) == 0) && cal[i].duration[j] != -1)
+			{
+				strcpy(duplicateErrors.errors[duplicateErrors.errorCounter], cal[i].line[j]);
+				duplicateErrors.errorCounter++;
+				cout << cal[i].line[j] << endl;
+			}
+			else if ((strcmp(cal[i].who[j], cal[i].who[j+1]) == 0) && cal[i].duration[j] != -1)
+			{
+				strcpy(duplicateErrors.errors[duplicateErrors.errorCounter], cal[i].line[j]);
+				duplicateErrors.errorCounter++;
+				cout << cal[i].line[j] << endl;
+			}
+		}
+	}	
+}
+
+
 void FindDuplicateErrors(int totalAssignments, char* datafile, ErrorList& duplicateErrors, task assignments[])
 {
     int duplicates[150];
@@ -127,7 +154,7 @@ void ReadQuantityErrors(ErrorList quantityErrors) {
 }
 
 
-void FindQuantityErrTest(ErrorList& quantityErrors, task assignments[], int size)
+void FindQuantityErrors(ErrorList& quantityErrors, task assignments[], int size)
 {
 	int qerrs[CAL_DAYS][3];
 	for (int i = 0; i <= CAL_DAYS; i++)
@@ -147,25 +174,6 @@ void FindQuantityErrTest(ErrorList& quantityErrors, task assignments[], int size
 		else{
 			strcpy(quantityErrors.errors[quantityErrors.errorCounter], assignments[assignment].line);
 			quantityErrors.errorCounter++;
-		}
-	}
-}
-
-void FindQuantityErrors(int totalAssignments, char* datafile, ErrorList& quantityErrors, task assignments[]){
-// NEED TO ADD A WAY TO TRACK LINE INDEX OF EACH LINE THAT IS 
-// NOT ALLOWED, SO AS TO NOT FILL THE CALENDAR WITH THAT LINE
-	// to remove it from being seen
-	int duplicates = 0;
-	for (int i = 0; i < CAL_DAYS; i++){
-		duplicates = 0;
-		for (int j = 0; j < totalAssignments; j++) {
-			if (assignments[j].day == i) {
-				duplicates++;
-				if (duplicates > 3) {
-					strcpy(quantityErrors.errors[quantityErrors.errorCounter], assignments[j].line);
-					quantityErrors.errorCounter++;
-				}
-			}
 		}
 	}
 }

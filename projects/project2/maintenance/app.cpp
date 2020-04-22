@@ -34,17 +34,22 @@ int main(int argc, char* argv[])
 	//ErrorList overlapErrors;
 	ErrorList duplicateErrors;
 	ErrorList quantityErrors;
+
+	duplicateErrors.errorCounter = 0;
 	
 	//int duplicateLineIndeces[MAX_STR] = {0};
 	//int quantityLineIndeces[MAX_STR] = {0};
 
 	// Main part of the program
 	ReadDataIntoAssignments(datafile, assignments, totalAssignments);
-	// FindQuantityErrors(totalAssignments, datafile, quantityErrors, assignments);
-	FindQuantityErrTest(quantityErrors, assignments, totalAssignments);
-	FindDuplicateErrors(totalAssignments, datafile, duplicateErrors, assignments);
+	
+	FindQuantityErrors(quantityErrors, assignments, totalAssignments);
+	
+	
+	// FindDuplicateErrors(totalAssignments, datafile, duplicateErrors, assignments);
 
 	FillCal(cal, assignments, totalAssignments);
+	FindDups(cal, duplicateErrors);
 	ReadCal(cal);
 	ReadQuantityErrors(quantityErrors);
 	ReadDuplicateErrors(duplicateErrors);

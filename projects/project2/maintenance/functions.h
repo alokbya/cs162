@@ -36,7 +36,7 @@ void GetTaskname(char line[], int delIndeces[], char task[]);
 void ReadDataIntoAssignments(char* datafile, task assignments[], int& totalAssignments); 
 void ReadQuantityErrors(ErrorList quantityErrors);
 void ReadDuplicateErrors(ErrorList duplicateErrors);
-void FindQuantityErrors(int totalAssignments, char* datafile, ErrorList& quantityErrors, task assignments[]);
+void FindQuantityErrors(ErrorList& quantityErrors, task assignments[], int size);
 void FindDuplicateErrors(int totalAssignments, char* datafile, ErrorList& duplicateErrors, task assignments[]);
 int Getday(char line[], int delIndeces[]);
 int GetDuration(char line[], int delIndeces[]);
@@ -45,7 +45,7 @@ void ReadCalendar(task calendar[][3]);
 void FillCal(day cal[], task assignments[], int size);
 void ReadCal(day cal[]);
 
+void FindDups(day cal[], ErrorList& duplicateErrors);
 
-void FindQuantityErrTest(ErrorList& quantityErrors, task assignments[], int size);
 
 #endif
