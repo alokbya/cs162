@@ -42,7 +42,10 @@ int Getday(char line[], int delIndeces[]);
 int GetDuration(char line[], int delIndeces[]);
 void FillCalendar(task calendar[][3], task assignments[], int size);
 void ReadCalendar(task calendar[][3]);
-void FillCalTest(day cal[], task assignments[], int size);
-void ReadCalTest(day cal[]);
+void FillCal(day cal[], task assignments[], int size);
+void ReadCal(day cal[]);
+
+
+void FindQuantityErrTest(ErrorList& quantityErrors, task assignments[], int size);
 
 #endif

@@ -12,26 +12,7 @@ using namespace std;
 
 // void FindOverlapErrors(day calendar[][3], )
 
-void ReadCalendar(task calendar[][3])
-{	
-	for (int day = 0; day < CAL_DAYS; day++)
-	{
-		cout << "Day" << setw(3) << day << ":" << endl;
-		for (int task = 0; task < 3; task++)
-		{
-			if (calendar[day][task].day != -1)
-			{
-				cout << "  ";
-				cout << calendar[day][task].who << " is doing \"";
-				cout << calendar[day][task].taskname << "\" for ";
-				cout << calendar[day][task].duration << " days";
-				cout << endl;
-			}
-		}
-	}
-}
-
-void ReadCalTest(day cal[])
+void ReadCal(day cal[])
 {
 	for (int i = 0; i < CAL_DAYS; i++)
 	{
@@ -50,7 +31,7 @@ void ReadCalTest(day cal[])
 	}
 }
 
-void FillCalTest(day cal[], task assignments[], int size)
+void FillCal(day cal[], task assignments[], int size)
 {
 	day cleanDay;
 	cleanDay.day = -1;
@@ -80,31 +61,7 @@ void FillCalTest(day cal[], task assignments[], int size)
 
 				taskCounter++;
 			}
-		}
-	}
-}
-
-void FillCalendar(task calendar[][3], task assignments[], int size) 
-{
-	task shell;
-	shell.day = -1;
-	for (int i = 0; i < CAL_DAYS; i++)
-	{
-		for (int j = 0; j < 3; j++) 
-		{
-			calendar[i][j] = shell;
-		}
-	}
-	for (int eachDay = 0; eachDay < CAL_DAYS; eachDay++)  
-	{
-		int taskNumber = 0;
-		for (int eachTask = 0; eachTask <= size; eachTask++)
-		{
-			if(assignments[eachTask].day == eachDay && taskNumber < 3)
-			{
-				calendar[eachDay][taskNumber] = assignments[eachTask];
-				taskNumber++;
-			}
+			
 		}
 	}
 }
@@ -166,6 +123,31 @@ void ReadQuantityErrors(ErrorList quantityErrors) {
 	cout << endl << "Errors due to too many jobs on the same day:" << endl;
 	for(int i = 0; i < quantityErrors.errorCounter; i++) {
 		cout << "  " << quantityErrors.errors[i] << endl;
+	}
+}
+
+
+void FindQuantityErrTest(ErrorList& quantityErrors, task assignments[], int size)
+{
+	int qerrs[CAL_DAYS][3];
+	for (int i = 0; i <= CAL_DAYS; i++)
+	{
+		for (int j = 0; j < 3; j++)
+			qerrs[i][j] = -1;
+	}
+	
+	for (int assignment = 0; assignment <= size; assignment++)
+	{
+		if (qerrs[assignments[assignment].day][0] == -1)
+			qerrs[assignments[assignment].day][0] = 1;
+		else if (qerrs[assignments[assignment].day][1] == -1)
+			qerrs[assignments[assignment].day][1] = 1;
+		else if (qerrs[assignments[assignment].day][2] == -1)
+			qerrs[assignments[assignment].day][2] = 1;
+		else{
+			strcpy(quantityErrors.errors[quantityErrors.errorCounter], assignments[assignment].line);
+			quantityErrors.errorCounter++;
+		}
 	}
 }
 

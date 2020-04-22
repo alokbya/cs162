@@ -24,7 +24,7 @@ int main(int argc, char* argv[])
 	
 	char* datafile = argv[1];									// This is the filename containing the tasklist
 	// Define and initialize variables
-	task calendar[CAL_DAYS][3];
+	// task calendar[CAL_DAYS][3];
 	task assignments[100];
 	day cal[CAL_DAYS];
 
@@ -40,13 +40,12 @@ int main(int argc, char* argv[])
 
 	// Main part of the program
 	ReadDataIntoAssignments(datafile, assignments, totalAssignments);
-	FindQuantityErrors(totalAssignments, datafile, quantityErrors, assignments);
+	// FindQuantityErrors(totalAssignments, datafile, quantityErrors, assignments);
+	FindQuantityErrTest(quantityErrors, assignments, totalAssignments);
 	FindDuplicateErrors(totalAssignments, datafile, duplicateErrors, assignments);
 
-	// FillCalendar(calendar, assignments, totalAssignments);
-	// ReadCalendar(calendar);
-	FillCalTest(cal, assignments, totalAssignments);
-	ReadCalTest(cal);
+	FillCal(cal, assignments, totalAssignments);
+	ReadCal(cal);
 	ReadQuantityErrors(quantityErrors);
 	ReadDuplicateErrors(duplicateErrors);
 
