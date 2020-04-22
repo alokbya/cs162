@@ -14,7 +14,7 @@ using namespace std;
 
 void ReadCal(day cal[])
 {
-	for (int i = 0; i < CAL_DAYS; i++)
+	for (int i = 0; i <= CAL_DAYS; i++)
 	{
 		cout << "Day" << setw(3) << i << ":" << endl;
 		for (int j = 0; j < 3; j++)
@@ -49,7 +49,7 @@ void FillCal(day cal[], task assignments[], int size)
 	{
 		int taskCounter = 0;
 		cal[i].day = i; 
-		for (int j = 0; j <= size; j++)
+		for (int j = 0; j < size; j++)
 		{
 			if (assignments[j].day == i && taskCounter < 3)
 			{
@@ -66,6 +66,42 @@ void FillCal(day cal[], task assignments[], int size)
 	}
 }
 
+void ReadOverlapErrors(ErrorList overLapErrors) 
+{
+	cout << endl << "Errors due to overlaps:" << endl;
+	for(int i = 0; i < overLapErrors.errorCounter; i++) 
+	{
+		cout << "  " << overLapErrors.errors[i] << endl;
+	}
+}
+
+
+void FindOverlapErrors(day cal[], ErrorList& overLapErrors)
+{
+	for (int day = 0; day <= CAL_DAYS; day++)
+	{
+		for (int task = 0; task < 3; task++)
+		{
+			for (int duration = 0; duration <= cal[day+duration].duration[task]; duration++)
+			{
+				if (duration <= CAL_DAYS)
+				{
+					if(strcmp(cal[day].who[task], cal[duration].who[task]) == 0)				// if there is overlap
+					{
+						strcpy(overLapErrors.errors[overLapErrors.errorCounter], cal[duration].line[task]);
+						overLapErrors.errorCounter++;
+					}
+					else if(strcmp(cal[day].taskname[task], cal[duration].taskname[task]) == 0)
+					{
+						strcpy(overLapErrors.errors[overLapErrors.errorCounter], cal[duration].line[task]);
+						overLapErrors.errorCounter++;
+					}
+				}
+			}
+		}
+	}
+}
+
 void ReadDuplicateErrors(ErrorList duplicateErrors) {
 	cout << endl << "Errors due to duplicate assignments:" << endl;
 	for(int i = 0; i < duplicateErrors.errorCounter; i++) {
@@ -76,7 +112,7 @@ void ReadDuplicateErrors(ErrorList duplicateErrors) {
 
 void FindDuplicateErrors(day cal[], ErrorList& duplicateErrors)
 {
-	for (int i = CAL_DAYS; i >=0 ; i--)		// to get that reverse order list...
+	for (int i = CAL_DAYS; i >= 0 ; i--)		// to get that reverse order list...
 	{
 		for (int j = 0; j < 2; j++)
 		{
@@ -84,13 +120,11 @@ void FindDuplicateErrors(day cal[], ErrorList& duplicateErrors)
 			{
 				strcpy(duplicateErrors.errors[duplicateErrors.errorCounter], cal[i].line[j]);
 				duplicateErrors.errorCounter++;
-				cout << cal[i].line[j] << endl;
 			}
 			else if ((strcmp(cal[i].who[j], cal[i].who[j+1]) == 0) && cal[i].duration[j] != -1)
 			{
 				strcpy(duplicateErrors.errors[duplicateErrors.errorCounter], cal[i].line[j]);
 				duplicateErrors.errorCounter++;
-				cout << cal[i].line[j] << endl;
 			}
 		}
 	}	
@@ -98,7 +132,7 @@ void FindDuplicateErrors(day cal[], ErrorList& duplicateErrors)
 
 
 void ReadQuantityErrors(ErrorList quantityErrors) {
-	cout << endl << "Errors due to too many jobs on the same day:" << endl;
+	cout << "Errors due to too many jobs on the same day:" << endl;
 	for(int i = 0; i < quantityErrors.errorCounter; i++) {
 		cout << "  " << quantityErrors.errors[i] << endl;
 	}
@@ -107,6 +141,7 @@ void ReadQuantityErrors(ErrorList quantityErrors) {
 
 void FindQuantityErrors(ErrorList& quantityErrors, task assignments[], int size)
 {
+	quantityErrors.errorCounter = 0;
 	int qerrs[CAL_DAYS][3];
 	for (int i = 0; i <= CAL_DAYS; i++)
 	{
@@ -114,7 +149,7 @@ void FindQuantityErrors(ErrorList& quantityErrors, task assignments[], int size)
 			qerrs[i][j] = -1;
 	}
 	
-	for (int assignment = 0; assignment <= size; assignment++)
+	for (int assignment = 0; assignment < size; assignment++)
 	{
 		if (qerrs[assignments[assignment].day][0] == -1)
 			qerrs[assignments[assignment].day][0] = 1;
