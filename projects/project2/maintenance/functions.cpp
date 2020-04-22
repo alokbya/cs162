@@ -74,12 +74,8 @@ void ReadDuplicateErrors(ErrorList duplicateErrors) {
 }
 
 
-void FindDups(day cal[], ErrorList& duplicateErrors)
+void FindDuplicateErrors(day cal[], ErrorList& duplicateErrors)
 {
-
-	// clean out duplicate errors list
-	
-
 	for (int i = CAL_DAYS; i >=0 ; i--)		// to get that reverse order list...
 	{
 		for (int j = 0; j < 2; j++)
@@ -100,51 +96,6 @@ void FindDups(day cal[], ErrorList& duplicateErrors)
 	}	
 }
 
-
-void FindDuplicateErrors(int totalAssignments, char* datafile, ErrorList& duplicateErrors, task assignments[])
-{
-    int duplicates[150];
-    int dcounter = 0;
-    for (int element = 0; element < MAX_STR; element++)
-        duplicates[element] = -1;
-   
-   // iterate through each day of the month
-    for (int d = 0; d < CAL_DAYS; d++) 
-    {
-        task dailywork[MAX_STR];
-        int workcounter = 0;
-        for (int assignment = 0; assignment < totalAssignments; assignment++)
-        {
-            if (assignments[assignment].day == d)
-            {   // if the assignment is for the same day, add it into the daily work array
-                dailywork[workcounter] = assignments[assignment];
-                workcounter++;
-            }            
-			for (int i = 0; i < workcounter; i++)
-            {
-                for (int j = 0; j < workcounter; j++)
-                {   // check if the name or task are the same for a given day
-                    if ((strcmp(dailywork[i].taskname, dailywork[j].taskname) == 0 || strcmp(dailywork[i].who, dailywork[j].who) == 0) && (dailywork[i].fileIndex != dailywork[j].fileIndex))
-                    {
-						bool exists = false;
-						for (int k = 0; k < dcounter; k++)
-						{
-							if (dailywork[i].fileIndex == duplicates[k])
-								exists = true;
-						}
-						if (!exists)
-						{
-							duplicates[dcounter] = dailywork[i].fileIndex;
-							strcpy(duplicateErrors.errors[duplicateErrors.errorCounter], dailywork[i].line);
-							duplicateErrors.errorCounter++;
-							dcounter++;
-						}
-                    }   
-                }
-            }
-		}
-    }
-}
 
 void ReadQuantityErrors(ErrorList quantityErrors) {
 	cout << endl << "Errors due to too many jobs on the same day:" << endl;

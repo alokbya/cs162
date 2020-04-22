@@ -42,14 +42,11 @@ int main(int argc, char* argv[])
 
 	// Main part of the program
 	ReadDataIntoAssignments(datafile, assignments, totalAssignments);
+	FillCal(cal, assignments, totalAssignments);
 	
 	FindQuantityErrors(quantityErrors, assignments, totalAssignments);
-	
-	
-	// FindDuplicateErrors(totalAssignments, datafile, duplicateErrors, assignments);
+	FindDuplicateErrors(cal, duplicateErrors);
 
-	FillCal(cal, assignments, totalAssignments);
-	FindDups(cal, duplicateErrors);
 	ReadCal(cal);
 	ReadQuantityErrors(quantityErrors);
 	ReadDuplicateErrors(duplicateErrors);
