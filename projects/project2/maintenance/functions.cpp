@@ -14,12 +14,12 @@ using namespace std;
 
 void ReadCal(day cal[])
 {
-	for (int i = 0; i <= CAL_DAYS; i++)
+	for (int i = 1; i <= CAL_DAYS; i++)
 	{
 		cout << "Day" << setw(3) << i << ":" << endl;
 		for (int j = 0; j < 3; j++)
 		{
-			if (cal[i].duration[j] != -1)		// if not empty
+			if (cal[i].duration[j] != -1 && (cal[i].who[j][0] >=65 && cal[i].who[j][0] <= 90))		// if not empty
 			{
 				cout << "  ";
 				cout << cal[i].who[j] << " is doing \"";
@@ -34,24 +34,36 @@ void ReadCal(day cal[])
 void FillCal(day cal[], task assignments[], int size)
 {
 	day cleanDay;
+	char taskname[MAX_STR] = {'\0'};
+	
 	cleanDay.day = -1;
 	cleanDay.duration[0] = -1;
 	cleanDay.duration[1] = -1;
 	cleanDay.duration[2] = -1;
+	// strcpy(cleanDay.taskname[0], taskname);
+	// strcpy(cleanDay.taskname[1], taskname);
+	// strcpy(cleanDay.taskname[2], taskname);
+	// strcpy(cleanDay.who[0], taskname);
+	// strcpy(cleanDay.who[1], taskname);
+	// strcpy(cleanDay.who[2], taskname);
+	// strcpy(cleanDay.line[0], taskname);
+	// strcpy(cleanDay.line[1], taskname);
+	// strcpy(cleanDay.line[2], taskname);
+
 	// clean out the calendar
-	for (int i = 0; i < CAL_DAYS; i++)
+	for (int i = 0; i < CAL_DAYS; i++)					// changing this to <= causes problems
 	{
 		cal[i] = cleanDay;
 	}
 
 	// fill calendar with assignments
-	for (int i = 0; i < CAL_DAYS; i++)
+	for (int i = 0; i <= CAL_DAYS; i++)					// inlcuding CAL_DAYS (<= instead of <) is adds item to day 30, but is most correct so far
 	{
 		int taskCounter = 0;
 		cal[i].day = i; 
-		for (int j = 0; j < size; j++)
+		for (int j = 0; j <= size; j++)	// make sure to include the last item in the list (<=)
 		{
-			if (assignments[j].day == i && taskCounter < 3)
+			if ((assignments[j].day == i) && (taskCounter < 3))
 			{
 				strcpy(cal[i].taskname[taskCounter], assignments[j].taskname);
 				cal[i].duration[taskCounter] = assignments[j].duration;
@@ -59,9 +71,16 @@ void FillCal(day cal[], task assignments[], int size)
 				cal[i].fileIndex[taskCounter] = assignments[j].fileIndex;
 				strcpy(cal[i].line[taskCounter], assignments[j].line);
 
+				// cout << endl;
+				// cout << "DAY: " << i << endl;
+				// cout << cal[i].taskname[taskCounter] << endl;
+				// cout << cal[i].duration[taskCounter] << endl;
+				// cout << cal[i].who[taskCounter] << endl;
+				// cout << cal[i].fileIndex[taskCounter] << endl;
+				// cout << cal[i].line[taskCounter] << endl;
+
 				taskCounter++;
 			}
-			
 		}
 	}
 }

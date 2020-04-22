@@ -68,10 +68,17 @@ int main(int argc, char* argv[])
 	// 	cout << cal[i].duration[2] << endl;
 	// }
 	ReadCal(cal);
+	cout << "==============================" << endl;
 	ReadQuantityErrors(quantityErrors);
 	ReadOverlapErrors(overlapErrors);
 	ReadDuplicateErrors(duplicateErrors);
 
+
+	// for (int i = 0; i <= totalAssignments; i++) {
+	// 	cout << assignments[i].fileIndex << ": ";
+	// 	cout << assignments[i].who << endl;
+		
+	// }
 	// FillCalTest(day cal[], task assignments[], int size);
 	return 0;
 }
