@@ -1,10 +1,10 @@
 CC = g++
 CPPFLAGS = -Wall -g -std=c++11
-app:	app.o dtypes.o
+app:	app.o functions.o
 
-app.o: 	dtypes.h
+app.o: 	functions.h
 
-dtypes.o:	dtypes.h
+functions.o:	functions.h
 
 .PHONY: clean
 clean:	

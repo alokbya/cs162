@@ -6,7 +6,7 @@ Sources: https://stackoverflow.com/questions/16772842/what-is-the-difference-bet
 
 #include <iostream>
 #include <cstring>
-#include "dtypes.h"
+#include "functions.h"
 
 using namespace std;
 
@@ -24,8 +24,9 @@ int main(int argc, char* argv[])
 	
 	char* datafile = argv[1];									// This is the filename containing the tasklist
 	// Define and initialize variables
-	//day calendar[CAL_DAYS];
-	day assignments[100];
+	task calendar[CAL_DAYS][3];
+	task assignments[100];
+	day cal[CAL_DAYS];
 
 	//int totalCalSize = 0;
 	int totalAssignments = 0;
@@ -38,13 +39,18 @@ int main(int argc, char* argv[])
 	//int quantityLineIndeces[MAX_STR] = {0};
 
 	// Main part of the program
-	ReadDataIntoCalendar(datafile, assignments, totalAssignments);
+	ReadDataIntoAssignments(datafile, assignments, totalAssignments);
 	FindQuantityErrors(totalAssignments, datafile, quantityErrors, assignments);
 	FindDuplicateErrors(totalAssignments, datafile, duplicateErrors, assignments);
-	//ReadQuantityErrors(quantityErrors);
+
+	// FillCalendar(calendar, assignments, totalAssignments);
+	// ReadCalendar(calendar);
+	FillCalTest(cal, assignments, totalAssignments);
+	ReadCalTest(cal);
+	ReadQuantityErrors(quantityErrors);
 	ReadDuplicateErrors(duplicateErrors);
 
-	
+	// FillCalTest(day cal[], task assignments[], int size);
 	return 0;
 }
 
