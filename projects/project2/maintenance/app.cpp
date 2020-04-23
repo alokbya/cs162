@@ -36,9 +36,6 @@ int main(int argc, char* argv[])
 	ErrorList quantityErrors;
 	ErrorList overlapErrors;
 	duplicateErrors.errorCounter = 0;
-	
-	//int duplicateLineIndeces[MAX_STR] = {0};
-	//int quantityLineIndeces[MAX_STR] = {0};
 
 	// Main part of the program
 	ReadDataIntoAssignments(datafile, assignments, totalAssignments);
@@ -48,38 +45,13 @@ int main(int argc, char* argv[])
 	
 	FindOverlapErrors(cal, overlapErrors);
 	FindDuplicateErrors(cal, duplicateErrors);
-	// for (int i = 0; i < CAL_DAYS; i++)
-	// {
 
-	// }
-	
-	// for (int i = 0; i <= CAL_DAYS; i++)
-	// {
-	// 	cout << "###############" << endl;
-	// 	cout << i << endl;
-	// 	cout << cal[i].who[0] << endl;
-	// 	cout << cal[i].who[1] << endl;
-	// 	cout << cal[i].who[2] << endl;
-	// 	cout << cal[i].taskname[0] << endl;
-	// 	cout << cal[i].taskname[1] << endl;
-	// 	cout << cal[i].taskname[2] << endl;
-	// 	cout << cal[i].duration[0] << endl;
-	// 	cout << cal[i].duration[1] << endl;
-	// 	cout << cal[i].duration[2] << endl;
-	// }
 	ReadCal(cal);
 	cout << "==============================" << endl;
+
 	ReadQuantityErrors(quantityErrors);
 	ReadOverlapErrors(overlapErrors);
 	ReadDuplicateErrors(duplicateErrors);
-
-
-	// for (int i = 0; i <= totalAssignments; i++) {
-	// 	cout << assignments[i].fileIndex << ": ";
-	// 	cout << assignments[i].who << endl;
-		
-	// }
-	// FillCalTest(day cal[], task assignments[], int size);
 	return 0;
 }
 

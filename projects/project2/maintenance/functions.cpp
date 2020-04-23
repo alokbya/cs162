@@ -34,23 +34,12 @@ void ReadCal(day cal[])
 void FillCal(day cal[], task assignments[], int size)
 {
 	day cleanDay;
-	char taskname[MAX_STR] = {'\0'};
 	
 	cleanDay.day = -1;
 	cleanDay.duration[0] = -1;
 	cleanDay.duration[1] = -1;
 	cleanDay.duration[2] = -1;
-	// strcpy(cleanDay.taskname[0], taskname);
-	// strcpy(cleanDay.taskname[1], taskname);
-	// strcpy(cleanDay.taskname[2], taskname);
-	// strcpy(cleanDay.who[0], taskname);
-	// strcpy(cleanDay.who[1], taskname);
-	// strcpy(cleanDay.who[2], taskname);
-	// strcpy(cleanDay.line[0], taskname);
-	// strcpy(cleanDay.line[1], taskname);
-	// strcpy(cleanDay.line[2], taskname);
 
-	// clean out the calendar
 	for (int i = 0; i < CAL_DAYS; i++)					// changing this to <= causes problems
 	{
 		cal[i] = cleanDay;
@@ -70,15 +59,6 @@ void FillCal(day cal[], task assignments[], int size)
 				strcpy(cal[i].who[taskCounter], assignments[j].who);
 				cal[i].fileIndex[taskCounter] = assignments[j].fileIndex;
 				strcpy(cal[i].line[taskCounter], assignments[j].line);
-
-				// cout << endl;
-				// cout << "DAY: " << i << endl;
-				// cout << cal[i].taskname[taskCounter] << endl;
-				// cout << cal[i].duration[taskCounter] << endl;
-				// cout << cal[i].who[taskCounter] << endl;
-				// cout << cal[i].fileIndex[taskCounter] << endl;
-				// cout << cal[i].line[taskCounter] << endl;
-
 				taskCounter++;
 			}
 		}
@@ -90,7 +70,10 @@ void ReadOverlapErrors(ErrorList overLapErrors)
 	cout << endl << "Errors due to overlaps:" << endl;
 	for(int i = 0; i < overLapErrors.errorCounter; i++) 
 	{
-		cout << "  " << overLapErrors.errors[i] << endl;
+		if (static_cast<int>(overLapErrors.errors[i][0]) > 0){
+			cout << "  " << overLapErrors.errors[i] << endl;
+		}
+			
 	}
 }
 
@@ -101,7 +84,7 @@ void FindOverlapErrors(day cal[], ErrorList& overLapErrors)
 	{
 		for (int task = 0; task < 3; task++)
 		{
-			for (int duration = 0; duration <= cal[day+duration].duration[task]; duration++)
+			for (int duration = day; duration <= cal[day+duration].duration[task]; duration++)//cal[day+duration].duration[task]; duration++)
 			{
 				if (duration <= CAL_DAYS)
 				{
@@ -120,6 +103,7 @@ void FindOverlapErrors(day cal[], ErrorList& overLapErrors)
 		}
 	}
 }
+
 
 void ReadDuplicateErrors(ErrorList duplicateErrors) {
 	cout << endl << "Errors due to duplicate assignments:" << endl;
