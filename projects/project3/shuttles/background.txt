@@ -1,0 +1,131 @@
+Within seconds of the malfuction, loud alarms went off in all the living areas
+of the IMC Two. Flashing red lights raced down the long radial corridors and
+blinking strobes lit up each room. It was 2:00 AM, ship time, and most of the
+passengers who had been sleeping were jerking awake to the emergency. A calm,
+recorded voice started speaking over the ship broadcast system.
+
+"Emergency protocol: code red. All passengers, put on your enivornment suits
+immediately and proceed to your assigned muster location." There was a cheeful
+chime and a few second pause then the message repeated.
+
+Addie flipped the covers off or her bed and lept out of bed. Misjudging the
+reduced gravity caused her to fly across the small room and into the far
+wall. She twisted her shoulder just in time to take the brunt of the impact
+there rather than on her face. "Oomph! That's going to leave a bruise," she
+said to herself. "Light on." She gave the verbal command to her room's system
+and the soft room lights came on.
+
+The door to the closet holding her emergency environment suit was cracked
+open. She moved to the closet quickly and slipped into the suit. Each suit was
+custom fitted it's owner. This ensured that it was easy to get on and provided
+the most flexibility. It wasn't about comfort, it was about safety. In an
+emergency situation a person needed as much freedom of movement as possible.
+
+Once the suit was on Addie stepped out of her room. The hallway was full of
+dozens of other suited up passengers moving to her right. Everyone in this
+section of the wheel was going to the Lyra lounge. That was their muster
+point. There were a total of 400 people on the IMC Two and each one was
+assigned to one of the eight lounges in case of emergency.
+
+Sounds coming from outside the environment suit were muffled so much that
+Addie could barely hear the audible alarms. Someone grabbed her shoulder from
+behind and she turned to see Angelica. She looked panicked behind the
+transparent faceplate. Her lips were moving but Addie couldn't hear what she
+was saying. Angelica lifted her wrist and tapped it. Oh! Of course, the
+radio. Addie looked to her wrist and tapped on the radio comms. She pressed
+the button to open a two way channel with Angelica.
+
+"Addie! What's going on?" She sounded panicked too.
+
+"I don't know Angie. But let's get to the Lyra and we'll probably find out."
+Addie grabbed Angelica's arm and started pulling her along the walkway. Others
+were streaming passed them. "Come on. We've got to hurry."
+
+"I know, I know." Angelica said. "I'm just so scared." She stepped up right
+behind Addie and the two moved towards the lounge. It only took a couple
+minutes to get to their destination. It was already mostly full. Addie and
+Angelica found Martin, the muster captain, and registered their presence. He
+marked them down on his tablet.
+
+The main radio channel was so full of chatter it was impossible to discern
+what was going on. Angelica moved to one of the lounge windows. This window
+faced towards the central axis of the ship and her viewed allowed her to see
+the twin wheel on the other side. It was spinning in the opposite direction,
+as expected. Then Angelica gasped. Several small rectangular shapes were
+floating in space on a trajectory towards the spinning wheel.
+
+"Addie. Addie. Come look! What is that?" She pointed out the window. Others
+noticed her gesture and flocked to the window. Soon all fifty occupants of the
+Lyra lounge were staring out. Addie switched her radio to the Lyra lounge
+channel where there were already a bunch of people talking.
+
+Someone with a loud voice was describing the situation. "It's a shuttle. I
+mean they are all shuttles. A bunch of shuttles broke free. All those small
+things floating... Oh! I think they're going to crash into the wheel!"
+
+The small vehicles floated with painful and inevitable slowness on a crash
+course with the spinning spokes of the opposite wheel. There was nothing that
+could be done to avoid it. The shuttles were out of control and the IMC Two
+had too much inertia to change course quickly.
+
+A few seconds later one, then another, of the shuttles slammed into a
+spoke. At the first impact an explosion of debris puffed away from where the
+shuttle hit. The shuttle itslef broke into two peices, each of which went
+spinning out and away from the ship, but the spoke remained intact. The second
+shuttle hit a hundred meters down the spoke but with much more effect. The
+shuttle plowed through the spoke, shearing it in half. For a few seconds
+clouds of vapor jetted out of both severed ends of the spoke. Eventually
+safety bulkheads inside the ship sealed off the breach, preventing further
+loss of atomosphere. Everyone on the Lyra channel was silent.
+
+Eventually Addie spoke up. "I hope there wasn't anyone on that spoke."
+
+Someone replied. "If everyone was in their lounge then I'm sure it they were
+safe. I do hope that they were." Everyone started talking all at once and
+Addie and Angelica switched to a private channel so they could talk without
+having to compete with the other voices.
+
+A few minutes later an annoucement was broadcast to all channels.
+
+"Attention passengers. This is Captain Walker. The IMC Two has taken
+unexpected damage in an accident. Details are being investigated. For now, the
+emergency is over. Everyone, please return to your cabins for the rest of the
+night. There will be a shipwide briefing tomorrow morning, once we have all of
+the details. I know that it may be hard to get to sleep, but please try to
+remain in your cabins while we clean up the situation. Also, it is now safe to
+remove your environment suits."
+
+It took a few minutes for the crowd to dissipate but eventually Addie made it
+back to her room, removed her suit, and got back in bed. It took another hour
+before she fell back asleep.
+
+The next morning Captain Walker called for an all hands meeting at 10:00
+AM. Addie logged into the meeting from her work station.
+
+"As you have no doubt heard, there was an accident last night. Apparently
+there was a malfunction in the locking mechanism for our drop shuttles. Over
+half of them broke loose. Once they broke loose, we were unable to control
+them and they floated away from the ship. Unfortunately, two of them struck
+the portside wheel and damaged one of the spokes. The wheel construction is
+durable enough that it is still functional. All damage has been mitigated. We
+got lucky. The only real consequence is that we have fewer ships for landing
+on Mars when we get there in a few months. But this is a solvable problem. Our
+software team will be creating new boarding lists and assigning passengers to
+the remaining shuttles. You can expect to see these new boarding lists in a
+couple weeks. I want to personally thank every one of you for responding so
+well to the emergency. We had 100% compliance with the emergency protocol. Due
+to your quick responses, we lost no life in this potentially fatal
+accident. Once again, thank you. If you have any further questions, feel free
+to send me a message. I'll do my best to answer all questions."
+
+The group message ended and Addie sat back in her chair. Well, she was the
+software team. What did Captain Walker mean about the software team creating
+new boarding lists? At that moment, her message inbox beeped. She looked at
+the sender. It was Bowman, her boss. She opened the message and, as she
+guessed, there were instructions for creating new boarding lists. Only seven
+shuttles survived and there were 350 people to transport to the planet. But
+each of the shuttles could hold a different number of passengers. It would be
+a little tricky to write the software but quite doable.
+
+Addie replied to Bowman. "Yes sir, I'll work on it right away."
+
