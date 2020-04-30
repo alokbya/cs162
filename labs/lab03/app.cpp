@@ -11,13 +11,9 @@ int main()
 
 	print(aList, size);
 	insert(0, 10, aList, size);
-	print(aList, size);
 	insert(1, 20, aList, size);
-	print(aList, size);
 	insert(0, 4, aList, size);
-	print(aList, size);
 	insert(1, 40, aList, size);
-	print(aList, size);
 	insert(2, 25, aList, size);
 	print(aList, size);
 	if(!remove(5, val, aList, size))

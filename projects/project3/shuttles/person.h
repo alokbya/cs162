@@ -1,12 +1,10 @@
-#ifndef SHUTTLE_H
-#define SHUTTLE_H
+#ifndef PERSON_H
+#define PERSON_H
 
-#define MAX_STR 100
-#define MAX_PASSENGERS 350
 
-#include <cstring>
-// I guess this struct has to be included ABOVE class members who
-// reference this type
+
+#include "spaceconstants.h"
+
 class person
 {
     private:
@@ -14,12 +12,19 @@ class person
         char lname[MAX_STR];
 
     public: 
-        
+        person();
+        ~person();
+        void setFirst(char f[]);
+        void setLast(char l[]);
+        void getFirst();
+        void getLast();
+        void test();
 };
 
+/*
+    Helper functions
+*/
 
-void cStringInit_1D(char s[], int size);
-void cStringInit_2D(char s[], int size1, int size2);
 
 
 #endif
