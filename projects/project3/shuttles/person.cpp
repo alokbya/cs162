@@ -29,14 +29,22 @@ void person::setLast(char l[])
     strcpy(lname, l);
 }
 
-void person::getFirst()
-{   // just prints name out to console
-    cout << fname;
+// This function will copy the value from the current objects first name,
+// to the character array that is passed into this function. This will allow 
+// the f[] character array to be accessed, as it is not a member variable
+// but holds the same content as the member variables first name.
+void person::getFirst(char f[])
+{   
+    strcpy(f, fname);
 }
 
-void person::getLast()
-{   // just prints name out to console
-    cout << lname;
+// This function will copy the value from the current objects last name,
+// to the character array that is passed into this function. This will allow 
+// the l[] character array to be accessed, as it is not a member variable
+// but holds the same content as the member variables last name.
+void person::getLast(char l[])
+{   
+    strcpy(l, lname);
 }
 
 void person::test()

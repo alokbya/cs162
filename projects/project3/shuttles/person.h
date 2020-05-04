@@ -16,14 +16,15 @@ class person
         ~person();
         void setFirst(char f[]);
         void setLast(char l[]);
-        void getFirst();
-        void getLast();
+        void getFirst(char f[]);
+        void getLast(char l[]);
         void test();
 };
 
 /*
     Helper functions
 */
+
 
 
 
