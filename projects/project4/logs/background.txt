@@ -1,0 +1,210 @@
+Sitting at his small desk in the security office, Tucker sighed and bowed his
+head. Another dead end. The computer display showed that yet another of the
+system access log files was corrupted beyond repair. Not just another log
+file, the last one. That was all of them. This couldn't be an accident. A
+couple weeks after the shuttle incident he started to get suspicious. The
+mechanical teams insisted that there was nothing wrong with the locking
+mechanisms for the shuttles and when they tried to view the system access
+logs, they were unable to. The computer reported the logs as
+unreadable. Tucker spent over a week trying to recover the data but was not
+able to fix whatever damage had been done.
+
+On a hunch, he started looking at the other system logs. It was the same story
+for each of the major ship systems. That couldn't be a coincidence. Being the
+head of security gave Tucker more access than most so he was able to dive
+deeper into the system and access the tape backups for the logs. They were
+stored on long term storage and it took a few days to get them all
+loaded. Once that was done, Tucker was hoping to find a smoking gun in the
+data but he was again disappointed. Even the backup data had been corrupted or
+damaged.
+
+Even more significant, though, were the warnings that Tucker's inner sense was
+sending him. It was clear to him that the shuttle fiasco was no accident but
+it was even more clear to him that there was going to be another
+incident. And, considering that no one could board or leave the ship,
+obviously, that meant that someone on the ship was the saboteur. Time was
+running out. He knew it.
+
+"Raven, can you come here for a sec?" he called to the other room.
+
+His coworker, Raven Ledet, stepped into the room. "Yeah, what do you need?"
+She was always cheerful. He liked that about her. And she was quite
+attractive. Blond hair, despite her name, athletic build, and full of
+energy. Many times he thought that if they weren't working together, he'd
+persue more romantic interests. He was pretty sure that she reciprocated the
+sentiment. But that was for a different time.
+
+"Well, the last log was corrupted too. So we're completely out of options." He
+sighed again and leaned back in his chair. Maybe his dad was right. Maybe he
+was too young for this job. She sat in the chair across from his desk.
+
+"Really? The last one, the infosys one, that was unreadable too? I thought for
+sure it would be ok. It seemed the least damaged of the tapes."
+
+"Nope. No dice. And I'm really worried. I've got a feeling that something big
+is going to happen and we're not even going to know about it till it's too
+late. You know, those anti-Mars people on Earth are probably the ones behind
+it." Tucker ran a hand through his prematurely thinning brown hair.
+
+"But didn't mission control screen everyone?" Raven asked. "I can't believe
+that they missed anything. Did you check the personnel records?"
+
+Tucker nodded. "Yes, but there was only summary information in those
+records. The majority of the psych data stayed on Earth. I suppose we could
+send a request. With our connections we could get access to that data. And
+then we..."
+
+"Wait!" Raven interrupted him and jumped up from her seat. Forgetting the
+lighter gravity, she almost crashed into the ceiling. "Wait, that's the
+answer. I bet. You know that periodically we send a dump of the system log
+archives back to Earth." She tapped on her datapad for a second. "Yes! Two
+days before the shuttle incident, we sent copies of the access logs back. We
+can get those. I'm sure they won't be corrupted. I don't think anyone but us
+knows that we send archives back to Earth."
+
+Tucker's eyes grew wide. "Wow. You know? That will work. It certainly is worth
+a shot." He leaned forward to his desk in excitement. "Raven, you're
+amazing. Contact our security team on Earth and let's get those logs."
+
+She beamed with excitement too. "Yeah. We're going to catch that guy, whoever
+he is!" She bounced from the room, again forgetting about the lighter
+gravity. Tucker smiled. Finally, a break.
+
+About an hour later Raven came back into his office. 
+
+"Got the data. I sent it to your terminal. Let's take a look." She slid a
+chair around to his side of the desk and sat down. Tucker noticed the incoming
+notification in his mailbox and tapped a few icons. Within seconds, the access
+log data started streaming across his screen. Thousands of lines of system
+access entries.
+
+"What? Why so many?"
+
+Raven watched the screen for a bit. "Oh. This is the complete, unfiltered
+log. Every single time someone does anything with a sytsem, it is logged. I
+mean, even if you just check the status on a terminal screen, it logs it."
+
+"Wow. This will take forever to go through. Can we feed this to our analyzer?"
+
+"No, I don't think so. It's designed to look at the rollup data, not the raw
+logs like this. We need something that can convert this data to a format we
+can understand."
+
+"Seriously? Another roadblock?" Tucker felt success slipping out of his hands
+again. He was already at the end of his patience. Another setback was just
+about too much. He could feel himself losing control. "You know, I just need
+to step away for a bit. I'm going to go for a quick run. Maybe that will clear
+my mind." He offered Raven a small smile. "I think I need this otherwise I'm
+going to go crazy. Can we take a break for a bit?"
+
+She smiled back in her unflappable way. "Sure, you're the boss. I'll keep
+poking at the data while you're gone. Maybe there will be something we can
+do." She moved the chair back to the other side of the desk as she left his
+office.
+
+Tucker went to his quarters and changed into some shorts and a t-shirt then
+headed to the running track. The exertion of running felt good. In no time he
+finished the first lap and tapped the lap counter on his wrist. He let his
+mind wander. Maybe he wasn't cut out for this security job -- just like his
+dad had said. Once on Mars he was supposed to lead security for Bon Jovi
+Station but now that didn't sound like a fun position. The trip, up till the
+shuttle incident, had been uneventful and he had fooled himself into thinking
+he was a good security chief. But when the first real problem came about, he
+was useless.
+
+The lap stripe came into view for the second time. Tucker tapped the wrist app
+again. That girl Addie, who made the lap counting app, she was certainly a
+success. Harry had told him about how she helped him with his staffing
+logs. And everyone knew how she quickly remade the passenger manifests for the
+shuttles after his big failure. Why couldn't he be more like her?
+
+Tucker stopped on the track suddenly. Wait a minute! If Addie could help Harry
+or with the shuttles, she could help him. He doubled back to the track
+entrance and quickly made his way to his quarters. On the way he tapped his
+watch to contact the software expert.
+
+"Hello," her voice answered. "This is Addie Barstow."
+
+"Hi, this is Tucker Peeler, from security."
+
+"Oh, hi. Uh. Is there a problem?" Her voice shifted to tentative nervousness.
+
+"No, no," he put a smile in his voice. "No problem at all. In fact, I'm hoping
+you can help me with a problem. Can you meet me in my office in half an hour?"
+
+"Uh. Sure," she replied. "Can I as what this is about?"
+
+Tucker looked around the hallway he was walking down. "Well, I'd rather not
+say here. Let's just go over it in my office. Don't worry, you're not in
+trouble. Not at all. I'm just hoping you can help me with some trouble I'm
+having."
+
+Addie paused for only a brief second. "Oh. Ok. Sure, I'm glad to help." She
+couldn't mask the curiousity in her voice. "I'll be there in thirty minutes."
+
+"Thanks." Tucker terminated the communication.
+
+In his quarters, he showered and changed back into his security uniform. He
+raced back to his office and filled Raven in on his plan then they waited for
+Addie. When she arrived they ushered her into the inner office and shut the
+door. Raven brought in an extra seat for her.
+
+"Ok. So here's the deal," Tucker started in right away. "You know that problem
+with the shuttles? Well, we are pretty sure it wasn't an accident. We're
+pretty sure that there's a saboteur on board."
+
+Addie looked shocked. "Really?"
+
+"Yeah," Raven said. "And we think that he's going to strike again."
+
+Tucker nodded. "Yep. But we don't know who it is and we don't know where he'll
+strike next. We've spent the last few weeks trying to dig through the system
+access logs to find a pattern but the log files have all been corrupted or
+damaged. We were able to get our hands on some raw data logs but they are in a
+format that we can't analyze. That's why I called you. I'm hoping you can
+write a program for us that will read the data in and output a format that we
+can more easily analyze."
+
+Tucker and Raven spent the next several minutes showing Addie the log files and
+explaining what they needed. Eventually she nodded and smiled.
+
+"Yes, of course I can do this. It sounds fun."
+
+"One more thing," Tucker added. "You can't tell anyone, not even your boss,
+about this. As of now, only you, me, and Raven, know about this. Everyone else
+is a suspect."
+
+"Oh, don't worry, I can keep this a secret. I'll work on it right away."
+
+Addie left Tucker's office with her pulse pounding and wondering who the
+saboteur was.
+
+Raven smiled broadly at Tucker. "Well Mr. Tucker Peeler, Head of Security, I
+think this is going to work. You are going to be the hero."
+
+Tucker blushed with an embarrassed grin. "Uh. Yeah, right. I think think we're
+getting ahead of ourselves. And besides, this was your idea."
+
+Raven put her hand on his arm and he felt the electricity in his skin. "No, it
+was your idea to ask for Addie's help. So I guess, it was a team effort." She
+patted his arm and then moved away, still smiling. "You know, once we're on
+Mars, we might have different assignments. If we're not working together,
+maybe we can find other ways to spend time together." 
+
+He looked at her, flashing a big smile. "Yeah, that would be nice. But let's
+go get this guy first. You know, while Ms. Barstow is working on the software,
+maybe we can go get a bite to eat. I mean, we do have to eat." The two of them
+left the office and headed towards the closest dining room.
+
+
+
+
+
+
+
+
+
+
+
+
+

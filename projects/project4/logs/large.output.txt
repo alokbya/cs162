@@ -1,0 +1,135 @@
+System: propulsion
+  Top: Angelica Milliken
+  Second: Issac Rangel, Ramiro Thomson
+  All:
+    Phoenix Mondragon 11 (8%)
+    Angelica Milliken 32 (25%)
+    Temperance Burris 7 (5%)
+    Cason Porterfield 12 (9%)
+    Issac Rangel 13 (10%)
+    Franklin Flagg 6 (4%)
+    Ramiro Thomson 13 (10%)
+    Isaias Verdin 9 (7%)
+    Demi Vallejo 11 (8%)
+    Hailey Rigsby 5 (3%)
+    Antonio Schaefer 9 (7%)
+System: lifesupport
+  Top: Angelica Milliken
+  Second: Issac Rangel
+  All:
+    Franklin Flagg 9 (6%)
+    Hailey Rigsby 5 (3%)
+    Issac Rangel 16 (12%)
+    Angelica Milliken 30 (22%)
+    Temperance Burris 5 (3%)
+    Phoenix Mondragon 15 (11%)
+    Demi Vallejo 12 (9%)
+    Antonio Schaefer 9 (6%)
+    Ramiro Thomson 6 (4%)
+    Isaias Verdin 12 (9%)
+    Cason Porterfield 12 (9%)
+System: recycling
+  Top: Angelica Milliken
+  Second: Temperance Burris
+  All:
+    Phoenix Mondragon 9 (5%)
+    Hailey Rigsby 17 (10%)
+    Issac Rangel 9 (5%)
+    Ramiro Thomson 12 (7%)
+    Temperance Burris 20 (12%)
+    Isaias Verdin 8 (5%)
+    Angelica Milliken 32 (20%)
+    Demi Vallejo 13 (8%)
+    Antonio Schaefer 11 (7%)
+    Cason Porterfield 16 (10%)
+    Franklin Flagg 10 (6%)
+System: navigation
+  Top: Angelica Milliken
+  Second: Franklin Flagg
+  All:
+    Antonio Schaefer 10 (7%)
+    Isaias Verdin 8 (5%)
+    Temperance Burris 13 (9%)
+    Cason Porterfield 13 (9%)
+    Phoenix Mondragon 10 (7%)
+    Angelica Milliken 33 (23%)
+    Ramiro Thomson 10 (7%)
+    Demi Vallejo 10 (7%)
+    Issac Rangel 10 (7%)
+    Hailey Rigsby 7 (5%)
+    Franklin Flagg 14 (10%)
+System: communications
+  Top: Angelica Milliken
+  Second: Temperance Burris
+  All:
+    Angelica Milliken 26 (21%)
+    Cason Porterfield 9 (7%)
+    Isaias Verdin 13 (10%)
+    Franklin Flagg 9 (7%)
+    Hailey Rigsby 8 (6%)
+    Antonio Schaefer 6 (5%)
+    Ramiro Thomson 12 (10%)
+    Temperance Burris 14 (11%)
+    Issac Rangel 10 (8%)
+    Demi Vallejo 7 (5%)
+    Phoenix Mondragon 6 (5%)
+System: mechanical
+  Top: Angelica Milliken
+  Second: Franklin Flagg
+  All:
+    Angelica Milliken 106 (53%)
+    Ramiro Thomson 7 (3%)
+    Hailey Rigsby 6 (3%)
+    Cason Porterfield 11 (5%)
+    Phoenix Mondragon 7 (3%)
+    Issac Rangel 12 (6%)
+    Antonio Schaefer 8 (4%)
+    Demi Vallejo 8 (4%)
+    Temperance Burris 9 (4%)
+    Franklin Flagg 18 (9%)
+    Isaias Verdin 7 (3%)
+System: infosys
+  Top: Angelica Milliken
+  Second: Hailey Rigsby
+  All:
+    Antonio Schaefer 8 (6%)
+    Temperance Burris 7 (6%)
+    Hailey Rigsby 14 (12%)
+    Angelica Milliken 33 (28%)
+    Phoenix Mondragon 3 (2%)
+    Ramiro Thomson 9 (7%)
+    Isaias Verdin 6 (5%)
+    Franklin Flagg 11 (9%)
+    Issac Rangel 4 (3%)
+    Cason Porterfield 11 (9%)
+    Demi Vallejo 9 (7%)
+System: scanning
+  Top: Angelica Milliken
+  Second: Isaias Verdin
+  All:
+    Cason Porterfield 12 (6%)
+    Angelica Milliken 78 (41%)
+    Antonio Schaefer 11 (5%)
+    Franklin Flagg 12 (6%)
+    Demi Vallejo 7 (3%)
+    Hailey Rigsby 10 (5%)
+    Isaias Verdin 15 (8%)
+    Issac Rangel 9 (4%)
+    Ramiro Thomson 9 (4%)
+    Phoenix Mondragon 14 (7%)
+    Temperance Burris 10 (5%)
+System: power
+  Top: Angelica Milliken
+  Second: Temperance Burris
+  All:
+    Angelica Milliken 32 (23%)
+    Isaias Verdin 13 (9%)
+    Temperance Burris 16 (11%)
+    Demi Vallejo 6 (4%)
+    Cason Porterfield 10 (7%)
+    Antonio Schaefer 8 (5%)
+    Franklin Flagg 11 (8%)
+    Ramiro Thomson 14 (10%)
+    Issac Rangel 8 (5%)
+    Phoenix Mondragon 6 (4%)
+    Hailey Rigsby 11 (8%)
