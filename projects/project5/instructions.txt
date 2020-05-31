@@ -1,0 +1,233 @@
+================================================================================
+========================================================= Overview and Objective 
+
+For this assignment you will write a program that manages incoming messages
+for the ship's message system. This means receiving new messages, listing
+messages for a user, listing all messages, and deleting messages. The program
+should be able to handle an infinite number of messages (subject to machine
+memory). The background.txt file gives the story behind these requirements.
+
+The objective of this assignment is to practice using the following concepts:
+
+- linked lists (*NEW*)
+- class and objects
+- dynamically allocated character arrays
+- pointers 
+- multiple files for compilation
+- reading and parsing data from files
+
+Your program will be evaluated based on both how it runs as well as how it was
+designed and coded. Pay attention to the "rubric.txt" file to see how it will
+be evaluated.
+
+Along with these instructions, I have provided data files and the EXACT
+expected output that corresponds to those data files. It is important that
+your program output matches EXACTLY. This includes spelling, whitespace, and
+punctuation.
+
+The rest of this document provides more details about the assignment. If you
+have any questions, be sure to post in the discussion group or send me
+email. Do not wait until the last minute to start this assignment.
+
+================================================================================
+======================================================================== Details 
+
+The following sections provides details about the requirements for the
+assignment.
+
+----------------------------------------------------------- running your program
+
+When your program is completed, you will run it from the command line and will
+provide a single data file. For example, if your program is called "messages" then
+you might run:
+
+./messages small.txt
+
+The output should be printed to the console (screen). The format of the output
+is described below. You should study the provided output files to understand
+the output data and format.
+
+--------------------------------------------------------- data model and classes
+
+There are two central concepts in the data model for this program. There is
+the concept of a message and the concept of a list of messages.
+
+In this system, messages are fairly simple. A message contains only ID
+(integer) and a recipient (string). The recipient should be implmented as a
+dynamically allocated character array.
+
+The list of messages holds a list of all of the current messages. There is no
+limit (other than machine memory) for the number of messages that can be held
+in the list so this should be implemented as a linked list. The message list
+needs to support the ability to add new messages, list all messages for a
+given recipient, list all of the messages, and delete a message.
+
+Both of these data models should be implmented as classes: message,
+messagelist.
+
+The message class will contain the two fields, a constructor, and getter
+methods for the ID and recipient. Since a message without an ID or recipient
+doesn't make sense, the message class should NOT have a default constructor.
+
+The messagelist class will contain a pointer that is the head of the linked
+list and no other data. The messagelist class will have methods for each of
+the four operations.
+
+A linked list requires a "node". This can be implemented as a structure or a
+class. This should contain a pointer to a message object and a pointer to the
+next node. It is ok if the node structure or class is in the messagelist
+header file.
+
+The above has described the minimal set of classes and structures that you
+need to have in this program. You are free to create additional classes if you
+wish. Keep in mind the following necessary items when implmenting classes:
+
+- the class definition should be in the header file
+- the class implementation should be in the cpp file
+- each class should be in its own set of files
+- all data members should be private
+
+------------------------------------------------------------ processing the data
+
+All the message data is in the provided data file. The message data consists
+of commands to the message system. Each line is a command and data associated
+with that command. The valid commands are: "Receive", "Delete", "List", "All".
+
+The Receive command 
+
+  This command represents receiving a new message that needs to be added to
+  the list. The line of data for a receive command includes the message id and
+  the recipient as follows:
+
+  Receive 1 Itzel Trudeau
+
+  Processing the receive command requires reading the two additional data
+  items and then adding the a message to the message list. This command does
+  not generate any output.
+
+The Delete command
+
+  This command represents that a user wants to delete a particular message
+  from the message list. The line of data for a delete command includes the
+  message id to be deleted as follows:
+
+  Delete 5
+
+  Processing the delete command requires reading the message id from the
+  line of data and then removing the specified message from the message
+  list. It is not an error if the message is already deleted. This command
+  does not generate any output.
+
+The List command
+
+  This command represents a user requesting a list of all of the messages for
+  that user. The line of data for a list command includes the name of the
+  recipient as follows:
+
+  List Jasper Mccaskill
+
+  Processing the list command requires reading the recipient name from the
+  line of data and then asking the message list to print out the IDs of all
+  messages for that recipient. The output is as follows:
+
+  Messages for Cohen Mowery:
+    107
+    358
+    437
+
+  That is, the text "Messages for <name>:" and then each message ID is written
+  on a separate line, indented by two characters.
+
+The All command
+
+  This command requires printing information for all of the messages that are
+  still in the system. This command doesn't require any other data from the
+  line of data. It simply outputs the messages as follows:
+
+  ** All Messages **
+  Message 3 Jasmine Montemayor
+  Message 4 Titus Poston
+  Message 6 Leslie Christian
+  Message 7 Howard Folse
+  Message 8 Micah Pilcher
+  Message 9 Ella Barela
+  Message 11 Jasper Mccaskill
+  ******************
+
+  That is, the text "** All Messages **" followed by each message on a
+  line. For each message the id and name should be printed (see above
+  format). After all messages have been printed, the text "******************"
+  should be printed.
+
+-------------------------------------------------------------- the main function
+
+The main function is responsible for opening the data file and reading one
+line of data at a time. For each line of data, the main function should
+determine what type of command that line represents and the process that
+command as described in the "processing the data" section.
+
+The main function should interact only with the message list class. It should
+not create message objects. Creating message objects should only be done in
+the message list class.
+
+After processing all of the data from the data file, the main function should
+close the file and then exit the program.
+
+--------------------------------------- assignment operator and copy constructor
+
+Now that we're dealing with classes that have pointer data, we have to deal
+with copy constructors and assignment operators. Please review the section in
+the book that talks about copy constructors and assignment operators (pages
+849 - 858 in the 8th edition Malik). Note that you won't learn about
+overloading operators until chapter 13 so it is not necessary to do that for
+this project. However, in order to be safe, you should "delete" the copy
+constructor and assignment operator for each class that has pointer data. For
+example, if your class is called MyClass then you would add this to your class
+header file:
+
+  MyClass(const MyClass&) = delete;  // Delete copy constructor
+  const MyClass& operator=(const MyClass&) = delete; // Delete assignment operator
+
+-------------------------------------------------------- memory leaks and errors
+
+You must use valgrind to ensure that there are no memory leaks or invalid
+memory accesses. See ~mike.noel/classes/all/memory_check.txt for basic
+information on using valgrind. See online tutorials for more indepth
+information. 
+
+----------------------------------------------------------------- error checking
+
+You do not have to do any error checking with this program.
+
+---------------------------------------------------------------------- test data
+
+Other that the tiny, small, medium, and large data sets, I have not provided
+any additional test data for this assignment. I highly recommend that you
+create additional small, targetting test files for your own use in
+implementing and debugging your program.
+
+------------------------------------------------------------------- Requirements
+
+All of the details describe above should be followed. See the rubric.txt file
+for the specific grading guidelines.
+
+================================================================================
+========================================================================= Design
+
+The design of your program is just as important as the functionality of the
+program. Make sure that your program structure makes sense and is clear. Make
+good use of functions and classes to organize your program.
+
+================================================================================
+========================================================================= Turnin
+
+You must use the "turnin" program to turn in your assignment. DO NOT USE D2L
+TO TURN IN YOUR ASSIGNMENT. Assignments turned in using D2L will not be
+counted. For information on using the "turnin" program see
+~mike.noel/classes/all/turnin.txt.
+
+IMPORTANT: If the program fails to compile, crashes, or hangs then the program
+automatically gets a 0.
+
+Use the turnin program to turn in only the *.cpp and *.h files that you
+created. Do not turn in additional files.

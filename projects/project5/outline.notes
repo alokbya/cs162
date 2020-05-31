@@ -1,0 +1,34 @@
+
+
+class message
+{
+	private:
+		int id;
+		char *recipient;
+	public:
+		message(int id, char* recipient);
+		~message();
+		setId(int);
+		set(recipient);
+		getId();
+		getRecipient();
+};
+
+class messageList
+{
+	private:
+		messageList *head;
+		
+	public:
+		addNewMessage(message m);
+		listMessages(char* recipient);
+		listAllMessages();
+		deleteMessage()
+};
+
+struct Node
+{
+	message *m;
+	Node *next
+	Node *prev;
+};

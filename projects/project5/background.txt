@@ -1,0 +1,154 @@
+Tucker and Harry raced down the corridor towards engineering. The saboteur was
+only a few steps ahead of them. They heard the door to engineering slide shut
+and the chime indicating that it was locked. As they approached the door
+Tucker pressed the open button and it just beeped at him. He typed in his
+access code with sweaty and trembling fingers. The door still wouldn't
+open. Harry was trying to force the door open by pushing it back into the wall
+pocket. That would never work.
+
+Tucker tapped his comms. "Raven, we're at engineering. She got in there ahead
+of us and locked the door. She locked out my access code. Can you override
+it?"
+
+Raven's voice came over the small comm unit speaker. "Yep. Give me a sec." The
+urgency was apparent in her voice. Just a couple days ago they had finally
+been able to analyze the access log data. The evidence clearly pointed to
+Angelica Milliken as the saboteur. When they confronted her it was almost like
+she had expected it. She gave them the slip and then hid in one of the rarely
+used storage lockers. When they finally found her hiding place and flushed her
+out, she led them on a chase through most of the ship and it finally ended
+here in engineering.
+
+Suddenly red lights began flashing in the hallway and an audible alarm started
+ringing from the other side of the door. Tucker's heart skipped a beat and he
+turned to Harry. "What's going on Harry? What did she do?"
+
+"Uh, um. I don't know..." Harry was busy tapping and scrolling on his
+watch. "I'm trying to access the system but this stupid watch interface is,
+well, stupid."  He was flustered but working quickly. "Oh. Ok. Here. Oh no!"
+His face went white. He made eye contact with Tucker. "She's shutdown the
+reactor safeguards and is overdriving the reactor itself now."
+
+Tucker's eyes grew wide. "That sounds bad."
+
+"Yeah. If we don't stop her, and soon, the engines are going to blow. Worst
+case, the explosion will destroy the whole ship. Best case, the main hull will
+survive, but we'll be nothing more than a floating husk, waiting for our life
+support systems to drain the batteries."
+
+Tucker tapped his comms again. "Raven? Anything? We need to get in. Right
+away." Looking at Harry, "How much time?" 
+
+Harry consulted his watch display. "I'd say we have less than three minutes
+before the reactor has reached a point of no return."
+
+"Raven, we have less than..."
+
+Raven's voice interrupted. "Right. I heard. I'm working as fast as I can. Oh
+wait. There it is."  They could hear a few beeps over the comms then the
+engineering door slid open.
+
+"Thanks Rave!" Tucker replied and then ran through the door with Harry right
+on his heels. Angelica was seated at one of the engineering workstations. She
+looked up as soon as they entered. "Too late!" she exclaimed and tapped the
+screen. Tucker didn't even slow down, he launched himself across the room and
+body tackled her out of the chair.
+
+He landed on top of her when they hit the floor and then he grabbed her arms
+before she could get free. He pulled wrist restraints from his belt and
+slapped them on her. He shouted to Harry over his shoulder. "Get that reactor
+calmed down. Now!" Harry was already working at the station.
+
+A few moments later Harry stepped away from the terminal. Tucker stood and
+pulled Angelica to her feet. She had a smirk on her face. He looked at Harry
+with a questioning look. "Got it," Harry replied. He peeked over at the
+workstation again. "Yep. The safeguards are back online and the reactor is
+cooling down to normal temperatures."
+
+"You know, you won't be able to stop us," Angelica said. Her voice was
+calm. She knew she had lost but she didn't seem the think that she had been
+defeated. "You think you're safe now but just wait and see."
+
+Tucker ignored her and started pulling her towards the door. He tapped his
+comms again. "Raven. We got her. I'm bringing her in. Make sure that cell is
+ready." He guided the saboteur ahead of him. "Ok, let's go."
+
+Tucker kept leading her down the hall. "I hope you like small spaces. For the
+next eight weeks, you'll be enjoying a special room, all to yourself. When we
+get to Mars, then you'll get your trial. I don't think the counsel is going to
+be very happy."
+
+It didn't take long for Tucker to get Angelica back to security. He put her in
+the solitary cell then locked the door. He nodded to Raven as he walked past
+her. "Job well done. She implied that there will be more attacks. I hope it
+was just a bluff."
+
+... Six weeks later ...
+
+Addie opened her inbox for the twentieth time that morning. Still no
+messages. That didn't make any sense. Only two weeks remained until the
+landing. There should be a ton of messages as everyone was making
+preparations. Strangely, the opposite had been happening. Over the last couple
+of days the number of messages had been tapering off and now she wasn't
+receiving any at all. Worse than that, her saved messages were gone too. She
+tried again to send a message to her dad. She was able to type the message but
+then when she hit the send button, nothing happened.
+
+"I give up! It's not working." She pushed herself away from her desk and
+tossed her hands in the air. Her chair rolled all the way across the small
+office and bumped into Bowman's desk. "So? Are you having problems with your
+messages? I haven't been getting any new messages for a while."
+
+Her supervisor leaned back in his chair with a short laugh. "What? You're
+complaining about not getting any work requests and messages about problems?
+Heh. I haven't been getting any either and I just figured it was good luck."
+
+"That would be nice," she huffed sarcastically. "But I think there's actually
+a problem. I can't even send messages."
+
+"Really?" He let his chair come back to the normal position and checked his
+terminal. "Sure enough. I can't send either. I wonder what's going on." He
+kept typing and Addie rolled her chair around to see his computer screen. "You
+should pull up the diagnostic software and we can run some tests."
+
+"Good idea." He tapped the gear and hammer icon. The diagnostic software
+started running and almost instantly the screen was full of red alert
+messages.
+
+"Whoa! What's going on?" He selected a couple items. "Everything is gone. I
+mean, the entire message system is just erased." A ball of anxiety started to
+boil in Addie's gut. Her thoughts immediately went back to the incident with
+Angelica a few weeks ago. She couldn't get over how her friend had betrayed
+all of them, especially her. And now it might be happening again.
+
+Bowen was staring intently at the screen. "Addie, help me figure this out."
+
+"I think it might be Angelica again. Maybe she planted something. Remember
+Harry and Raven telling us what she said? Can you run a deep system integrity
+check on each major system?" 
+
+After a few minutes they both understood what had happened. Some sort of virus
+software had been planted in the scanning system -- something no one ever
+thought to check. The virus had kicked in a couple days ago and had been
+systematically uninstalling and erasing the message systems.
+
+"This is bad." Bowen said with a sigh. "Without messaging, we won't receive
+the final instructions that we need from Earth. They've been checking and
+rechecking the whole planet and determining the best landing points. If we
+don't get that info, we'll be stuck." He puffed out his cheeks then blew a
+blast of air out. "Wow. This is real bad."
+
+"You know, I might have a solution. What if I just rewrite the message
+system. Well, at least a basic system."
+
+He looked at her in amazement. "You can do that?"
+
+Addie nodded but Bowen could tell that her gears were already turning. "Yeah,
+I can. It won't be as fancy as the system we had, but it will allow us to do
+basic stuff. And I think I can finish it up in a week or so."
+
+"Addie, if you can do that, you'd be a hero. Again!"
+
+She started moving back to her desk, her eyes focused in the distance. "Yeah,
+uh huh. Just doing my job. But I think I'd better start right away."
+
