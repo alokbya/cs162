@@ -15,9 +15,10 @@ class LinkedList
     public:
         LinkedList();
         ~LinkedList();
-        bool add(Message * &m);
+        bool add(int id, char * name);//Message * &m);
         bool remove(int val);
         void print();
+        void print(char * name);
 };
 
 #endif

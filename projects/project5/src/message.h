@@ -9,9 +9,7 @@ class Message
     public:
         Message(int idnum, char* r);
         Message(const Message& obj);
-        ~Message();
-        void setId(int id);                 
-        void setRecipient(char* r);         
+        ~Message();       
         int getId();                       
         char* getRecipient();                
 };

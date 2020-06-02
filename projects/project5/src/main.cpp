@@ -47,101 +47,24 @@ int main(int argc, char* argv[])
                 {
                     int id = -1;
                     char *name = parseReceivedData(item, id);
-                    Message * m = new Message(id, name);
-                    ll.add(m);
-                    // ll.print();
+                    ll.add(id, name);
                     delete [] name;            // need to delete name
-                    delete m;                  // need to delete message
-                    
-                // processCommand(ll, item);
                 }
                 else if (item[0] == 'L')
                 {
-                    ll.print();
+                    char * name = getNameToList(item);   // get unique id to print
+                    ll.print(name);
+                    delete [] name;
                 }
                 else if (item[0] == 'D')
-                {
+                {   
                     int val = getDelData(item);
                     ll.remove(val);
                 }
-                
+                else{
+                    ll.print();
+                }   
             }
-        
-        
-
-
-        //  OG CODE BELOW
-        // readData(argv[1]);
-        // MessageList mList;
-        // ifstream input;
-        // input.open(argv[1]);
-        // if(!input.is_open())
-        // {
-        //     cerr << "Cannot open file at specified path " << argv[1] << endl;
-        //     cerr << "Exiting program " << endl;
-        //     exit(0);
-        // }
-        // else
-        // {
-        //     cout << "reading data " << endl << endl;
-        //     char item[BUFF];
-        //     char cmd[BUFF];
-        //     char name[BUFF];
-        //     int id = 0;
-        //     while(input.peek() != EOF)
-        //     {
-        //         input >> item;
-        //         if (item[0] == 'R')
-        //         {
-        //             strcpy(cmd, item);
-        //             input >> id;
-        //             input.getline(name, BUFF);
-        //             cout << name << endl;
-                
-        //             Message m = Message(id, name);
-        //             mList.addNewMessage(m);
-        //             mList.listAllMessages();
-        //         }
-
-
-                
-        //         // input.getline(line, BUFF);
-        //         // if(line[0] == 'R')
-        //         // {   int id = -1;
-        //         //     char *name = parseReceivedData(line, id);
-        //         //     cout << name << " " << id << endl;
-        //         //     cout << line << endl;
-        //         //     Message m = Message(id, name);
-        //         //     mList.addNewMessage(m);
-        //         //     // mList.listAllMessages();
-        //         //     delete [] name;                    // need to delete name
-        //         // }
-        //         // else if(line[0] == 'L')
-        //         // {
-        //         //     // cout << "List" << endl;
-        //         //     // get list data
-        //         //         // recipeint name
-        //         //     // read recipients messages
-        //         //         // listMessages(recipientsName)
-        //         // }
-        //         // else if(line[0] == 'D')
-        //         // {
-        //         //     // cout << "Delete" << endl;
-        //         //     // get line data
-        //         //         // id
-        //         //     // deleteMessage(id);
-        //         // }
-        //         // else if(line[0] == 'A')
-        //         // {
-        //         //     // listAllMessages()
-        //         // }
-        //         // else 
-        //         // {
-        //         //     cout << "Error, could not determine command " << endl;
-        //         // }
-        //         // // processCommand(mList, line);
-        //     }
-        // }
             input.close();
             cout << "closed file " << endl;
             cout << "end main" << endl;

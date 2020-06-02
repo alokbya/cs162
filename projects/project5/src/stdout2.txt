@@ -1,0 +1,444 @@
+running main
+small.txt
+reading data 
+
+Recieve: Itzel Trudeau
+Recieve: Dimitri Bourque
+Recieve: Jasmine Montemayor
+Recieve: Titus Poston
+Recieve: Ulises Greiner
+Recieve: Leslie Christian
+Recieve: Howard Folse
+Recieve: Micah Pilcher
+Recieve: Ella Barela
+Recieve: Kenley Easton
+Messages for Titus Poston
+4
+Set to delete -> 5 : 9 <- Deleting
+Set to delete -> 10 : 10 <- Deleting
+Recieve: Jasper Mccaskill
+Set to delete -> 1 : 8 <- Deleting
+Set to delete -> 2 : 7 <- Deleting
+** All Messages **
+Message 11 Jasper Mccaskill
+Message 6 Leslie Christian
+Message 5 Ulises Greiner
+Message 4 Titus Poston
+Message 3 Jasmine Montemayor
+Message 2 Dimitri Bourque
+Message 1 Itzel Trudeau
+******************
+Messages for Jasper Mccaskill
+11
+** All Messages **
+Message 11 Jasper Mccaskill
+Message 6 Leslie Christian
+Message 5 Ulises Greiner
+Message 4 Titus Poston
+Message 3 Jasmine Montemayor
+Message 2 Dimitri Bourque
+Message 1 Itzel Trudeau
+******************
+** All Messages **
+Message 11 Jasper Mccaskill
+Message 6 Leslie Christian
+Message 5 Ulises Greiner
+Message 4 Titus Poston
+Message 3 Jasmine Montemayor
+Message 2 Dimitri Bourque
+Message 1 Itzel Trudeau
+******************
+Messages for Leslie Christian
+6
+Set to delete -> 4 : 6 <- Deleting
+Set to delete -> 7 : 5 <- Deleting
+Messages for Jasmine Montemayor
+3
+Recieve: Genesis Candelaria
+Recieve: Howard Folse
+Recieve: Fernanda Roberge
+Set to delete -> 14 : 14 <- Deleting
+Messages for Micah Pilcher
+Recieve: Danica Moten
+Messages for Jasmine Montemayor
+3
+Set to delete -> 13 : 13 <- Deleting
+** All Messages **
+Message 15 Danica Moten
+Message 12 Genesis Candelaria
+Message 11 Jasper Mccaskill
+Message 4 Titus Poston
+Message 3 Jasmine Montemayor
+Message 2 Dimitri Bourque
+Message 1 Itzel Trudeau
+******************
+Recieve: Gemma Kelley
+Messages for Ella Barela
+Messages for Genesis Candelaria
+12
+Messages for Jasmine Montemayor
+3
+Recieve: Helen Hargrove
+Messages for Gemma Kelley
+16
+Messages for Genesis Candelaria
+12
+Recieve: Mariam Laws
+Recieve: Lucian Waite
+Recieve: Jonathan Jay
+Recieve: Lilia Blackmon
+Recieve: Taylor Wren
+Set to delete -> 12 : 21 <- Deleting
+** All Messages **
+Message 22 Taylor Wren
+Message 20 Jonathan Jay
+Message 19 Lucian Waite
+Message 18 Mariam Laws
+Message 17 Helen Hargrove
+Message 16 Gemma Kelley
+Message 15 Danica Moten
+Message 12 Genesis Candelaria
+Message 11 Jasper Mccaskill
+Message 4 Titus Poston
+Message 3 Jasmine Montemayor
+Message 2 Dimitri Bourque
+Message 1 Itzel Trudeau
+******************
+Recieve: Sean Carrasco
+Messages for Leslie Christian
+Recieve: Lucas Park
+Messages for Jasper Mccaskill
+11
+Messages for Taylor Wren
+22
+Messages for Taylor Wren
+22
+Messages for Lilia Blackmon
+** All Messages **
+Message 24 Lucas Park
+Message 23 Sean Carrasco
+Message 22 Taylor Wren
+Message 20 Jonathan Jay
+Message 19 Lucian Waite
+Message 18 Mariam Laws
+Message 17 Helen Hargrove
+Message 16 Gemma Kelley
+Message 15 Danica Moten
+Message 12 Genesis Candelaria
+Message 11 Jasper Mccaskill
+Message 4 Titus Poston
+Message 3 Jasmine Montemayor
+Message 2 Dimitri Bourque
+Message 1 Itzel Trudeau
+******************
+Set to delete -> 21 : 23 <- Deleting
+Set to delete -> 16 : 22 <- Deleting
+Recieve: Darwin Sargent
+Messages for Sean Carrasco
+Messages for Jasper Mccaskill
+11
+Recieve: Adyson Pichardo
+Recieve: Lylah Hoskins
+** All Messages **
+Message 27 Lylah Hoskins
+Message 26 Adyson Pichardo
+Message 25 Darwin Sargent
+Message 24 Lucas Park
+Message 20 Jonathan Jay
+Message 19 Lucian Waite
+Message 18 Mariam Laws
+Message 17 Helen Hargrove
+Message 16 Gemma Kelley
+Message 15 Danica Moten
+Message 12 Genesis Candelaria
+Message 11 Jasper Mccaskill
+Message 4 Titus Poston
+Message 3 Jasmine Montemayor
+Message 2 Dimitri Bourque
+Message 1 Itzel Trudeau
+******************
+** All Messages **
+Message 27 Lylah Hoskins
+Message 26 Adyson Pichardo
+Message 25 Darwin Sargent
+Message 24 Lucas Park
+Message 20 Jonathan Jay
+Message 19 Lucian Waite
+Message 18 Mariam Laws
+Message 17 Helen Hargrove
+Message 16 Gemma Kelley
+Message 15 Danica Moten
+Message 12 Genesis Candelaria
+Message 11 Jasper Mccaskill
+Message 4 Titus Poston
+Message 3 Jasmine Montemayor
+Message 2 Dimitri Bourque
+Message 1 Itzel Trudeau
+******************
+Messages for Ella Barela
+Messages for Jonathan Jay
+20
+Recieve: James Mccrary
+Recieve: Courtney Neal
+** All Messages **
+Message 29 Courtney Neal
+Message 28 James Mccrary
+Message 27 Lylah Hoskins
+Message 26 Adyson Pichardo
+Message 25 Darwin Sargent
+Message 24 Lucas Park
+Message 20 Jonathan Jay
+Message 19 Lucian Waite
+Message 18 Mariam Laws
+Message 17 Helen Hargrove
+Message 16 Gemma Kelley
+Message 15 Danica Moten
+Message 12 Genesis Candelaria
+Message 11 Jasper Mccaskill
+Message 4 Titus Poston
+Message 3 Jasmine Montemayor
+Message 2 Dimitri Bourque
+Message 1 Itzel Trudeau
+******************
+Messages for Micah Pilcher
+Recieve: Kelly Castle
+Messages for Darwin Sargent
+25
+** All Messages **
+Message 30 Kelly Castle
+Message 29 Courtney Neal
+Message 28 James Mccrary
+Message 27 Lylah Hoskins
+Message 26 Adyson Pichardo
+Message 25 Darwin Sargent
+Message 24 Lucas Park
+Message 20 Jonathan Jay
+Message 19 Lucian Waite
+Message 18 Mariam Laws
+Message 17 Helen Hargrove
+Message 16 Gemma Kelley
+Message 15 Danica Moten
+Message 12 Genesis Candelaria
+Message 11 Jasper Mccaskill
+Message 4 Titus Poston
+Message 3 Jasmine Montemayor
+Message 2 Dimitri Bourque
+Message 1 Itzel Trudeau
+******************
+Set to delete -> 17 : 29 <- Deleting
+Set to delete -> 15 : 28 <- Deleting
+** All Messages **
+Message 30 Kelly Castle
+Message 27 Lylah Hoskins
+Message 26 Adyson Pichardo
+Message 25 Darwin Sargent
+Message 24 Lucas Park
+Message 20 Jonathan Jay
+Message 19 Lucian Waite
+Message 18 Mariam Laws
+Message 17 Helen Hargrove
+Message 16 Gemma Kelley
+Message 15 Danica Moten
+Message 12 Genesis Candelaria
+Message 11 Jasper Mccaskill
+Message 4 Titus Poston
+Message 3 Jasmine Montemayor
+Message 2 Dimitri Bourque
+Message 1 Itzel Trudeau
+******************
+Recieve: Kristina Hilliard
+Messages for Adyson Pichardo
+26
+Set to delete -> 18 : 30 <- Deleting
+Recieve: Santino Bisson
+Recieve: Destiny Vann
+Messages for Micah Pilcher
+Messages for Lucian Waite
+19
+Messages for Micah Pilcher
+Messages for Micah Pilcher
+Recieve: Alex Arthur
+Messages for Jasper Mccaskill
+11
+Recieve: Ulises Greiner
+Set to delete -> 28 : 34 <- Deleting
+Recieve: Gerardo Blackman
+Set to delete -> 8 : 35 <- Deleting
+Set to delete -> 27 : 33 <- Deleting
+Set to delete -> 22 : 32 <- Deleting
+** All Messages **
+Message 36 Gerardo Blackman
+Message 31 Kristina Hilliard
+Message 27 Lylah Hoskins
+Message 26 Adyson Pichardo
+Message 25 Darwin Sargent
+Message 24 Lucas Park
+Message 20 Jonathan Jay
+Message 19 Lucian Waite
+Message 18 Mariam Laws
+Message 17 Helen Hargrove
+Message 16 Gemma Kelley
+Message 15 Danica Moten
+Message 12 Genesis Candelaria
+Message 11 Jasper Mccaskill
+Message 4 Titus Poston
+Message 3 Jasmine Montemayor
+Message 2 Dimitri Bourque
+Message 1 Itzel Trudeau
+******************
+Messages for Sean Carrasco
+Recieve: Genesis Candelaria
+Recieve: Valentina Tobias
+Recieve: Amani Willis
+Recieve: Brayan Provost
+** All Messages **
+Message 40 Brayan Provost
+Message 39 Amani Willis
+Message 38 Valentina Tobias
+Message 37 Genesis Candelaria
+Message 36 Gerardo Blackman
+Message 31 Kristina Hilliard
+Message 27 Lylah Hoskins
+Message 26 Adyson Pichardo
+Message 25 Darwin Sargent
+Message 24 Lucas Park
+Message 20 Jonathan Jay
+Message 19 Lucian Waite
+Message 18 Mariam Laws
+Message 17 Helen Hargrove
+Message 16 Gemma Kelley
+Message 15 Danica Moten
+Message 12 Genesis Candelaria
+Message 11 Jasper Mccaskill
+Message 4 Titus Poston
+Message 3 Jasmine Montemayor
+Message 2 Dimitri Bourque
+Message 1 Itzel Trudeau
+******************
+Recieve: Jace Markham
+Set to delete -> 3 : 40 <- Deleting
+Messages for Kristina Hilliard
+31
+** All Messages **
+Message 41 Jace Markham
+Message 39 Amani Willis
+Message 38 Valentina Tobias
+Message 37 Genesis Candelaria
+Message 36 Gerardo Blackman
+Message 31 Kristina Hilliard
+Message 27 Lylah Hoskins
+Message 26 Adyson Pichardo
+Message 25 Darwin Sargent
+Message 24 Lucas Park
+Message 20 Jonathan Jay
+Message 19 Lucian Waite
+Message 18 Mariam Laws
+Message 17 Helen Hargrove
+Message 16 Gemma Kelley
+Message 15 Danica Moten
+Message 12 Genesis Candelaria
+Message 11 Jasper Mccaskill
+Message 4 Titus Poston
+Message 3 Jasmine Montemayor
+Message 2 Dimitri Bourque
+Message 1 Itzel Trudeau
+******************
+** All Messages **
+Message 41 Jace Markham
+Message 39 Amani Willis
+Message 38 Valentina Tobias
+Message 37 Genesis Candelaria
+Message 36 Gerardo Blackman
+Message 31 Kristina Hilliard
+Message 27 Lylah Hoskins
+Message 26 Adyson Pichardo
+Message 25 Darwin Sargent
+Message 24 Lucas Park
+Message 20 Jonathan Jay
+Message 19 Lucian Waite
+Message 18 Mariam Laws
+Message 17 Helen Hargrove
+Message 16 Gemma Kelley
+Message 15 Danica Moten
+Message 12 Genesis Candelaria
+Message 11 Jasper Mccaskill
+Message 4 Titus Poston
+Message 3 Jasmine Montemayor
+Message 2 Dimitri Bourque
+Message 1 Itzel Trudeau
+******************
+Messages for Lucas Park
+24
+** All Messages **
+Message 41 Jace Markham
+Message 39 Amani Willis
+Message 38 Valentina Tobias
+Message 37 Genesis Candelaria
+Message 36 Gerardo Blackman
+Message 31 Kristina Hilliard
+Message 27 Lylah Hoskins
+Message 26 Adyson Pichardo
+Message 25 Darwin Sargent
+Message 24 Lucas Park
+Message 20 Jonathan Jay
+Message 19 Lucian Waite
+Message 18 Mariam Laws
+Message 17 Helen Hargrove
+Message 16 Gemma Kelley
+Message 15 Danica Moten
+Message 12 Genesis Candelaria
+Message 11 Jasper Mccaskill
+Message 4 Titus Poston
+Message 3 Jasmine Montemayor
+Message 2 Dimitri Bourque
+Message 1 Itzel Trudeau
+******************
+Messages for Destiny Vann
+** All Messages **
+Message 41 Jace Markham
+Message 39 Amani Willis
+Message 38 Valentina Tobias
+Message 37 Genesis Candelaria
+Message 36 Gerardo Blackman
+Message 31 Kristina Hilliard
+Message 27 Lylah Hoskins
+Message 26 Adyson Pichardo
+Message 25 Darwin Sargent
+Message 24 Lucas Park
+Message 20 Jonathan Jay
+Message 19 Lucian Waite
+Message 18 Mariam Laws
+Message 17 Helen Hargrove
+Message 16 Gemma Kelley
+Message 15 Danica Moten
+Message 12 Genesis Candelaria
+Message 11 Jasper Mccaskill
+Message 4 Titus Poston
+Message 3 Jasmine Montemayor
+Message 2 Dimitri Bourque
+Message 1 Itzel Trudeau
+******************
+Messages for Sean Carrasco
+Set to delete -> 25 : 39 <- Deleting
+Set to delete -> 31 : 38 <- Deleting
+Set to delete -> 11 : 37 <- Deleting
+Set to delete -> 34 : 36 <- Deleting
+Set to delete -> 9 : 31 <- Deleting
+Set to delete -> 20 : 27 <- Deleting
+Set to delete -> 26 : 26 <- Deleting
+Set to delete -> 41 : 41 <- Deleting
+Set to delete -> 35 : 24 <- Deleting
+Set to delete -> 24 : 20 <- Deleting
+Set to delete -> 6 : 19 <- Deleting
+Set to delete -> 23 : 18 <- Deleting
+Set to delete -> 19 : 17 <- Deleting
+Set to delete -> 36 : 16 <- Deleting
+Set to delete -> 37 : 15 <- Deleting
+Set to delete -> 39 : 12 <- Deleting
+Set to delete -> 30 : 11 <- Deleting
+Set to delete -> 33 : 4 <- Deleting
+Set to delete -> 40 : 3 <- Deleting
+Set to delete -> 38 : 2 <- Deleting
+Set to delete -> 29 : 1 <- Deleting
+closed file 
+end main

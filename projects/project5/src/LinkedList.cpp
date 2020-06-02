@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 #include "LinkedList.h"
 using namespace std;
 
@@ -8,59 +9,100 @@ LinkedList::LinkedList()
 }
 LinkedList::~LinkedList()
 {
-    Node * current = head;
-    Node * next = nullptr;
-    while(current)
+    if(head)                                    // if any nodes are left
     {
-        next = current->next;
-        delete current;
-        current = next;
+        Node * current = head;
+        Node * next = nullptr;
+        Message * cm = current->data;
+        // Message * nm = nullptr;
+
+        while(current)
+        {
+            next = current->next;
+            // if(next)                            // no data exists if current == nullptr
+            //     nm = next->data;                                  
+            delete cm;
+            delete current;
+            
+            current = next;
+            if(current)
+                cm = current->data;             // no data exists if current == nullptr
+        }
     }
+
 }
 
-bool LinkedList::add(Message * &m)
+bool LinkedList::add(int id, char* name)
 {
-    Node * n = nullptr;
-    n = new Node;
-    n->data = m;
+    // create message object
+    Message * m = new Message(id, name);
+    Node * n = nullptr;         // instantiate new node
+    n = new Node;               // allocate mem for new node
+    n->data = m;                // set node.data pointer
     n->next =  head;
     head = n;
+    cout << "Recieve: " << name << endl;
     return true;
 }
 
 bool LinkedList::remove(int val)
 {
     Node * current = nullptr;
-    Node * tail = nullptr;
-    Node * del = nullptr;
     Node * next = nullptr;
+    Node * prev = nullptr;
+
+    Node * del_n = nullptr;
+    Message * del_m = nullptr;
     bool found = false;
 
-    if(head)
-        current = head;
-    if(current->data->getId() == val)
+    // check if val is in head
+    if(head->data->getId() == val)
     {
-        // head is to be deleted
-        head = current->next;
-        del = current;
+        del_n = head;
+        del_m = head->data;
+        current = head->next;
+        head = current;
     }
     else
     {
-        while (current && !found)
+        if(head)
         {
-            if(current->next->data->getId() == val)
+            current = head;
+            while(current->next && !found)
             {
-                tail = current;
-                del = current->next;
-                next = del->next;
-                found = true;
+                if(current->next->data->getId() == val)
+                {
+                    // cout << current->next->data->getId() - val << endl;
+                    // cout << "Found node: " << current->next->data->getId() << endl;
+                    prev = current;
+                    if(current->next->next)
+                        next = current->next->next;
+                    else
+                        next = nullptr;
+                    del_n = current->next;
+                    del_m = current->next->data;
+                    prev->next = next;
+                    found = true;
+                }
+                else
+                {
+                    current=current->next;              
+                }
+                
             }
         }
     }
-    if(del)
+    
+    
+    if(del_n)
     {
-        tail->next = next;
-        delete del;
+        // tail->next = next;
+        // cout << "Del_n: " << del_n << endl;//delete del;
+        // cout << "Del_m: " << del_m << endl;//delete del;
+        // cout << "Set to delete -> " << val << " : " << del_m->getId() << " <- Deleting" << endl;
+        
+        delete del_m;
+        delete del_n;
     }
 
     return found;
@@ -68,13 +110,39 @@ bool LinkedList::remove(int val)
 
 void LinkedList::print()
 {
+    cout << "** All Messages **" << endl;
     Node * current = nullptr;
     if(head)
         current = head;
     while(current)
     {
-        cout << current->data->getId() << " ";
+        cout << "Message " << current->data->getId();
+        cout << " " << current->data->getRecipient() << endl;
         current = current->next;
     }
-    cout << endl;
+    cout << "******************" << endl;
+}
+
+void LinkedList::print(char * name)
+{
+    cout << "Messages for " << name << endl;
+    Node * current = nullptr;
+    if(head)
+        current = head;
+    while(current)
+    {   
+        if(!strcmp(current->data->getRecipient(), name))
+        {
+            cout << current->data->getId() << endl;
+        }
+        else
+        {
+            // cout << current->data->getRecipient();
+            // cout << " != " << name << " : ";
+            // cout << strcmp(current->data->getRecipient(), name);
+            // cout << endl;
+        }
+        // cout << " " << current->data->getId() << endl;
+        current = current->next;
+    }
 }

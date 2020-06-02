@@ -6,17 +6,17 @@ using namespace std;
 
 Message::Message(int idnum, char* r)
 {
-    name = nullptr;
     id = idnum;
-    setRecipient(r);
+    name = new char[strlen(r) + 1];
+    strcpy(name, r);
 }
 
 Message::Message(const Message& obj)                    // copy constructor
 {
-    // id = obj.id;
-    // name = new char[BUFF];
-    // for(int i = 0; i < static_cast<int>(strlen(obj.name)); i++)
-    //     name[i] = obj.name[i];
+    id = obj.id;
+    name = new char[BUFF];
+    for(int i = 0; i < static_cast<int>(strlen(obj.name)); i++)
+        name[i] = obj.name[i];
     
 }
 
@@ -24,18 +24,6 @@ Message::~Message()
 {
     delete [] name;
 }
-
-void Message::setId(int id)
-{
-    this->id = id;
-}
-
-void Message::setRecipient(char *r)
-{
-    delete [] name;
-    name = new char[BUFF];
-    strcpy(name, r);
-} 
 
 int Message::getId()
 {
