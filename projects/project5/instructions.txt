@@ -56,7 +56,7 @@ In this system, messages are fairly simple. A message contains only ID
 (integer) and a recipient (string). The recipient should be implmented as a
 dynamically allocated character array.
 
-The list of messages holds a list of all of the current messages. There is no
+The list of messages holds a list of all of the current messages. There is no *
 limit (other than machine memory) for the number of messages that can be held
 in the list so this should be implemented as a linked list. The message list
 needs to support the ability to add new messages, list all messages for a
