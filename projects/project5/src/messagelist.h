@@ -13,11 +13,18 @@ class messagelist
     private:
         Node *head;
     public:
+        // Default constructor
         messagelist();
+        // Destructor
         ~messagelist();
-        bool add(int id, char * name);//Message * &m);
+        // Add a message (node) to the linked list (messagelist)
+        bool add(int id, char * name);
+        // Remove a message (node) by it's unique identifier
+        // (id), that is a message property.
         bool remove(int val);
+        // Print all messages
         void print();
+        // Print all messages that belong to (name)
         void print(char * name);
 };
 
