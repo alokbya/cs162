@@ -34,14 +34,12 @@ LinkedList::~LinkedList()
 
 bool LinkedList::add(int id, char* name)
 {
-    // create message object
     Message * m = new Message(id, name);
     Node * n = nullptr;         // instantiate new node
     n = new Node;               // allocate mem for new node
     n->data = m;                // set node.data pointer
     n->next =  head;
     head = n;
-    cout << "Recieve: " << name << endl;
     return true;
 }
 
@@ -72,8 +70,6 @@ bool LinkedList::remove(int val)
             {
                 if(current->next->data->getId() == val)
                 {
-                    // cout << current->next->data->getId() - val << endl;
-                    // cout << "Found node: " << current->next->data->getId() << endl;
                     prev = current;
                     if(current->next->next)
                         next = current->next->next;
@@ -96,11 +92,6 @@ bool LinkedList::remove(int val)
     
     if(del_n)
     {
-        // tail->next = next;
-        // cout << "Del_n: " << del_n << endl;//delete del;
-        // cout << "Del_m: " << del_m << endl;//delete del;
-        // cout << "Set to delete -> " << val << " : " << del_m->getId() << " <- Deleting" << endl;
-        
         delete del_m;
         delete del_n;
     }
@@ -111,15 +102,34 @@ bool LinkedList::remove(int val)
 void LinkedList::print()
 {
     cout << "** All Messages **" << endl;
-    Node * current = nullptr;
-    if(head)
-        current = head;
+    Node * current = head;
+
+    // find tail* and total count
+    int count = 0;
     while(current)
     {
-        cout << "Message " << current->data->getId();
-        cout << " " << current->data->getRecipient() << endl;
+        current = current->next;
+        count++;
+    }
+    // create an array of messages
+    Message ** list = new Message*[count + 1]; 
+    int i = 0;
+    current = head;
+    while(current)
+    {
+        Message * m = new Message(current->data->getId(), current->data->getRecipient());
+        list[i] = m;
+        i++;
         current = current->next;
     }
+    // print ordered list
+    for(int i = count-1; i >= 0; i--)
+        if(list[i])
+            cout << "Message " << list[i]->getId() << " " << list[i]->getRecipient() << endl;
+    // delete (deallocate) memory
+    for(int j = 0; j < count; j++)
+           delete list[j];
+    delete [] list;
     cout << "******************" << endl;
 }
 
@@ -133,16 +143,8 @@ void LinkedList::print(char * name)
     {   
         if(!strcmp(current->data->getRecipient(), name))
         {
-            cout << current->data->getId() << endl;
+            cout << "  " << current->data->getId() << endl;
         }
-        else
-        {
-            // cout << current->data->getRecipient();
-            // cout << " != " << name << " : ";
-            // cout << strcmp(current->data->getRecipient(), name);
-            // cout << endl;
-        }
-        // cout << " " << current->data->getId() << endl;
         current = current->next;
     }
 }

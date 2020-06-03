@@ -17,7 +17,6 @@ Message::Message(const Message& obj)                    // copy constructor
     name = new char[BUFF];
     for(int i = 0; i < static_cast<int>(strlen(obj.name)); i++)
         name[i] = obj.name[i];
-    
 }
 
 Message::~Message()
