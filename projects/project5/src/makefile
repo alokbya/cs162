@@ -2,15 +2,15 @@
 CC = g++
 CPPFLAGS = -Wall -g -std=c++11
 
-main:	main.o messageList.o message.o helpers.o LinkedList.o
+main:	main.o message.o helpers.o messagelist.o
 
-main.o:	message.o helpers.o LinkedList.o
+main.o:	message.o helpers.o messagelist.o
 
 message.o:	message.h
 
 helpers.o:	helpers.h
 
-LinkedList.o:	LinkedList.h
+messagelist.o:	messagelist.h
 
 .PHONY: clean
 

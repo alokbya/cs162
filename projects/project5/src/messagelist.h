@@ -1,5 +1,5 @@
-#ifndef LINKEDLIST_H
-#define LINKEDLIST_H
+#ifndef messagelist_H
+#define messagelist_H
 
 #include "message.h"
 struct Node
@@ -8,13 +8,13 @@ struct Node
     Node * next;
 };
 
-class LinkedList
+class messagelist
 {
     private:
         Node *head;
     public:
-        LinkedList();
-        ~LinkedList();
+        messagelist();
+        ~messagelist();
         bool add(int id, char * name);//Message * &m);
         bool remove(int val);
         void print();

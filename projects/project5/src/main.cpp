@@ -11,7 +11,7 @@ Notes:
 #include <iostream>
 #include <cstring>
 #include "helpers.h"
-#include "LinkedList.h"
+#include "messagelist.h"
 
 #define BUFF 256
 using namespace std;
@@ -32,7 +32,7 @@ int main(int argc, char* argv[])
         }
         else
         {
-            LinkedList ll;
+            messagelist ll;
             char item[BUFF];
             while(input.peek() != EOF)
             {

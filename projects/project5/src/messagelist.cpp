@@ -1,13 +1,13 @@
 #include <iostream>
 #include <cstring>
-#include "LinkedList.h"
+#include "messagelist.h"
 using namespace std;
 
-LinkedList::LinkedList()
+messagelist::messagelist()
 {
     head = nullptr;
 }
-LinkedList::~LinkedList()
+messagelist::~messagelist()
 {
     if(head)                                    // if any nodes are left
     {
@@ -32,7 +32,7 @@ LinkedList::~LinkedList()
 
 }
 
-bool LinkedList::add(int id, char* name)
+bool messagelist::add(int id, char* name)
 {
     Message * m = new Message(id, name);
     Node * n = nullptr;         // instantiate new node
@@ -43,7 +43,7 @@ bool LinkedList::add(int id, char* name)
     return true;
 }
 
-bool LinkedList::remove(int val)
+bool messagelist::remove(int val)
 {
     Node * current = nullptr;
     Node * next = nullptr;
@@ -99,7 +99,7 @@ bool LinkedList::remove(int val)
     return found;
 }
 
-void LinkedList::print()
+void messagelist::print()
 {
     cout << "** All Messages **" << endl;
     Node * current = head;
@@ -133,7 +133,7 @@ void LinkedList::print()
     cout << "******************" << endl;
 }
 
-void LinkedList::print(char * name)
+void messagelist::print(char * name)
 {
     cout << "Messages for " << name << ":" << endl;
     Node * current = head;

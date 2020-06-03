@@ -1,6 +1,6 @@
 #ifndef HELPERS_H
 #define HELPERS_H
-#include "LinkedList.h"
+#include "messagelist.h"
 
 char* parseReceivedData(char *line, int& id);
 // int getIdIndexRec(line, )
