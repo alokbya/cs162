@@ -135,16 +135,35 @@ void LinkedList::print()
 
 void LinkedList::print(char * name)
 {
-    cout << "Messages for " << name << endl;
-    Node * current = nullptr;
-    if(head)
-        current = head;
+    cout << "Messages for " << name << ":" << endl;
+    Node * current = head;
+
+    // find tail* and total count
+    int count = 0;
     while(current)
-    {   
-        if(!strcmp(current->data->getRecipient(), name))
-        {
-            cout << "  " << current->data->getId() << endl;
-        }
+    {
+        current = current->next;
+        count++;
+    }
+    // create an array of messages
+    Message ** list = new Message*[count + 1]; 
+    int i = 0;
+    current = head;
+    while(current)
+    {
+        Message * m = new Message(current->data->getId(), current->data->getRecipient());
+        list[i] = m;
+        i++;
         current = current->next;
     }
+    // print ordered list
+    for(int i = count-1; i >= 0; i--)
+        if(!strcmp(list[i]->getRecipient(), name))
+            cout << "  " << list[i]->getId() << endl;
+        
+    // delete (deallocate) memory
+    for(int j = 0; j < count; j++)
+           delete list[j];
+    delete [] list;
+
 }

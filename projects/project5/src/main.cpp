@@ -16,17 +16,12 @@ Notes:
 #define BUFF 256
 using namespace std;
 
-void runTest();
-
 int main(int argc, char* argv[])
 {
     if (argc != 2)
         cerr << "Usage: " << argv[0] << " <datafile> " << endl;
     else
     {
-        cout << "running main" << endl;
-        cout << argv[1] << endl;
-        //  NEW CODE BELOW
         ifstream input;
         input.open(argv[1]);
         if(!input.is_open())
@@ -39,7 +34,6 @@ int main(int argc, char* argv[])
         {
             LinkedList ll;
             char item[BUFF];
-            cout << "reading data " << endl << endl;
             while(input.peek() != EOF)
             {
                 input.getline(item, BUFF);
@@ -66,38 +60,8 @@ int main(int argc, char* argv[])
                 }   
             }
             input.close();
-            cout << "closed file " << endl;
-            cout << "end main" << endl;
         }
     }
     return 0;
 
 }
-
-// void runTest()
-// {
-//     cout << "testing" << endl;  
-//     MessageList mList;
-//     int id1 = -1;
-    
-//     char one[] = "Receive 15 Danica Moten";
-//     char *name1 = parseReceivedData(one, id1);
-//     Message m1 = Message(id1, name1);
-//     mList.addNewMessage(m1);
-//     delete [] name1;
-    
-//     mList.listAllMessages();
-    
-
-//     char two[] = "Receive 9 Ella Barela";
-//     char *name2 = parseReceivedData(two, id1);
-//     int id2 = -1;
-//     Message m2 = Message(id2, name2);
-//     mList.addNewMessage(m2);
-//     delete [] name2;
-//     mList.listAllMessages();
-    
-    
-    
-//     // mList.listAllMessages();
-// }
