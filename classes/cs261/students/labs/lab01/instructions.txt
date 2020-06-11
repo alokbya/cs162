@@ -1,0 +1,96 @@
+== Lab 1 ==
+
+You will be using syccuxas01.pcc.edu as your Linux programming
+environment. You can log on to it using PuTTY. Connect to port 22 via an SSH
+connection. Your username will be the same as your username on MyPCC and
+D2L. Your password will be your pcc G number with a capital G. 
+
+In order to develop software in the Linux command line environment, you will
+need to learn to use a variety of tools. You should start with these: 
+
+cd   	go into a directory
+mkdir	make a directory
+rmdir	remove an empty directory
+rm -r	remove a directory and everything in it (be careful with this)
+ls 	list files and directories in a directory
+cp  	copy a file
+mv  	move a file or rename a file
+cat 	display a text file
+less	display a text file that.s longer than your window
+rm	remove a file
+passwd	change your password
+
+You will need to learn a text editor. There are three possibilities:
+nano	easier to learn for starters, but you should learn one of the following two powerful ones instead.
+vim	a powerful text editor with code-oriented features
+emacs	more powerful than vim, but a steeper learning curve 
+
+I will provide support for learning emacs. I have never used vim, so I can't provide support for that.
+
+Things to do:
+- Log on to syccuxas01.pcc.edu and change your password.
+- Get familiar with file system related unix commands
+  - Protect your home directory
+    chmod 700 ~
+  - Create a directory cs261 in your home directory: 
+    mkdir cs261
+    ls
+  - Go inside cs261: 
+    cd cs261
+    ls
+  - Create a directory lab1
+  - Go inside lab1
+  - Copy ~mike.noel/classes/cs261/students/labs/lab01/* into the lab1 directory:
+    cp ~ mike.noel/classes/cs261/students/labs/lab01/* .
+- Use g++ to compile your hello world program and run it
+  - Compile hello.cpp and call the executable myhello
+    g++ -o myhello hello.cpp
+
+    If you use c++11 features in your program:
+    g++ -std=c++11 .o myhello hello.cpp 
+
+    If you want to be able to debug the code: -g option
+    g++ -g -std=c++11 .o myhello hello.cpp
+
+  - Run myhello
+    ./myhell
+  - Remove the executable
+    rm myhello
+- Bundle your lab1 together in a tar ball. Your future projects will be much
+    bigger than one source file, so it's necessary to create a tar file to
+    bundle everything together for delivery.
+  - Create a tar file of lab1 directory
+    cd .. (you should be in the parent directory of lab1)
+    tar cvf lab1.tar lab1
+    ls (you should see lab1.tar)
+- Start learning one of the text editors.
+  - Edit hello.cpp to make it do fancier things other than just saying
+    "hello", compile and run it.
+
+-  Use gdb, the debugger:  the ability to use a debugger is essential for your
+   success for this class. You should create a cheat sheet for the frequently
+   used gdb command today for your own reference. 
+
+   g++ .std=c++11 .Wall .g .o exectutable-file *.cpp
+   gdb executable-file
+
+- Use valgrind to check memory leaks
+
+  valgrind --tool=memcheck --leak-check=full executable-file
+
+- Lab 1 submission. All labs and programming assignments will be submitted on
+the Linux system using the .turnin. command. This is a custom command that I
+wrote and it is located in ~mike.noel/bin. You can type the full path to that
+program every time or you can add ~mike.noel/bin to your path.
+
+  - Run the following command when you are in cs261 directory
+  ls -R lab1 > lab1.txt
+
+  - Run the following command from the same directory
+  ~mike.noel/bin/turnin submit prof=mike.noel course=cs261 lab1.txt
+
+  (Note: if you have setup your path and configured the turnin tool for this
+  class then you can just type "turnin lab1.txt". See the help that comes with
+  turnin to learn how to do this: "turnin --help")
+
+

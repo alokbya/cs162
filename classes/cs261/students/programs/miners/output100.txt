@@ -1,0 +1,1524 @@
+== Boston Station Miner Manager ==
+
+Authenticating with Van Halen facilities...
+Connected and registered.
+=======
+== Command: start
+Miner #1 (magnesium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #1 (magnesium) is going to standby.
+=======
+== Command: start
+Miner #2 (iron) is starting.
+== Command: detect
+Magnetometer activated.
+Searching for magnetic field deviations.
+Iron deposits located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #2 (iron) is going to standby.
+=======
+== Command: start
+Miner #3 (potassium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #3 (potassium) is going to standby.
+=======
+== Command: start
+Miner #4 (chloride) is starting.
+== Command: detect
+Steam blasting...
+Salinity detector activated.
+Concentration vector of NaCl detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #4 (chloride) is going to standby.
+=======
+== Command: start
+Miner #5 (water) is starting.
+== Command: detect
+Initiating heat blast.
+Directional humidity detector activated.
+Ice located.
+== Command: collect
+Water vacuums and hoses deployed.
+Heater turned on. Waiting for the ice to melt.
+Liquid water moved to collection chamber.
+Surface pump activated.
+== Command: stop
+Miner #5 (water) is going to standby.
+=======
+== Command: start
+Miner #6 (sodium) is starting.
+== Command: detect
+Steam blasting...
+Salinity detector activated.
+Concentration vector of NaCl detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #6 (sodium) is going to standby.
+=======
+== Command: start
+Miner #7 (potassium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #7 (potassium) is going to standby.
+=======
+== Command: start
+Miner #8 (potassium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #8 (potassium) is going to standby.
+=======
+== Command: start
+Miner #9 (chloride) is starting.
+== Command: detect
+Steam blasting...
+Salinity detector activated.
+Concentration vector of NaCl detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #9 (chloride) is going to standby.
+=======
+== Command: start
+Miner #10 (water) is starting.
+== Command: detect
+Initiating heat blast.
+Directional humidity detector activated.
+Ice located.
+== Command: collect
+Water vacuums and hoses deployed.
+Heater turned on. Waiting for the ice to melt.
+Liquid water moved to collection chamber.
+Surface pump activated.
+== Command: stop
+Miner #10 (water) is going to standby.
+=======
+== Command: start
+Miner #11 (iron) is starting.
+== Command: detect
+Magnetometer activated.
+Searching for magnetic field deviations.
+Iron deposits located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #11 (iron) is going to standby.
+=======
+== Command: start
+Miner #12 (iron) is starting.
+== Command: detect
+Magnetometer activated.
+Searching for magnetic field deviations.
+Iron deposits located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #12 (iron) is going to standby.
+=======
+== Command: start
+Miner #13 (iron) is starting.
+== Command: detect
+Magnetometer activated.
+Searching for magnetic field deviations.
+Iron deposits located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #13 (iron) is going to standby.
+=======
+== Command: start
+Miner #14 (silicon) is starting.
+== Command: detect
+Sample grinder activated.
+10 um seive applied.
+Infrared laser activated.
+Spectrophotometer activated and results analyzed.
+Silica vein located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #14 (silicon) is going to standby.
+=======
+== Command: start
+Miner #15 (silicon) is starting.
+== Command: detect
+Sample grinder activated.
+10 um seive applied.
+Infrared laser activated.
+Spectrophotometer activated and results analyzed.
+Silica vein located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #15 (silicon) is going to standby.
+=======
+== Command: start
+Miner #16 (chloride) is starting.
+== Command: detect
+Steam blasting...
+Salinity detector activated.
+Concentration vector of NaCl detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #16 (chloride) is going to standby.
+=======
+== Command: start
+Miner #17 (silicon) is starting.
+== Command: detect
+Sample grinder activated.
+10 um seive applied.
+Infrared laser activated.
+Spectrophotometer activated and results analyzed.
+Silica vein located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #17 (silicon) is going to standby.
+=======
+== Command: start
+Miner #18 (silicon) is starting.
+== Command: detect
+Sample grinder activated.
+10 um seive applied.
+Infrared laser activated.
+Spectrophotometer activated and results analyzed.
+Silica vein located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #18 (silicon) is going to standby.
+=======
+== Command: start
+Miner #19 (water) is starting.
+== Command: detect
+Initiating heat blast.
+Directional humidity detector activated.
+Ice located.
+== Command: collect
+Water vacuums and hoses deployed.
+Heater turned on. Waiting for the ice to melt.
+Liquid water moved to collection chamber.
+Surface pump activated.
+== Command: stop
+Miner #19 (water) is going to standby.
+=======
+== Command: start
+Miner #20 (water) is starting.
+== Command: detect
+Initiating heat blast.
+Directional humidity detector activated.
+Ice located.
+== Command: collect
+Water vacuums and hoses deployed.
+Heater turned on. Waiting for the ice to melt.
+Liquid water moved to collection chamber.
+Surface pump activated.
+== Command: stop
+Miner #20 (water) is going to standby.
+=======
+== Command: start
+Miner #21 (iron) is starting.
+== Command: detect
+Magnetometer activated.
+Searching for magnetic field deviations.
+Iron deposits located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #21 (iron) is going to standby.
+=======
+== Command: start
+Miner #22 (silicon) is starting.
+== Command: detect
+Sample grinder activated.
+10 um seive applied.
+Infrared laser activated.
+Spectrophotometer activated and results analyzed.
+Silica vein located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #22 (silicon) is going to standby.
+=======
+== Command: start
+Miner #23 (chloride) is starting.
+== Command: detect
+Steam blasting...
+Salinity detector activated.
+Concentration vector of NaCl detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #23 (chloride) is going to standby.
+=======
+== Command: start
+Miner #24 (iron) is starting.
+== Command: detect
+Magnetometer activated.
+Searching for magnetic field deviations.
+Iron deposits located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #24 (iron) is going to standby.
+=======
+== Command: start
+Miner #25 (silicon) is starting.
+== Command: detect
+Sample grinder activated.
+10 um seive applied.
+Infrared laser activated.
+Spectrophotometer activated and results analyzed.
+Silica vein located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #25 (silicon) is going to standby.
+=======
+== Command: start
+Miner #26 (sodium) is starting.
+== Command: detect
+Steam blasting...
+Salinity detector activated.
+Concentration vector of NaCl detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #26 (sodium) is going to standby.
+=======
+== Command: start
+Miner #27 (iron) is starting.
+== Command: detect
+Magnetometer activated.
+Searching for magnetic field deviations.
+Iron deposits located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #27 (iron) is going to standby.
+=======
+== Command: start
+Miner #28 (water) is starting.
+== Command: detect
+Initiating heat blast.
+Directional humidity detector activated.
+Ice located.
+== Command: collect
+Water vacuums and hoses deployed.
+Heater turned on. Waiting for the ice to melt.
+Liquid water moved to collection chamber.
+Surface pump activated.
+== Command: stop
+Miner #28 (water) is going to standby.
+=======
+== Command: start
+Miner #29 (iron) is starting.
+== Command: detect
+Magnetometer activated.
+Searching for magnetic field deviations.
+Iron deposits located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #29 (iron) is going to standby.
+=======
+== Command: start
+Miner #30 (silicon) is starting.
+== Command: detect
+Sample grinder activated.
+10 um seive applied.
+Infrared laser activated.
+Spectrophotometer activated and results analyzed.
+Silica vein located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #30 (silicon) is going to standby.
+=======
+== Command: start
+Miner #31 (sodium) is starting.
+== Command: detect
+Steam blasting...
+Salinity detector activated.
+Concentration vector of NaCl detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #31 (sodium) is going to standby.
+=======
+== Command: start
+Miner #32 (water) is starting.
+== Command: detect
+Initiating heat blast.
+Directional humidity detector activated.
+Ice located.
+== Command: collect
+Water vacuums and hoses deployed.
+Heater turned on. Waiting for the ice to melt.
+Liquid water moved to collection chamber.
+Surface pump activated.
+== Command: stop
+Miner #32 (water) is going to standby.
+=======
+== Command: start
+Miner #33 (sodium) is starting.
+== Command: detect
+Steam blasting...
+Salinity detector activated.
+Concentration vector of NaCl detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #33 (sodium) is going to standby.
+=======
+== Command: start
+Miner #34 (chloride) is starting.
+== Command: detect
+Steam blasting...
+Salinity detector activated.
+Concentration vector of NaCl detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #34 (chloride) is going to standby.
+=======
+== Command: start
+Miner #35 (iron) is starting.
+== Command: detect
+Magnetometer activated.
+Searching for magnetic field deviations.
+Iron deposits located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #35 (iron) is going to standby.
+=======
+== Command: start
+Miner #36 (silicon) is starting.
+== Command: detect
+Sample grinder activated.
+10 um seive applied.
+Infrared laser activated.
+Spectrophotometer activated and results analyzed.
+Silica vein located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #36 (silicon) is going to standby.
+=======
+== Command: start
+Miner #37 (potassium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #37 (potassium) is going to standby.
+=======
+== Command: start
+Miner #38 (magnesium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #38 (magnesium) is going to standby.
+=======
+== Command: start
+Miner #39 (potassium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #39 (potassium) is going to standby.
+=======
+== Command: start
+Miner #40 (sodium) is starting.
+== Command: detect
+Steam blasting...
+Salinity detector activated.
+Concentration vector of NaCl detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #40 (sodium) is going to standby.
+=======
+== Command: start
+Miner #41 (silicon) is starting.
+== Command: detect
+Sample grinder activated.
+10 um seive applied.
+Infrared laser activated.
+Spectrophotometer activated and results analyzed.
+Silica vein located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #41 (silicon) is going to standby.
+=======
+== Command: start
+Miner #42 (potassium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #42 (potassium) is going to standby.
+=======
+== Command: start
+Miner #43 (sodium) is starting.
+== Command: detect
+Steam blasting...
+Salinity detector activated.
+Concentration vector of NaCl detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #43 (sodium) is going to standby.
+=======
+== Command: start
+Miner #44 (silicon) is starting.
+== Command: detect
+Sample grinder activated.
+10 um seive applied.
+Infrared laser activated.
+Spectrophotometer activated and results analyzed.
+Silica vein located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #44 (silicon) is going to standby.
+=======
+== Command: start
+Miner #45 (iron) is starting.
+== Command: detect
+Magnetometer activated.
+Searching for magnetic field deviations.
+Iron deposits located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #45 (iron) is going to standby.
+=======
+== Command: start
+Miner #46 (water) is starting.
+== Command: detect
+Initiating heat blast.
+Directional humidity detector activated.
+Ice located.
+== Command: collect
+Water vacuums and hoses deployed.
+Heater turned on. Waiting for the ice to melt.
+Liquid water moved to collection chamber.
+Surface pump activated.
+== Command: stop
+Miner #46 (water) is going to standby.
+=======
+== Command: start
+Miner #47 (chloride) is starting.
+== Command: detect
+Steam blasting...
+Salinity detector activated.
+Concentration vector of NaCl detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #47 (chloride) is going to standby.
+=======
+== Command: start
+Miner #48 (sodium) is starting.
+== Command: detect
+Steam blasting...
+Salinity detector activated.
+Concentration vector of NaCl detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #48 (sodium) is going to standby.
+=======
+== Command: start
+Miner #49 (water) is starting.
+== Command: detect
+Initiating heat blast.
+Directional humidity detector activated.
+Ice located.
+== Command: collect
+Water vacuums and hoses deployed.
+Heater turned on. Waiting for the ice to melt.
+Liquid water moved to collection chamber.
+Surface pump activated.
+== Command: stop
+Miner #49 (water) is going to standby.
+=======
+== Command: start
+Miner #50 (iron) is starting.
+== Command: detect
+Magnetometer activated.
+Searching for magnetic field deviations.
+Iron deposits located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #50 (iron) is going to standby.
+=======
+== Command: start
+Miner #51 (silicon) is starting.
+== Command: detect
+Sample grinder activated.
+10 um seive applied.
+Infrared laser activated.
+Spectrophotometer activated and results analyzed.
+Silica vein located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #51 (silicon) is going to standby.
+=======
+== Command: start
+Miner #52 (water) is starting.
+== Command: detect
+Initiating heat blast.
+Directional humidity detector activated.
+Ice located.
+== Command: collect
+Water vacuums and hoses deployed.
+Heater turned on. Waiting for the ice to melt.
+Liquid water moved to collection chamber.
+Surface pump activated.
+== Command: stop
+Miner #52 (water) is going to standby.
+=======
+== Command: start
+Miner #53 (iron) is starting.
+== Command: detect
+Magnetometer activated.
+Searching for magnetic field deviations.
+Iron deposits located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #53 (iron) is going to standby.
+=======
+== Command: start
+Miner #54 (potassium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #54 (potassium) is going to standby.
+=======
+== Command: start
+Miner #55 (water) is starting.
+== Command: detect
+Initiating heat blast.
+Directional humidity detector activated.
+Ice located.
+== Command: collect
+Water vacuums and hoses deployed.
+Heater turned on. Waiting for the ice to melt.
+Liquid water moved to collection chamber.
+Surface pump activated.
+== Command: stop
+Miner #55 (water) is going to standby.
+=======
+== Command: start
+Miner #56 (silicon) is starting.
+== Command: detect
+Sample grinder activated.
+10 um seive applied.
+Infrared laser activated.
+Spectrophotometer activated and results analyzed.
+Silica vein located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #56 (silicon) is going to standby.
+=======
+== Command: start
+Miner #57 (potassium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #57 (potassium) is going to standby.
+=======
+== Command: start
+Miner #58 (water) is starting.
+== Command: detect
+Initiating heat blast.
+Directional humidity detector activated.
+Ice located.
+== Command: collect
+Water vacuums and hoses deployed.
+Heater turned on. Waiting for the ice to melt.
+Liquid water moved to collection chamber.
+Surface pump activated.
+== Command: stop
+Miner #58 (water) is going to standby.
+=======
+== Command: start
+Miner #59 (silicon) is starting.
+== Command: detect
+Sample grinder activated.
+10 um seive applied.
+Infrared laser activated.
+Spectrophotometer activated and results analyzed.
+Silica vein located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #59 (silicon) is going to standby.
+=======
+== Command: start
+Miner #60 (potassium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #60 (potassium) is going to standby.
+=======
+== Command: start
+Miner #61 (silicon) is starting.
+== Command: detect
+Sample grinder activated.
+10 um seive applied.
+Infrared laser activated.
+Spectrophotometer activated and results analyzed.
+Silica vein located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #61 (silicon) is going to standby.
+=======
+== Command: start
+Miner #62 (silicon) is starting.
+== Command: detect
+Sample grinder activated.
+10 um seive applied.
+Infrared laser activated.
+Spectrophotometer activated and results analyzed.
+Silica vein located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #62 (silicon) is going to standby.
+=======
+== Command: start
+Miner #63 (potassium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #63 (potassium) is going to standby.
+=======
+== Command: start
+Miner #64 (silicon) is starting.
+== Command: detect
+Sample grinder activated.
+10 um seive applied.
+Infrared laser activated.
+Spectrophotometer activated and results analyzed.
+Silica vein located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #64 (silicon) is going to standby.
+=======
+== Command: start
+Miner #65 (sodium) is starting.
+== Command: detect
+Steam blasting...
+Salinity detector activated.
+Concentration vector of NaCl detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #65 (sodium) is going to standby.
+=======
+== Command: start
+Miner #66 (potassium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #66 (potassium) is going to standby.
+=======
+== Command: start
+Miner #67 (magnesium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #67 (magnesium) is going to standby.
+=======
+== Command: start
+Miner #68 (magnesium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #68 (magnesium) is going to standby.
+=======
+== Command: start
+Miner #69 (silicon) is starting.
+== Command: detect
+Sample grinder activated.
+10 um seive applied.
+Infrared laser activated.
+Spectrophotometer activated and results analyzed.
+Silica vein located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #69 (silicon) is going to standby.
+=======
+== Command: start
+Miner #70 (silicon) is starting.
+== Command: detect
+Sample grinder activated.
+10 um seive applied.
+Infrared laser activated.
+Spectrophotometer activated and results analyzed.
+Silica vein located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #70 (silicon) is going to standby.
+=======
+== Command: start
+Miner #71 (silicon) is starting.
+== Command: detect
+Sample grinder activated.
+10 um seive applied.
+Infrared laser activated.
+Spectrophotometer activated and results analyzed.
+Silica vein located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #71 (silicon) is going to standby.
+=======
+== Command: start
+Miner #72 (magnesium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #72 (magnesium) is going to standby.
+=======
+== Command: start
+Miner #73 (water) is starting.
+== Command: detect
+Initiating heat blast.
+Directional humidity detector activated.
+Ice located.
+== Command: collect
+Water vacuums and hoses deployed.
+Heater turned on. Waiting for the ice to melt.
+Liquid water moved to collection chamber.
+Surface pump activated.
+== Command: stop
+Miner #73 (water) is going to standby.
+=======
+== Command: start
+Miner #74 (magnesium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #74 (magnesium) is going to standby.
+=======
+== Command: start
+Miner #75 (potassium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #75 (potassium) is going to standby.
+=======
+== Command: start
+Miner #76 (iron) is starting.
+== Command: detect
+Magnetometer activated.
+Searching for magnetic field deviations.
+Iron deposits located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #76 (iron) is going to standby.
+=======
+== Command: start
+Miner #77 (magnesium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #77 (magnesium) is going to standby.
+=======
+== Command: start
+Miner #78 (magnesium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #78 (magnesium) is going to standby.
+=======
+== Command: start
+Miner #79 (iron) is starting.
+== Command: detect
+Magnetometer activated.
+Searching for magnetic field deviations.
+Iron deposits located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #79 (iron) is going to standby.
+=======
+== Command: start
+Miner #80 (potassium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #80 (potassium) is going to standby.
+=======
+== Command: start
+Miner #81 (water) is starting.
+== Command: detect
+Initiating heat blast.
+Directional humidity detector activated.
+Ice located.
+== Command: collect
+Water vacuums and hoses deployed.
+Heater turned on. Waiting for the ice to melt.
+Liquid water moved to collection chamber.
+Surface pump activated.
+== Command: stop
+Miner #81 (water) is going to standby.
+=======
+== Command: start
+Miner #82 (sodium) is starting.
+== Command: detect
+Steam blasting...
+Salinity detector activated.
+Concentration vector of NaCl detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #82 (sodium) is going to standby.
+=======
+== Command: start
+Miner #83 (sodium) is starting.
+== Command: detect
+Steam blasting...
+Salinity detector activated.
+Concentration vector of NaCl detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #83 (sodium) is going to standby.
+=======
+== Command: start
+Miner #84 (water) is starting.
+== Command: detect
+Initiating heat blast.
+Directional humidity detector activated.
+Ice located.
+== Command: collect
+Water vacuums and hoses deployed.
+Heater turned on. Waiting for the ice to melt.
+Liquid water moved to collection chamber.
+Surface pump activated.
+== Command: stop
+Miner #84 (water) is going to standby.
+=======
+== Command: start
+Miner #85 (potassium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #85 (potassium) is going to standby.
+=======
+== Command: start
+Miner #86 (sodium) is starting.
+== Command: detect
+Steam blasting...
+Salinity detector activated.
+Concentration vector of NaCl detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #86 (sodium) is going to standby.
+=======
+== Command: start
+Miner #87 (silicon) is starting.
+== Command: detect
+Sample grinder activated.
+10 um seive applied.
+Infrared laser activated.
+Spectrophotometer activated and results analyzed.
+Silica vein located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #87 (silicon) is going to standby.
+=======
+== Command: start
+Miner #88 (silicon) is starting.
+== Command: detect
+Sample grinder activated.
+10 um seive applied.
+Infrared laser activated.
+Spectrophotometer activated and results analyzed.
+Silica vein located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #88 (silicon) is going to standby.
+=======
+== Command: start
+Miner #89 (silicon) is starting.
+== Command: detect
+Sample grinder activated.
+10 um seive applied.
+Infrared laser activated.
+Spectrophotometer activated and results analyzed.
+Silica vein located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #89 (silicon) is going to standby.
+=======
+== Command: start
+Miner #90 (chloride) is starting.
+== Command: detect
+Steam blasting...
+Salinity detector activated.
+Concentration vector of NaCl detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #90 (chloride) is going to standby.
+=======
+== Command: start
+Miner #91 (iron) is starting.
+== Command: detect
+Magnetometer activated.
+Searching for magnetic field deviations.
+Iron deposits located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #91 (iron) is going to standby.
+=======
+== Command: start
+Miner #92 (silicon) is starting.
+== Command: detect
+Sample grinder activated.
+10 um seive applied.
+Infrared laser activated.
+Spectrophotometer activated and results analyzed.
+Silica vein located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #92 (silicon) is going to standby.
+=======
+== Command: start
+Miner #93 (sodium) is starting.
+== Command: detect
+Steam blasting...
+Salinity detector activated.
+Concentration vector of NaCl detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #93 (sodium) is going to standby.
+=======
+== Command: start
+Miner #94 (potassium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #94 (potassium) is going to standby.
+=======
+== Command: start
+Miner #95 (potassium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #95 (potassium) is going to standby.
+=======
+== Command: start
+Miner #96 (iron) is starting.
+== Command: detect
+Magnetometer activated.
+Searching for magnetic field deviations.
+Iron deposits located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #96 (iron) is going to standby.
+=======
+== Command: start
+Miner #97 (silicon) is starting.
+== Command: detect
+Sample grinder activated.
+10 um seive applied.
+Infrared laser activated.
+Spectrophotometer activated and results analyzed.
+Silica vein located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #97 (silicon) is going to standby.
+=======
+== Command: start
+Miner #98 (silicon) is starting.
+== Command: detect
+Sample grinder activated.
+10 um seive applied.
+Infrared laser activated.
+Spectrophotometer activated and results analyzed.
+Silica vein located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #98 (silicon) is going to standby.
+=======
+== Command: start
+Miner #99 (water) is starting.
+== Command: detect
+Initiating heat blast.
+Directional humidity detector activated.
+Ice located.
+== Command: collect
+Water vacuums and hoses deployed.
+Heater turned on. Waiting for the ice to melt.
+Liquid water moved to collection chamber.
+Surface pump activated.
+== Command: stop
+Miner #99 (water) is going to standby.

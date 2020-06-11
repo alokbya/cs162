@@ -1,0 +1,34 @@
+This is the grading rubric for the Logs programming assignment.
+
+================
+If the program fails to compile, crashes, or hangs then the program
+automatically gets a 0.
+================
+
+Functionality	     3
+ - output for full.txt matches full.output.txt 100% (including
+   spelling, whitespace, and punctuation).
+
+Implementation	    12
+ - use a class to implement syslog
+ - use a class to implement entries in the syslog entries array
+ - the syslog class must have at least a name and entries array
+ - the entries array in the syslog must be an array of objects
+ - all classes that have pointer data must have a copy constructor and
+destructor
+ - logs.cpp is unchanged
+ - all strings are represented with dynamically allocated character arrays
+ - no fixed sized arrays in the code you write
+ - no memory leaks or errors (as reported by valgrind)
+
+Design		     3
+ - class definition and implementation are in separate files
+ - helper functions are implemented in separate files
+ - all class data members are private
+ - no global variables
+
+Style		     2
+ - at most 1 return statement per function or method
+ - doesn't use of "break" or "continue" in a loop
+
+Total:		    20

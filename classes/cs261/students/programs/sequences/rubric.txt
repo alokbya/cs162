@@ -1,0 +1,25 @@
+This is the grading rubric for the Sequences programming assignment.
+
+================
+If the program fails to compile, crashes, or hangs then the program
+automatically gets a 0.
+================
+
+Functionality	     10
+ - output for verylarge.txt matches output.txt 100% (including all whitespace)
+ - the program runs on verylarge.txt in less than 30 seconds
+
+Implementation	    5
+  - The program reads data from the file specified on the command line
+  - The program uses Java Collection classes
+  - Uses of collection classes must use generic syntax (<>) and the type stored
+  in the container must be specified.
+
+Design		     3
+  - The entire program is less than 200 lines of Java code
+
+Style		     2
+ - at most 1 return path per function or method
+ - No use of "break" or "continue" in a loop
+
+Total:		    20

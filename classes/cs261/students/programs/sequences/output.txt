@@ -1,0 +1,6 @@
+Found the following DNA sequences in all strands:
+CGCUAUUCUGGUGA
+UAGCGAAAGUCAC
+GAGACUCG
+GCCACCC
+UAGCUA

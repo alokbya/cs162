@@ -1,0 +1,88 @@
+What started as an exciting job five years ago has become rather dull and
+routine. The afternoons drag on while you sit in front of your computer and
+the wan afternoon sun, half the intensity of sun on earth, still causes the
+familiar drowsiness. On top of that, the programming tasks that the new
+director, Henshaw, has been giving you are incredibly boring.
+
+Your incoming email icon flashes which probably means that Henshaw has yet
+another uninspired task for you. Reluctantly you open the email and then sit
+right up. It isn't from Henshaw, it's from Goliss. You haven't heard from her
+in quite a while. Since her demotion to assistant manager and move to Survivor
+she has kept pretty distance. But still, it's good to hear from her.
+
+The email message is short: "Give me a call in ten minutes. From somewhere
+private. G."
+
+Hmm. This sounds interesting and intriguing. Even though you haven't talked
+with her about the incident, you have always felt that Van Halen had
+mishandled the situation. And you're sure that Boston's incompetant Director,
+Williams, was somehow involved. You wrap up a couple things in your code
+editor and roll back from your desk. The reduced gravity on Mars makes it way
+too easy to push your desk chair all the way across the room but with an
+amused smile you manage to control yourself.
+
+One year after landfall Bon Jovi erected a tall observation tower. The base of
+the tower is the ever popular recreation center and the tower itself extends
+three hundred feet above the planet's surface. An elevator runs to the top
+where there is a small twenty-five hour cafe and a 360 degree view of rust
+colored rocks and rust colored dust. At first this was a very popular place
+but the novelty wore off quickly. The unchanging scenary, red rocks as far as
+anyone could see, wasn't enough to keep people excited. Now the Barsoom Lounge
+is usually occupied by small groups of people looking for some quiet, private
+space.
+
+You arrive at the lounge and find a small table near the window with plenty of
+space between you and a group of three nerdy looking guys that look like they
+are playing some sort of collectable card game. You dial Goliss' number on
+your phone and wait for her to answer.
+
+"Hello," she answers on the first ring. "Thanks so much for calling me back."
+She sounds a little urgent and worked up. She continues without waiting for
+you to reply. "What do you know about what happened a few years ago with
+Boston?"
+
+"Well," you reply slowly. You're pretty sure that you don't know the whole
+story but you also think something wasn't done right. "I only know that after
+the crash, Van Halen did an investigation. The Boston Director, Williams,
+provided the data for their investigation and they found that you were at
+fault. So they demoted you from Bon Jovi and sent you to Survivor. To be
+honest, I didn't think it was fair."
+
+Goliss sputters on the phone. "Fair! Of course it wasn't fair. That scum
+Williams, he faked the data. I know it. But I couldn't prove it. And he just
+did it to save his own skin. He was, actually still is, an incompetant
+fool. But now I have something." Her tone turns more conspiratorial. "I can
+prove that Williams' incompetance is still in full swing. I want to get him
+out of there! This is where I need your help."
+
+You get a twinge of excitement. You always did like Goliss and if you can do
+something to help her -- well, sounds like a good idea.
+
+"Ok. What is it? How can I help?"
+
+"Have you seen the production reports from Boston over the last couple of
+years?"
+
+"Yeah. Kind of. I'm not so interested in that stuff, really. So I have only
+barely paid attention."
+
+"Well, they are fake. I'm sure of it. I got my hands on a big chunk of raw
+data from the last three years. Over 300,000 data entries and when I started
+sifting through the data, it wasn't matching the official Boston reports. I
+think I can prove that they are falling way behind in water and mineral
+production from their mines. It will take me months to look through the data
+manually so I was hoping you could write a small program to do this
+automatically."
+
+"Uh. Sure. That seems possible."
+
+"Ok good. I'll email the data file over to you. Along with an explanation and
+example of the report I need." The ex-director sounds excited and
+energized. "I can't tell you how this makes me feel. Finally I'm going to be
+able to get that reprehensible Williams to face the music. I'll send the files
+right away. Ok?"
+
+"Ok. That sounds good. I'll get right on it. Should be just a couple of days."
+
+"Thanks," she replies. "I really appreciate it." She cuts the line. 
+

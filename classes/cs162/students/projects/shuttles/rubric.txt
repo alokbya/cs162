@@ -1,0 +1,35 @@
+This is the grading rubric for the Maintenance programming assignment.
+
+================
+If the program fails to compile, crashes, or hangs then the program
+automatically gets a 0.
+================
+
+Functionality	     5
+ - output for assignment.txt matches assignment.txt.out 100% (including
+   spelling, whitespace, and punctuation).
+
+Implementation	    10
+  - use a class to define the shuttle
+  - the shuttle class has the data members as described above
+  - the shuttle class has the methods as described above
+  - the passengers for a shuttle are stored in an array
+  - all class data members are private
+  - all class definitions are in header files
+  - all class implementations are in cpp files
+  - use an array of shuttle objects
+  - the main() function is less than 50 lines long (with proper formatting)
+  - extra functions are defined with prototypes in a header file
+  - extra functions are defined with implementation defined in a cpp file
+  - character strings need to be represented using char arrays
+
+Design		     3
+ - class definition and implementation are in separate files
+ - helper functions are implemented in separate files
+ - no global variables
+
+Style		     2
+ - at most 1 return statement per function or method
+ - doesn't use of "break" or "continue" in a loop
+
+Total:		    20

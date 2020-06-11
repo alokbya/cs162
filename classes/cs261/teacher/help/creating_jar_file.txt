@@ -1,0 +1,9 @@
+Creating a jar file from the command line is fairly simple. Use the "jar"
+command just like "tar". For example:
+
+jar cvf myfiles.jar *.java
+
+You can extract from a jar file as follows:
+
+jar xvf myfiles.jar
+

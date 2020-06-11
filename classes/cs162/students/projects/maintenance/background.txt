@@ -1,0 +1,120 @@
+From a distance, the IMC Two looked like a civil war canon of strange
+proportions floating through space. The two side wheels, one kilometer in
+diameter, spun in opposite directions and the "canon", at fifty meters in
+width, was much too thin. The axial tube ran straight out half a kilometer
+behind the two wheels and two kilometers in front. On a closer view, a dozen
+box-like protubrances were visible attached to either side of the central
+tube. These were the drop ships and landers that the prep team would use to
+land on Mars once they arrived. Bluish light from the engines glowed out of
+the aft end.
+
+Each of the wheels was quite thin. Eight spokes radiated from the center out
+to a rim that was only fifty meters thick. Two concentric rows of windows
+circled the rim on the outward, space-facing, side of the wheels. The windows
+opened into the living quarters, work spaces, and community spaces on the
+ship.
+
+Everyone spent most of thier time in one of the wheels. Moving around in
+partial gravity was just much easier to do than zero G. When the IMC Two had
+launched, the wheels spun at a speed to produce the equivalent of standard
+Earch gravity. Since Mars provided only about 40% of the gravity of Earth, the
+mission planners built in a gradual slowdown of the wheel so that by the
+halfway point of the trip they would be spinning only enough to create a
+centripetal force equivalent to Martian gravity.
+
+Only six weeks into the trip and Addie could already feel the difference in
+her step as she walked across the light blue, rubberized flooring in the Orion
+cafeteria. Each of the eight cafeterieas on board were named after a different
+constellation. Addie liked Orion and Pegasus best. She carried her tray to an
+empty table and sat down. The meals were not that great. Usually some
+variation of rice or beans with some sort of sauce. Today's dinner looked like
+cajun rice and a large side reconstituted steamed broccoli.
+
+After only a few bites, Addie's dumb smart watch beeped with a notification. A
+quick glance made her heart skip a beat. It was Director Goliss. She was one
+of the directors who was going to lead one of the base colonies when they
+landed. Getting a direct call from her was a big deal. The notification asked
+for Addie to meet in her office in thirty minutes. Addie responded that she'd
+be there then scarfed down the rest of her food.
+
+She tossed her empty tray in the cleaning bin on her way out of the Orion and
+raced to her room to grab her tablet and make sure she looked presentable. She
+had never met Director Goliss in person but she'd definitely heard about
+her. Most people had. The directors offices were on the other side of the
+wheel so she'd have to grab a scooter to get there in time.
+
+With two minutes to spare, Addie arrived at the office. Her knock on the door,
+just under the nameplate, was immediately answered with a "Come in".  The
+director was sitting at her desk and Harry, from ship services was sitting
+across from her. Sweat beaded on his forehead and there were dark pit stains
+on his shirt. Gross.
+
+The director motioned a chair next to Harry and Addie sat down.
+
+"Thanks for joining us on such short notice. We've not met yet but I'm
+Director Goliss. I'll..."
+
+"Yes, I know who you are," Addie interrupted then stopped. "Uh. Sorry. Please
+continue."
+
+"Yes. Ok. So you know who I am. Well, since I'll be leading one of the prep
+colonies once we land, I don't have a lot of responsibilities on the travel
+part of this mission. In fact, the only thing they've given me to do is to
+manage maintenance and upkeep on the ship and that's where Mr. Collins here
+comes into play." Harry nodded at Addie. They'd eaten dinner at the same table
+many times before.
+
+"You see, Mr. Collins is supposed to be managing his staff to make sure stuff
+is getting done on the ship. Things like cleaning the air ducts, making sure
+our water processor is working, that sort of thing. We've been in transit for
+six weeks and, well to put it nicely, a few things are falling through the
+cracks."
+
+Harry began to wring his hands as the director glared at him.
+
+"For some reason, Mr. Collins hasn't been able to get his team scheduled. He
+says it's too complicated. Maybe you can explain, Mr. Collins."
+
+Harry stumbled for a second then spoke up. "Well, I've got these people and I
+keep assigning them tasks and I make a schedule and then it turns out that
+someone is doing a task and then the next day I schedule them to do something
+else but they aren't finished with the first thing or sometimes I even get so
+confused that I schedule the same person for two different things on the same
+day. Or two different people to do the same thing on the same day. Or. Well,
+it's just confusing."
+
+The director watches Harry describe his problem and waits until he runs out of
+steam then she turns to Addie. "I heard what you did with the lap
+tracker. That was clever. In fact, I use it all the time now." She offers a
+thin but genuine smile. "So I was thinking, since you seem to be clever with
+software, maybe you could help Mr. Collins here. He could give you a list of
+days and tasks -- his proposed schedule for a period -- and then you could
+process that and print out the entire schedule for that period and also show
+him any errors in the schedule. See? If he had that program, he could
+rearrange the schedule as much as he needed until he eliminated all of the
+conflicts."
+
+Addie considered the concept for a few moments. "Yeah, I think that's
+doable. If Harry, I mean Mr. Collins, could send me a sample file to work
+with, I could create a program for him in a few days."
+
+Director Goliss smiled and nodded her head one time. "Very good. Mr. Collins?
+Will that work for you?"
+
+Harry nodded his head eagerly, much more than one time. "Yes. Yes. That will
+be perfect." He turned to Addie. "I'll send you a file as soon as I get back
+to my station."
+
+Director Goliss stood. Harry and Addie stood as well. "Thank you both. I'm
+sure that the two of you working together will get this worked out
+perfectly. And Harry," her use of his first name surprised him, "please make
+it work. We don't all want to die out here." She held a stern look for only a
+second then let a small smile loose. She winked at him. "Now you two, get
+busy."
+
+
+
+
+
+
+

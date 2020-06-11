@@ -1,0 +1,276 @@
+================================================================================
+========================================================= Overview and Objective 
+
+For this assignment you will write a program that reads in a list of job
+assignments, puts them in a calendar and generates a report. The report
+includes the day-by-day calendar assignments as well as a list of errors from
+the data. Details for all of this are provided below. You can read
+background.txt if you want more context for why we are doing this. 
+
+The objective of this assignment is to practice using the following concepts:
+- reading data from a file
+- structs
+- arrays
+- character arrays for strings
+- user-defined functions
+- multiple files for compilation
+
+Your program will be evaluated based on both how it runs as well as how it was
+designed and coded. Pay attention to the "rubric.txt" file to see how it will
+be evaluated.
+
+Along with these instructions, I have provided data files and the EXACT
+expected output that corresponds to some of those data files. It is important
+that your program output matches EXACTLY. This includes spelling, whitespace,
+and punctuation.
+
+The rest of this document provides more details about the assignment. If you
+have any questions, be sure to post in the discussion group or send me
+email. Do not wait until the last minute to start this assignment.
+
+================================================================================
+======================================================================== Details 
+
+The following sections provides details about the requirements for the
+assignment.
+
+------------------------------------------------------------------- data storage
+
+As described in the overview, this program reads in data and needs to store it
+in a calendar. This means that we need to have variables to store this
+data. The central structure is going to be the calendar. Since the calendar
+has a fixed number of days (CAL_DAYS from the sizes.h file), we can use an
+array with that number of slots. 
+
+The next question is what type of data should be in the array. Each day needs
+to hold task information for up to three assignments. The task information
+includes the task name, the duration of the task, and who it's assigned
+to. The best option for this is to use a struct. 
+
+Putting these two items together, that means you have an array of structs. If
+your struct was defined as "struct day { ...stuff... };" then declaring the
+calendar array would look like this:
+
+  day calendar[CAL_DAYS];
+
+That creates an array called "calendar" that holds "day" variables. It holds
+CAL_DAYS of those variables.
+
+The data we are dealing with it presented as strings 
+
+Since the report requires us to print out errors, we will probably want to
+have some arrays to keep the errors. Since errors are strings and strings are
+character arrays, we will end up with something like this:
+
+  char overlapErrors[MAX_ERRS][MAX_STR];
+
+That is, an array that holds at most MAX_ERRS error messages and each message
+is at most MAX_STR characters long.
+
+Now that we have a concept of the variables that we'll use, we can look at the
+main algorithm.
+
+--------------------------------------------------------------------------- main
+
+The main algorithm has two phases. In the first phase, the assignment data is
+read from the input file and inserted into the calendar array. Since each day
+in the array can only hold up to three assignments, if more than three
+assigments are provided for a day, the program keeps track of the extra ones
+so it can report an error at the end and it DOES NOT insert them into the
+calendar.
+
+The format of the data in the input file is:
+<day>;<task>;<duration>;<who>
+
+For example:
+5;Replace ventalation filters;2;Robbie Mitchell
+
+Any blank lines in the data file should be ignored and any line starting with
+a # should be ignored.
+
+The data in the input file can not be assumed to be in any sort of order. You
+do not have to deal with an improperly formatted data file.
+
+The second phase of the main algorithm generates the calendar and prints the
+errors. See the assignments.txt.out for the exact format of this output. Your
+program needs to print the data in the exact same way.
+
+One more thing, since you may not have dealt with command line arguments
+before, I have provided a sample_main.cpp file that shows how to make sure
+that a filename is passed on the command line and how to get that
+filename.
+
+------------------------------------------------------------------- reading data
+
+Reading the data from the file requires following this process:
+
+- read a line from the file (the whole line)
+- get the day number part
+- get the task name
+- get the duration
+- get the who name
+- add that data to the correct day entry in the calendar
+
+Getting the individual parts of the line of input will require you to have
+another variable to copy the data into and then you will use a loop to go one
+character at a time over the original line of data, copying one character at
+a time until you hit the delimeter. Here's an example of doing something
+similar. In this example I'm copying the xth through yth characters from "line" into
+"other".
+
+char other[MAX_STR];
+int otherIdx = 0;     
+for (int i=x;i<=y;i++) {
+  other[otherIdx] = line[i];
+}
+
+Once you have extracted the day and duration as strings using the technique
+above, you will need to convert them to integers. There is a built in function
+called atoi() that does this. This is defined in the cstdlib.h header
+file. Here is an example of using atoi().
+
+char numStr[] = "1234";
+int x;
+x = atoi(numStr);
+
+----------------------------------------------------------------- finding errors
+
+The program should locate three different types of errors in the data. These
+are
+
+- Too many entries for a given day. Each day can only hold up to three
+  assigments. If there are more than three assignments for a given calendar
+  day in the input, then the extra assignments cannot be added to the calendar
+  and you must report these in the error section listing too many jobs for a
+  day.
+
+- Duplicate assignments on the same day. In some cases the same task is
+  assigned more than once on the same day. In other cases, the same person is
+  assigned two different tasks on the same day. Both of these cases are
+  examples of duplicate assignment errors. Duplicate assignments should still
+  be added to the calendar but they should be reported in the duplicate
+  assignments section of the error report.
+
+- Overlapping assignments. Once a task is assigned to a person, no one else
+  can start that task before it finishes and that person cannot be assigned to
+  a different task before it finishes. Whenever either of these situations
+  occurs, the task should still be added to the calendar but it should also be
+  reported in the overlaps error section of the report.
+
+It is possible to detect all of these errors while reading the data but
+finding duplicates and overlaps is easier to do as a post-processing step
+after all of the data entries have been read.
+
+Since you will be detecting errors before you print anything, you'll need a
+way to hold on to the list of errors. This is where you will want a the array
+of error strings as described in the data storage section
+
+---------------------------------------------------------- generating the report
+
+After all the data has been read and all the errors detected, the program will
+generate a report. The first part of the report is a list of assignments per
+day in the following format:
+
+Day  8:
+  Steph Kalias is doing "Minor ship repairs" for 4 days
+Day  9:
+  Gail Lawhead is doing "Adjust fuel rods" for 3 days
+  Robbie Mitchell is doing "Food system checkup" for 2 days
+Day 10:
+  Carlos Johnston is doing "Clean waste recylers" for 3 days
+Day 11:
+  Gail Lawhead is doing "Domestic maintenance robotics" for 5 days
+Day 12:
+Day 13:
+  Richard Moody is doing "Hull debris sweep" for 4 days
+
+Notice that all days are written with two digits and are right-aligned. Also,
+days with no assignments are still written, they just don't have any
+assignments. Each assignment is indented under the day it is assigned to.
+
+After the calendar entries is a line of 30 = followed by the three different
+types of errors. The error report should be in this format:
+
+Errors due to too many jobs on the same day:
+  7;Lander routine maintenance;5;Carlos Johnston
+
+Errors due to overlaps:
+  3;Clean waste recylers;3;Karma Thames
+  3;Food system checkup;2;Steph Kalias
+
+Errors due to duplicate assignments:
+  14;Replace ventalation filters;2;Karma Thames
+
+Each error line is the actual line from the data file. In the case of "too
+many" and "duplicates", the error line is the line that is trying to be
+added. In the case of "overlaps", the error line is the initial
+assignment. The error line is indented when printed.
+
+---------------------------------------------------------------- using functions
+
+As programs get larger, it is expected that the code is broken down into
+smaller, managable units. Right now we are doing this using functions. This
+program is too complex to have all of the functionality in the main()
+function. Instead, you should have helper functions. For example, you might
+have a function called getDayNumber() that takes a const char[] as the
+argument and returns the day number (the string before the first ;).
+
+int getDayNumber(const char line[])
+{
+  int day = 0;
+
+  // code to copy out the day number characters then call atoi() on it
+
+  return day;
+}
+
+Once you have this function, when you are reading the lines of data from the
+data file, you can simply call this function to find out the day. Your program
+needs to have at least three separate functions (other than main). As a
+reference, my solution to this assignment uses eleven separate functions.
+
+The function implementations need to be in a separate file. In addition, the
+headers for the functions need to be in a header file. In the end you should
+have at least these files:
+
+main.cpp -- you main algorithm
+functions.cpp -- the helper function implementations
+functions.h -- the helper function definitions
+
+---------------------------------------------------------- External Requirements
+
+- Comply with all of the details listed in the above sections.
+- When run on the assignments.txt file, the output matches assignments.txt.out exactly.
+
+---------------------------------------------------- Implementation Requirements
+
+- use a struct to hold a day's assignments. The struct needs, at a minimum, a
+  field for the task name, the duration, and the assigned person. Hint: adding
+  a field to hold the entire input line makes it easier to report errors.
+- there can only be a max of 3 assignments per day so the struct only needs to
+  have task, duration, and who for three tasks. You have the option of either
+  replicating the fields three times or using an array inside the struct.
+- use an array of structs to hold the calendar days
+- you should have, at a minimum, three files: main.cpp, functions.cpp, functions.h
+- character strings need to be represented using char arrays
+
+================================================================================
+========================================================================= Design
+
+The design of your program is just as important as the functionality of the
+program. Make sure that your program structure makes sense and is clear. Make
+good use of functions to organize your program.
+
+================================================================================
+========================================================================= Turnin
+
+You must use the "turnin" program to turn in your assignment. DO NOT USE D2L
+TO TURN IN YOUR ASSIGNMENT. Assignments turned in using D2L will not be
+counted. For information on using the "turnin" program see
+~mike.noel/classes/all/turnin.txt.
+
+IMPORTANT: If the program fails to compile, crashes, or hangs then the program
+automatically gets a 0.
+
+Use the turnin program to turn in only the *.cpp and *.h files that you
+created. Do not turn in additional files.

@@ -1,0 +1,94 @@
+== Programming Assignment ==
+
+With this programming assignment we switch from C++ to Java. See the section
+below on compiling and running Java programs on the linux system.
+
+The objectives of this assignment are to learn how to develop Java programs,
+use basic Java collections, and perform simple Java file IO.
+
+You will write a Java program that compares several DNA strands and looks for
+common subsequences among the strands. Each DNA strand consists of a sequence
+of bases (A, G, C, U) and is represented as a line of characters in an input
+file. For example, this would represent four DNA strands:
+
+UACUCGGAUGUUGCAGAG
+GACCAGUUAUACUCGUCUGAGAG
+UCUUACUCGGAUGCUAGAGCUAGGA
+CCUGGAGCACUCGCCUG
+
+A common subsequence is a sequence of bases where the same sequence of bases
+appears in all the strands. The common subsequence can be at any location in
+each strand. With the above example, a common subsequence is "ACUCG" and it
+appears in each of the strands (2nd, 11th, 5th, and 9th positions,
+respectively). We only consider common subsequences that are between 5 and 15
+characters long, inclusivly. That is, we wouldn't count the "GAG" common
+subsequence even though it appears in each strand.
+
+The strands are of various lengths and there could be more than one common
+subsequence that appears in all of them. Your program will need to find all of
+the subsequences and then print them out in order from longest to
+shortest. See the output.txt file for the exact format and values. In order to
+do the longest-to-shortest sorting you may find it helpful to use the
+Comparable interface in Java.
+
+This assignment includes several data files containing DNA strands. All of the
+data files have the same subsequences in their DNA strands so the results from
+your program will be the same on all of the files (exactly what is in
+output.txt). You might find it helpful to create custom data files for
+testing.
+
+== A Note About Generics ==
+
+The Java Collections support the use of "generics" when declaring a variable
+of a particular collection class. For example:
+
+LinkedList<Integer> myNumbers;
+
+This declares a LinkedList that can hold Integer objects. Early versions of
+Java had the collection class library but didn't have generics. These
+non-generic versions of the classes still exist but it is highly recommended
+that you do not use them. For this class, any time you use classes that can be
+generic, you are required to use the generic version.
+
+== Compiling and Running Java Programs ==
+
+Compiling and running Java programs on the linux system isn't too
+difficult. It depends on two commands: javac and java. The javac command is
+used to complile *.java files into *.class files. The java command is used to
+run the JVM on a given class file.
+
+Both the javac and java commands are located in /usr/jdk/bin on the PCC linux
+system. For convenience, I recommend that you add that directory to your
+PATH. If you don't do this then you will need to type the full path to the
+command each time. It is necessary to use the same version of javac and java
+for compiling and running the progam. If you don't setup your PATH variable or
+type the explicit /usr/jdk/bin full command path then you might end up using
+different versions of the compiler and JVM.
+
+The examples below assume that you have set up your PATH.
+
+If you have a file Main.java that contains a Java class called Main you would
+compile that with this command:
+
+javac Main.java
+
+The result will be a new file in the current directory called Main.class. In
+order to run this Java program you would use the following command:
+
+java Main
+
+Notice that you don't type "Main.class".  
+
+It is possible to compile multiple Java files at once by passing all of the
+files to the javac command:
+
+javac *.java
+
+This will result in a new class file for each Java source file. Even though
+there are multiple class files, you run the Java program with just one. You
+run the java command on the Java class that contains the main method.
+
+== Turning in the Assignment ==
+
+Use the turnin command to turn in your assignment. DO NOT TURN IT IN ON
+D2L. For isntructions on using turnin see ~mike.noel/classes/all/turnin.txt.

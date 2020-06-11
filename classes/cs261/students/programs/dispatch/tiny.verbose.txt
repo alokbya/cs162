@@ -1,0 +1,216 @@
+
+======= Processing requests for day 1
+======= 0 requests carried over from previous day
+Dispatching HIGH MEDICAL responder to Journey
+Dispatching HIGH MEDICAL responder to Alabama
+Dispatching MEDIUM MEDICAL responder to Survivor
+Dispatching MEDIUM MEDICAL responder to Survivor
+Dispatching LOW VEHICLE responder to Kansas
+Dispatching LOW FACILITY responder to Bon Jovi
+Dispatching LOW VEHICLE responder to Chicago
+Dispatching LOW VEHICLE responder to Boston
+Dispatching LOW FACILITY responder to Chicago
+Dispatching LOW VEHICLE responder to Journey
+Requests Per Day: 15 Station Limit: 3
+  Requests: 10
+  Days: 1
+  Largest Carry: 0
+  Average Carry: 0
+
+======= Processing requests for day 1
+======= 0 requests carried over from previous day
+Dispatching HIGH MEDICAL responder to Journey
+Dispatching HIGH MEDICAL responder to Alabama
+Dispatching MEDIUM MEDICAL responder to Survivor
+Dispatching MEDIUM MEDICAL responder to Survivor
+Dispatching LOW VEHICLE responder to Kansas
+Dispatching LOW FACILITY responder to Bon Jovi
+Dispatching LOW VEHICLE responder to Chicago
+Dispatching LOW VEHICLE responder to Boston
+Dispatching LOW FACILITY responder to Chicago
+Dispatching LOW VEHICLE responder to Journey
+Requests Per Day: 15 Station Limit: 4
+  Requests: 10
+  Days: 1
+  Largest Carry: 0
+  Average Carry: 0
+
+======= Processing requests for day 1
+======= 0 requests carried over from previous day
+Dispatching HIGH MEDICAL responder to Journey
+Dispatching HIGH MEDICAL responder to Alabama
+Dispatching MEDIUM MEDICAL responder to Survivor
+Dispatching MEDIUM MEDICAL responder to Survivor
+Dispatching LOW VEHICLE responder to Kansas
+Dispatching LOW FACILITY responder to Bon Jovi
+Dispatching LOW VEHICLE responder to Chicago
+Dispatching LOW VEHICLE responder to Boston
+Dispatching LOW FACILITY responder to Chicago
+Dispatching LOW VEHICLE responder to Journey
+Requests Per Day: 15 Station Limit: 5
+  Requests: 10
+  Days: 1
+  Largest Carry: 0
+  Average Carry: 0
+
+======= Processing requests for day 1
+======= 0 requests carried over from previous day
+Dispatching HIGH MEDICAL responder to Journey
+Dispatching HIGH MEDICAL responder to Alabama
+Dispatching MEDIUM MEDICAL responder to Survivor
+Dispatching MEDIUM MEDICAL responder to Survivor
+Dispatching LOW VEHICLE responder to Kansas
+Dispatching LOW FACILITY responder to Bon Jovi
+Dispatching LOW VEHICLE responder to Chicago
+Dispatching LOW VEHICLE responder to Boston
+Dispatching LOW FACILITY responder to Chicago
+Dispatching LOW VEHICLE responder to Journey
+Requests Per Day: 20 Station Limit: 3
+  Requests: 10
+  Days: 1
+  Largest Carry: 0
+  Average Carry: 0
+
+======= Processing requests for day 1
+======= 0 requests carried over from previous day
+Dispatching HIGH MEDICAL responder to Journey
+Dispatching HIGH MEDICAL responder to Alabama
+Dispatching MEDIUM MEDICAL responder to Survivor
+Dispatching MEDIUM MEDICAL responder to Survivor
+Dispatching LOW VEHICLE responder to Kansas
+Dispatching LOW FACILITY responder to Bon Jovi
+Dispatching LOW VEHICLE responder to Chicago
+Dispatching LOW VEHICLE responder to Boston
+Dispatching LOW FACILITY responder to Chicago
+Dispatching LOW VEHICLE responder to Journey
+Requests Per Day: 20 Station Limit: 4
+  Requests: 10
+  Days: 1
+  Largest Carry: 0
+  Average Carry: 0
+
+======= Processing requests for day 1
+======= 0 requests carried over from previous day
+Dispatching HIGH MEDICAL responder to Journey
+Dispatching HIGH MEDICAL responder to Alabama
+Dispatching MEDIUM MEDICAL responder to Survivor
+Dispatching MEDIUM MEDICAL responder to Survivor
+Dispatching LOW VEHICLE responder to Kansas
+Dispatching LOW FACILITY responder to Bon Jovi
+Dispatching LOW VEHICLE responder to Chicago
+Dispatching LOW VEHICLE responder to Boston
+Dispatching LOW FACILITY responder to Chicago
+Dispatching LOW VEHICLE responder to Journey
+Requests Per Day: 20 Station Limit: 5
+  Requests: 10
+  Days: 1
+  Largest Carry: 0
+  Average Carry: 0
+
+======= Processing requests for day 1
+======= 0 requests carried over from previous day
+Dispatching HIGH MEDICAL responder to Journey
+Dispatching HIGH MEDICAL responder to Alabama
+Dispatching MEDIUM MEDICAL responder to Survivor
+Dispatching MEDIUM MEDICAL responder to Survivor
+Dispatching LOW VEHICLE responder to Kansas
+Dispatching LOW FACILITY responder to Bon Jovi
+Dispatching LOW VEHICLE responder to Chicago
+Dispatching LOW VEHICLE responder to Boston
+Dispatching LOW FACILITY responder to Chicago
+Dispatching LOW VEHICLE responder to Journey
+Requests Per Day: 25 Station Limit: 3
+  Requests: 10
+  Days: 1
+  Largest Carry: 0
+  Average Carry: 0
+
+======= Processing requests for day 1
+======= 0 requests carried over from previous day
+Dispatching HIGH MEDICAL responder to Journey
+Dispatching HIGH MEDICAL responder to Alabama
+Dispatching MEDIUM MEDICAL responder to Survivor
+Dispatching MEDIUM MEDICAL responder to Survivor
+Dispatching LOW VEHICLE responder to Kansas
+Dispatching LOW FACILITY responder to Bon Jovi
+Dispatching LOW VEHICLE responder to Chicago
+Dispatching LOW VEHICLE responder to Boston
+Dispatching LOW FACILITY responder to Chicago
+Dispatching LOW VEHICLE responder to Journey
+Requests Per Day: 25 Station Limit: 4
+  Requests: 10
+  Days: 1
+  Largest Carry: 0
+  Average Carry: 0
+
+======= Processing requests for day 1
+======= 0 requests carried over from previous day
+Dispatching HIGH MEDICAL responder to Journey
+Dispatching HIGH MEDICAL responder to Alabama
+Dispatching MEDIUM MEDICAL responder to Survivor
+Dispatching MEDIUM MEDICAL responder to Survivor
+Dispatching LOW VEHICLE responder to Kansas
+Dispatching LOW FACILITY responder to Bon Jovi
+Dispatching LOW VEHICLE responder to Chicago
+Dispatching LOW VEHICLE responder to Boston
+Dispatching LOW FACILITY responder to Chicago
+Dispatching LOW VEHICLE responder to Journey
+Requests Per Day: 25 Station Limit: 5
+  Requests: 10
+  Days: 1
+  Largest Carry: 0
+  Average Carry: 0
+
+======= Processing requests for day 1
+======= 0 requests carried over from previous day
+Dispatching HIGH MEDICAL responder to Journey
+Dispatching HIGH MEDICAL responder to Alabama
+Dispatching MEDIUM MEDICAL responder to Survivor
+Dispatching MEDIUM MEDICAL responder to Survivor
+Dispatching LOW VEHICLE responder to Kansas
+Dispatching LOW FACILITY responder to Bon Jovi
+Dispatching LOW VEHICLE responder to Chicago
+Dispatching LOW VEHICLE responder to Boston
+Dispatching LOW FACILITY responder to Chicago
+Dispatching LOW VEHICLE responder to Journey
+Requests Per Day: 30 Station Limit: 3
+  Requests: 10
+  Days: 1
+  Largest Carry: 0
+  Average Carry: 0
+
+======= Processing requests for day 1
+======= 0 requests carried over from previous day
+Dispatching HIGH MEDICAL responder to Journey
+Dispatching HIGH MEDICAL responder to Alabama
+Dispatching MEDIUM MEDICAL responder to Survivor
+Dispatching MEDIUM MEDICAL responder to Survivor
+Dispatching LOW VEHICLE responder to Kansas
+Dispatching LOW FACILITY responder to Bon Jovi
+Dispatching LOW VEHICLE responder to Chicago
+Dispatching LOW VEHICLE responder to Boston
+Dispatching LOW FACILITY responder to Chicago
+Dispatching LOW VEHICLE responder to Journey
+Requests Per Day: 30 Station Limit: 4
+  Requests: 10
+  Days: 1
+  Largest Carry: 0
+  Average Carry: 0
+
+======= Processing requests for day 1
+======= 0 requests carried over from previous day
+Dispatching HIGH MEDICAL responder to Journey
+Dispatching HIGH MEDICAL responder to Alabama
+Dispatching MEDIUM MEDICAL responder to Survivor
+Dispatching MEDIUM MEDICAL responder to Survivor
+Dispatching LOW VEHICLE responder to Kansas
+Dispatching LOW FACILITY responder to Bon Jovi
+Dispatching LOW VEHICLE responder to Chicago
+Dispatching LOW VEHICLE responder to Boston
+Dispatching LOW FACILITY responder to Chicago
+Dispatching LOW VEHICLE responder to Journey
+Requests Per Day: 30 Station Limit: 5
+  Requests: 10
+  Days: 1
+  Largest Carry: 0
+  Average Carry: 0

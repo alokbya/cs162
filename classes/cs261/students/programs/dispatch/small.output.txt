@@ -1,0 +1,60 @@
+Requests Per Day: 15 Station Limit: 3
+  Requests: 100
+  Days: 8
+  Largest Carry: 7
+  Average Carry: 3
+Requests Per Day: 15 Station Limit: 4
+  Requests: 100
+  Days: 7
+  Largest Carry: 2
+  Average Carry: 0
+Requests Per Day: 15 Station Limit: 5
+  Requests: 100
+  Days: 7
+  Largest Carry: 1
+  Average Carry: 0
+Requests Per Day: 20 Station Limit: 3
+  Requests: 100
+  Days: 8
+  Largest Carry: 15
+  Average Carry: 7
+Requests Per Day: 20 Station Limit: 4
+  Requests: 100
+  Days: 6
+  Largest Carry: 5
+  Average Carry: 3
+Requests Per Day: 20 Station Limit: 5
+  Requests: 100
+  Days: 5
+  Largest Carry: 2
+  Average Carry: 0
+Requests Per Day: 25 Station Limit: 3
+  Requests: 100
+  Days: 8
+  Largest Carry: 24
+  Average Carry: 10
+Requests Per Day: 25 Station Limit: 4
+  Requests: 100
+  Days: 6
+  Largest Carry: 12
+  Average Carry: 6
+Requests Per Day: 25 Station Limit: 5
+  Requests: 100
+  Days: 5
+  Largest Carry: 6
+  Average Carry: 2
+Requests Per Day: 30 Station Limit: 3
+  Requests: 100
+  Days: 8
+  Largest Carry: 30
+  Average Carry: 12
+Requests Per Day: 30 Station Limit: 4
+  Requests: 100
+  Days: 6
+  Largest Carry: 18
+  Average Carry: 8
+Requests Per Day: 30 Station Limit: 5
+  Requests: 100
+  Days: 5
+  Largest Carry: 9
+  Average Carry: 4

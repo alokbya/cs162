@@ -1,0 +1,54 @@
+== Lab 04 ==
+
+Copy the files from ~mike.noel/classes/cs261/students/labs/lab04 into your own
+lab directory. The file supplied.o contains code that can build, display, and
+destroy a circular linked list. 
+
+For this lab, you will need to write the following two functions in clist.cpp,
+and add function prototypes for them to clist.h.
+
+    void addHead(node *& head, int value)	
+
+      Add value to the head of the circular linked list.
+
+    void myDisplay(node * head)	      
+
+      Recursively display the circular linked list. The head data should be
+      displayed twice, once at the beginning of the listing and another time
+      at the end of the listing, e.g. if the circular linked list contains 2 4
+      6 8, the display should by 2 4 6 8 2. After adding -10 at head, the
+      display should be -10 2 4 6 8 -10
+
+After implementing the two functions, you need to invoke the functions in
+main.cpp.
+
+Run your program in valgrind and make sure there are no memory errors or
+memory leaks. Assuming the executable file is named app
+
+     valgrind --tool=memcheck --leak-check=full ./app
+
+For lab04 submission, create a tar file containing clist.cpp, clist.h, and
+main.cpp. Use the turnin command to submit it.
+
+     tar cvf lab04_files.tar main.cpp clist.cpp clist.h
+     ~mike.noel/bin/turnin cs261 lab04_files.tar
+
+----------------------------------------------------------------------
+
+More Practice Problems: (not for submission)
+
+    int displayReverse(node* head)
+
+      Write a function to display the list in reverse order. Return the number
+      of nodes.
+
+    int addAfter2(node*& head, int toAdd)
+
+      Write a function to add the data passed in to the function after every
+      instance of a 2 in the list. Return the number of nodes that were added
+      to the list.
+
+    int reverseAll(node*& head)
+
+      Write a Function to reverse the list.
+

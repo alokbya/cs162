@@ -1,0 +1,46 @@
+System: propulsion
+  Top: Phoenix Mondragon
+  Second: 
+  All:
+    Phoenix Mondragon 1 (100%)
+System: lifesupport
+  Top: Demi Vallejo, Antonio Schaefer
+  Second: 
+  All:
+    Demi Vallejo 1 (50%)
+    Antonio Schaefer 1 (50%)
+System: recycling
+  Top: 
+  Second: 
+  All:
+System: navigation
+  Top: Ramiro Thomson
+  Second: 
+  All:
+    Ramiro Thomson 1 (100%)
+System: communications
+  Top: Franklin Flagg, Angelica Milliken
+  Second: 
+  All:
+    Franklin Flagg 1 (50%)
+    Angelica Milliken 1 (50%)
+System: mechanical
+  Top: Angelica Milliken
+  Second: 
+  All:
+    Angelica Milliken 1 (100%)
+System: infosys
+  Top: 
+  Second: 
+  All:
+System: scanning
+  Top: Isaias Verdin
+  Second: Issac Rangel, Hailey Rigsby
+  All:
+    Issac Rangel 1 (25%)
+    Hailey Rigsby 1 (25%)
+    Isaias Verdin 2 (50%)
+System: power
+  Top: 
+  Second: 
+  All:

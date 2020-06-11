@@ -1,0 +1,145 @@
+================================================================================
+========================================================= Overview and Objective 
+
+For this assignment you will write a program that allows a user to enter
+timing data (minutes and seconds) and then print out some information about
+the entered data.
+
+The "background.txt" file gives a very short story (~1000 words) that provides
+some context for where this data is coming from and how it's being
+used. Reading the story is just for fun and is optional but recommended. The
+story will be continued in future projects.
+
+Your program will be evaluated based on both how it runs as well as how it was
+designed and coded. Pay attention to the "rubric.txt" file to see how it will
+be evaluated.
+
+The rest of this document provides more details about the assignment. If you
+have any questions, be sure to post in the discussion group or send me
+email. Do not wait until the last minute to start this assignment.
+
+================================================================================
+======================================================================== Details 
+
+The following sections provides details about the requirements for the
+assignment.
+
+-------------------------------------------------------------------------- Input
+
+When the program runs, it should prompt the user to enter timing values that
+correspond to laps around the track. The input should be provided as two
+integers, separated by a space. For example:
+
+Enter min sec: 1 15
+
+The "Enter min sec:" is printed by your program and the user enters "1 15"
+then presses Enter. Your program should read the 1 and 15 as minutes and
+seconds.
+
+Your program should continue to prompt users to enter timing data until the
+user enters a 0 for both minutes and seconds. At that point the program should
+stop requesting data. The user should be able to enter an arbitrary number of
+data points.
+
+Your program does not need to worry about invalid values.
+
+------------------------------------------------------------------- Calculations
+
+Your program will calculate several values based on the data that the user
+entered. The program will keep track of the fastest lap time, the slowest lap
+time, the total number of laps, and the average lap time. As a reminder, the
+average lap time is calculated by adding up all of the times and then dividing
+by the number of laps.
+
+------------------------------------------------------------------------- Output
+
+Your program will print out the total number of laps, the average lap time,
+and the lap number and time for both the slowest and fastest laps. The format
+will be as follows:
+
+Total laps: 3
+Average lap time: 01:15
+Fastest lap was #3
+Fastest Lap Time: 00:45
+Slowest lap was #1
+Slowest Lap Time: 01:45
+
+Note that all time values are printed using the traditional MM:SS format. All
+minutes and seconds should be two digits with leading 0s. Use the correct IO
+manipulators to output the fields, do not use special purpose logic to do
+this. 
+
+------------------------------------------------------------------------ Testing
+
+I have provided a simple test script that streamlines testing your program. If
+you have named your program "sp" and run "./test.sh" then it will run three
+tests on your program. If you want to use the test.sh script then you should
+edit it to use your program name (if it's not "sp") and then also add as many
+more test cases as you want.
+
+================================================================================
+========================================================================= Design
+
+The design of your program is just as important as the functionality of the
+program. While this is a very small program, there are still some basic design
+principles that should be followed. 
+
+Make sure that your program is structured in a clear and sensible way. It
+should be clear to anyone reading your source code how the program works. Your
+variables should have meaningful names.
+
+Do not use global variables. Global variables make programs much harder to
+debug and maintain. You should not develop the habit of using them, even for
+small programs like this.
+
+Use appropriate control structures. In this program, the user is required to
+enter at least one set of values. This means that you need a loop that runs at
+least once. The type of loop to use is the do-while loop (you should have
+learned about this in cs161).
+
+Use clean control structures. Unfortunately, C++ has three keywords that lend
+themselves to gross misuse. These are "goto", "break", and "continue". These
+are all throwbacks to when C, the precursor to C++, was developed. At that
+time, most people programed computers using assembly language. In assembly
+language there is no such thing as a for loop or while loop. Instead, all
+looping is done with "if then goto" type constructs. This way of thinking was
+transferred over into C in the form of "goto", "break", and "continue". Using
+these keywords breaks the clean flow of a control structure and invariably
+leads to code that is harder to debug and maintain. 
+
+I prohibit the use of "goto" entirely. There is no reason to use this, ever,
+in any of the code we will write in this class. I also prohibit the use of
+"break" or "continue" inside of loops. The only use of "break" that I allow is
+in a "case" inside a "switch" statement.
+
+I will be entirely merciless in taking off points for using "goto", "break",
+or "continue". Sorry.
+
+================================================================================
+========================================================================= Turnin
+
+You must use the "turnin" program to turn in your assignment. DO NOT USE D2L
+TO TURN IN YOUR ASSIGNMENT. Assignments turned in using D2L will not be
+counted. For information on using the "turnin" program see
+~mike.noel/classes/all/turnin.txt for information on using the "turnin"
+program.
+
+IMPORTANT: If the program fails to compile, crashes, or hangs then the program
+automatically gets a 0.
+
+IMPORTANT: If the program fails to compile, crashes, or hangs then the program
+automatically gets a 0.
+
+IMPORTANT: If the program fails to compile, crashes, or hangs then the program
+automatically gets a 0.
+
+IMPORTANT: If the program fails to compile, crashes, or hangs then the program
+automatically gets a 0.
+
+IMPORTANT: If the program fails to compile, crashes, or hangs then the program
+automatically gets a 0.
+
+(I mentioned that five times on purpose because I don't want anyone to note
+notice it.)
+
+

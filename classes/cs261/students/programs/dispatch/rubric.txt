@@ -1,0 +1,39 @@
+This is the grading rubric for the Dispatch programming assignment.
+
+================
+If the program fails to compile, crashes, or hangs then the program
+automatically gets a 0.
+================
+
+
+Functionality	     5
+  - output for large.txt matches large.output.txt 100% (including all
+    whitespace). Note that this output only shows the statistics from each
+    run. It does not include the verbose output.
+  - the program runs on large.txt in less than 30 seconds.
+
+Implementation	    9
+  - The program reads data from the file specified on the command line
+  - The program accepts the minimum and maximum values for station limits on
+    the command line.
+  - The program accepts the minimum and maximum values for requests_per_day on
+    the command line.
+  - The program accepts the increment amount for requests_per_day on the command line.
+  - Uses of collection classes must use generic syntax (<>) and the type stored
+    in the container must be specified.
+  - The station names must not be hard-coded but must be determined from the
+    data.
+
+Design		     5
+  - Must use an enumerated type for the dispatch type
+  - The program should have a Java class for managing the simulation
+    parameters (e.g., RunSims.java) and a separate class for running a single
+    simulation (e.g., ProcessRequests.java).
+  - The class for managing simulations should print the statistics. The class
+    for running a single simulation should NOT print the statistics.
+
+Style		     1
+ - at most 1 return path per function or method
+ - No use of "break" or "continue" in a loop
+
+Total:		    20

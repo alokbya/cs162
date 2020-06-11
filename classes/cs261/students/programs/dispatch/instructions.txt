@@ -1,0 +1,182 @@
+================================================================================
+
+With this programming assignment you will write a Java program that runs
+several simulations of an emergency response system, varying some of the
+system parameters. The emergency system accepts emergency messages and then
+simulates dispatching services to respond to the emergeny. The background.txt
+file gives some context and background information about this program.
+
+The objectives of this assignment are to become more familiar with Java
+interfaces, enumerated types, and data structures. As well as to analyze a
+more complex problem and develop a solution for this problem. 
+
+--------------------------------------------------------------- Program overview
+
+The main program iterates over a set of values and runs a simulation for each
+set of values. It collects statistics on each simulation run and reports those
+statistics. This means it runs the emergency response system simulation
+several times. Each time it runs with different values for the system
+parameters but it uses the same data file of emergency messages.
+
+The following sections first describe how to run a single simulation and then
+how to run the trials for the simulations.
+
+----------------------------------------------------------- Running a simulation
+
+The emergency response system that you are simulating works as follows. An
+emergency message comes into the system. The system determines which type of
+emergency service should be dispatched and from which station is should be
+dispatched. Services for emergencies are dispatched based on the order that
+they arrive and the priority of the message.
+
+The messages are english sentences (imagine text messages) and the system
+needs to read the sentence to determine the station and service. Here are a
+few examples of emergency messages:
+
+0: I have a flat tire. Please send help. You can find me at Kansas.
+1: I'm currently staying at Bon Jovi and my power is out.
+2: I live at Journey and my spouse is having trouble breathing.
+
+I have provided a few data files with emergency messages (tiny.txt, small.txt,
+medium.txt, large.txt).
+
+Each request also has an id number.
+
+In order to dispatch the appropriate emergency response, the program needs to
+determine the location of the request and the type of emergency. There are
+four types: vehicle problems, facilities problems (e.g., leaking pipes in your
+house), medical problems, and environmental problems (e.g., a huge whole in
+the dome over the station).
+
+Your program needs to determine the type of emergency based on the English
+text. This will require analysis of the data in the sample data files to see
+what type of things people are asking for.
+
+Your program cannot hard-code a list of stations. The list of available
+stations needs to be determined automatically by your program.
+
+In addition to understanding the type of emergency, your program needs to
+prioritize the emergencies and respond in priority order. Each request is
+either high, medium, or low priority. The priority of the requests is defined
+by the following set of rules:
+
+- vehicle problems: accidents are high priority, everything else is low
+- facility problems: everything is low
+- medical problems: breathing problems and seizures are high, everything
+  else is medium
+- environment problems: all are high
+
+All high priority requests are dispatched on the same day that they arrive.
+
+In order to balance resources between all of the stations, each station is
+only allowed a certain number of emergency dispatches per day. After
+dispatching all the high requests, if any station is under the daily limit,
+your program should dispatch medium and low priority requests to that
+station. These should be done in priority order, that is, medium before low.
+Note that ALL high requests are handled, even if this puts a station over the
+limit. In this situation, none of the medium or low requests would be
+processed for that station (since they are over the daily limit).
+
+Two requests with the same priority are to be handled in a first come first
+served order. This is tracked with the request id.
+
+Each simulation runs as a number of days. In each day the system reads a
+specified number of requests (REQUESTS_PER_DAY). For each request it determines
+the target station, the request type, and the request priority. Then, for that
+day, it processes requests as follows:
+
+1) Dispatch all HIGH requests, in first come first served order (using the id)
+2) Continuing dispatching medium and low requests until all requests are
+processed or all stations are at the station limit (STATION_LIMIT). 
+
+It is likely that there will be unanswered requests at the end of some
+days. Those requests should carry over to the next day. 
+
+The simulation should continue to run until there are no more requests to
+process.
+
+Your simulation needs to keep track of appropriate statistics so that they can
+be reported at the end of the simulation run.
+
+The REQUESTS_PER_DAY and STATION_LIMIT are parameters that are varied with
+each new full run of a simulation (see the "running the trials" section).
+
+------------------------------------------------------------- Running the trials
+
+The two parameters that vary for each simulation are the number of requests
+per day and the daily station limit. The main program should allow the user to
+specify a min and max value for the requests_per_day and the min and max value
+for the station limit. Then the program should loop from min to max for each
+parameter and call the simlulation for each combination. For the
+requests_per_day parameter, the user should also specify the "increment" used
+to go from min to max. The program should accept these values as command line
+arguments as follows:
+
+java RunSims datafile RPD_MIN RPD_MIN RPD_STEP SL_MIN SL_MAX
+
+datafile -- the file containing requests
+RPD_MIN -- requests per day minimum
+RPD_MAX -- requests per day maximum
+RPD_STEP -- requests per day step
+SL_MIN -- station limit minimum
+SL_MAX -- station limit maximum
+
+For example, the program could be run like this:
+
+java RunSims large.txt 15 30 5 3 5
+
+This would mean run a simulation for all of the following values:
+
+requests per day | station limit
+--------------------------------
+        15       |       3
+        15       |       4
+        15       |       5
+        20       |       3
+        20       |       4
+        20       |       5
+        25       |       3
+        25       |       4
+        25       |       5
+        30       |       3
+        30       |       4
+        30       |       5
+
+That is, the simlulation would be run 12 times using the same request data
+file but different values for requests per day and station limit.
+
+Each time a single simulation runs, it should collect statistics and return
+them to the main program. The main program should then print the
+statistics. The statistics to print are the total number of requests processed
+in the simulation run, the total number of days required to process all of the
+requets, the largest number of carried over requests (because of station
+limits), and the average number of carried over requests per day. The format
+of the output after each simulation should be as follows:
+
+Requests Per Day: 20 Station Limit: 5
+  Requests: 100000
+  Days: 5000
+  Largest Carry: 8
+  Average Carry: 0
+
+---------------------------------------------------------------- Expected output
+
+I have provided several data files (with different numbers of messages) and
+output files for each of those files. Your program should produce output that
+matches the ouptut files that I've provided exactly. 
+
+----------------------------------------------------------------- Verbose output
+
+To help you make sure that your program is getting the correct results, I have
+also provided verbose output files that show exactly what is being dispatched
+with each day of the simulation. You can use this output to help debug your
+programs. You DO NOT need to match this output. In fact, you should make sure
+that the output you generate in the version of the program you turn in should
+NOT generate the verbose output. That is only for debugging purposes.
+
+================================================================================
+
+== Turning in the Assignment ==
+
+Use the turnin command to turn in your assignment. DO NOT TURN IT IN ON
+D2L. For isntructions on using turnin see ~mike.noel/classes/all/turnin.txt.

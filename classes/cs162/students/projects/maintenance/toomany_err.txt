@@ -1,0 +1,7 @@
+24;Computer system diagnostic;2;Kelli Weeberly
+7;Food system checkup;2;Richard Moody
+7;Clean waste recylers;3;Kelli Weeberly
+7;Calibrate centripetal wheel rotations;5;Robbie Mitchell
+7;Lander routine maintenance;5;Carlos Johnston
+7;Computer system diagnostic;2;Steph Kalias
+3;Food system checkup;2;Steph Kalias

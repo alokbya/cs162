@@ -1,0 +1,51 @@
+== Lab 2 ==
+
+Copy the files from ~mike.noel/classes/cs261/students/labs/lab02 into your own
+lab directory. The file supplied.o contains code that can build, display, and
+destroy a array of linked lists.  For this lab, you will need to write the
+following two functions in arr.cpp, and add function prototypes for them to
+arr.h.
+
+    int sum(node * head[])
+
+      Compute and return the sum of the ints contained in the table.
+
+    int removeTwo(node * head[])   
+
+      Remove all the 2s from the table.
+
+After implementing the two functions, you need to invoke the functions in
+main.cpp. Run your program with valgrind and make sure there are no memory
+errors or memory leaks. Assuming the executable file is named app, the command
+for checking memory is:
+
+    valgrind --tool=memcheck --leak-check=full ./app
+
+For lab2 submission, create a tar file containing arr.cpp, arr.h, and
+main.cpp. Use the turnin command to submit it.
+
+    tar cvf lab02_files.tar main.cpp arr.cpp arr.h
+    ~mike.noel/bin/turnin cs261 lab02_files.tar
+
+----------------------------------------------------------------------
+
+Here are more practice problems for array of linked lists. These are not for
+submission but are only for you to have an opportunity to practice.
+
+    int displayReverse(node** head)
+
+      Write a function to display each list in reverse order starting with the
+      last list. Return the number of nodes displayed.
+
+    int addAfter2(node**& head, int toAdd)
+
+      Write a function to add the data passed in to the function after every
+      instance of a 2 in each list. Return the number of nodes that were added
+      to the list.
+
+    int reverseAll(node**& head)
+
+      Write a function to reverse each List. Return number of nodes in the
+      list.
+
+

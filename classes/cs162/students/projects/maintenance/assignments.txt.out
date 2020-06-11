@@ -1,0 +1,104 @@
+Day  1:
+Day  2:
+Day  3:
+  Karma Thames is doing "Clean waste recylers" for 3 days
+  Gail Lawhead is doing "Minor ship repairs" for 4 days
+  Steph Kalias is doing "Food system checkup" for 2 days
+Day  4:
+  Steph Kalias is doing "Water purification routine maintenance" for 4 days
+  Sarah Klein is doing "Computer system diagnostic" for 2 days
+Day  5:
+  Robbie Mitchell is doing "Replace ventalation filters" for 2 days
+  Kelli Weeberly is doing "Clean waste recylers" for 3 days
+  Karma Thames is doing "Surface static discharge" for 3 days
+Day  6:
+  Sarah Klein is doing "Clean waste recylers" for 3 days
+  Richard Moody is doing "Computer system diagnostic" for 2 days
+Day  7:
+  Richard Moody is doing "Food system checkup" for 2 days
+  Kelli Weeberly is doing "Clean waste recylers" for 3 days
+  Kelli Weeberly is doing "Calibrate centripetal wheel rotations" for 5 days
+Day  8:
+  Steph Kalias is doing "Minor ship repairs" for 4 days
+Day  9:
+  Gail Lawhead is doing "Adjust fuel rods" for 3 days
+  Robbie Mitchell is doing "Food system checkup" for 2 days
+Day 10:
+  Carlos Johnston is doing "Clean waste recylers" for 3 days
+Day 11:
+  Gail Lawhead is doing "Domestic maintenance robotics" for 5 days
+Day 12:
+Day 13:
+  Richard Moody is doing "Hull debris sweep" for 4 days
+Day 14:
+  Karma Thames is doing "Replace ventalation filters" for 2 days
+  Richard Moody is doing "Replace ventalation filters" for 2 days
+  Robbie Mitchell is doing "Surface static discharge" for 3 days
+Day 15:
+  Carlos Johnston is doing "Minor ship repairs" for 4 days
+  Sarah Klein is doing "Water purification routine maintenance" for 4 days
+  Gail Lawhead is doing "Surface static discharge" for 3 days
+Day 16:
+  Sarah Klein is doing "Computer system diagnostic" for 2 days
+Day 17:
+  Steph Kalias is doing "Adjust fuel rods" for 3 days
+  Gail Lawhead is doing "Computer system diagnostic" for 2 days
+Day 18:
+  Karma Thames is doing "Hull debris sweep" for 4 days
+Day 19:
+  Carlos Johnston is doing "Food system checkup" for 2 days
+Day 20:
+  Steph Kalias is doing "Calibrate centripetal wheel rotations" for 5 days
+Day 21:
+  Richard Moody is doing "Food system checkup" for 2 days
+Day 22:
+Day 23:
+  Robbie Mitchell is doing "Adjust fuel rods" for 3 days
+  Gail Lawhead is doing "Computer system diagnostic" for 2 days
+  Carlos Johnston is doing "Minor ship repairs" for 4 days
+Day 24:
+  Richard Moody is doing "Surface static discharge" for 3 days
+  Kelli Weeberly is doing "Computer system diagnostic" for 2 days
+  Sarah Klein is doing "Replace ventalation filters" for 2 days
+Day 25:
+  Karma Thames is doing "Hull debris sweep" for 4 days
+Day 26:
+  Kelli Weeberly is doing "Domestic maintenance robotics" for 5 days
+Day 27:
+Day 28:
+  Carlos Johnston is doing "Replace ventalation filters" for 2 days
+Day 29:
+  Sarah Klein is doing "Adjust fuel rods" for 3 days
+  Robbie Mitchell is doing "Clean waste recylers" for 3 days
+Day 30:
+  Steph Kalias is doing "Minor ship repairs" for 4 days
+==============================
+Errors due to too many jobs on the same day:
+  7;Lander routine maintenance;5;Carlos Johnston
+  14;Surface static discharge;3;Robbie Mitchell
+  15;Water purification routine maintenance;4;Karma Thames
+  7;Computer system diagnostic;2;Kelli Weeberly
+
+Errors due to overlaps:
+  3;Clean waste recylers;3;Karma Thames
+  3;Food system checkup;2;Steph Kalias
+  5;Clean waste recylers;3;Kelli Weeberly
+  6;Clean waste recylers;3;Sarah Klein
+  6;Computer system diagnostic;2;Richard Moody
+  7;Clean waste recylers;3;Kelli Weeberly
+  7;Calibrate centripetal wheel rotations;5;Kelli Weeberly
+  9;Adjust fuel rods;3;Gail Lawhead
+  11;Domestic maintenance robotics;5;Gail Lawhead
+  13;Hull debris sweep;4;Richard Moody
+  14;Replace ventalation filters;2;Karma Thames
+  14;Replace ventalation filters;2;Richard Moody
+  14;Surface static discharge;3;Robbie Mitchell
+  15;Water purification routine maintenance;4;Sarah Klein
+  15;Surface static discharge;3;Gail Lawhead
+  16;Computer system diagnostic;2;Sarah Klein
+  23;Computer system diagnostic;2;Gail Lawhead
+
+Errors due to duplicate assignments:
+  14;Replace ventalation filters;2;Karma Thames
+  7;Clean waste recylers;3;Kelli Weeberly
+

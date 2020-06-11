@@ -1,0 +1,138 @@
+== Boston Station Miner Manager ==
+
+Authenticating with Van Halen facilities...
+Connected and registered.
+=======
+== Command: start
+Miner #1 (magnesium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #1 (magnesium) is going to standby.
+=======
+== Command: start
+Miner #2 (iron) is starting.
+== Command: detect
+Magnetometer activated.
+Searching for magnetic field deviations.
+Iron deposits located.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #2 (iron) is going to standby.
+=======
+== Command: start
+Miner #3 (potassium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #3 (potassium) is going to standby.
+=======
+== Command: start
+Miner #4 (chloride) is starting.
+== Command: detect
+Steam blasting...
+Salinity detector activated.
+Concentration vector of NaCl detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #4 (chloride) is going to standby.
+=======
+== Command: start
+Miner #5 (water) is starting.
+== Command: detect
+Initiating heat blast.
+Directional humidity detector activated.
+Ice located.
+== Command: collect
+Water vacuums and hoses deployed.
+Heater turned on. Waiting for the ice to melt.
+Liquid water moved to collection chamber.
+Surface pump activated.
+== Command: stop
+Miner #5 (water) is going to standby.
+=======
+== Command: start
+Miner #6 (sodium) is starting.
+== Command: detect
+Steam blasting...
+Salinity detector activated.
+Concentration vector of NaCl detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #6 (sodium) is going to standby.
+=======
+== Command: start
+Miner #7 (potassium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #7 (potassium) is going to standby.
+=======
+== Command: start
+Miner #8 (potassium) is starting.
+== Command: detect
+Releasing oxygen...
+Thermal detector activated.
+Flammable reaction detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #8 (potassium) is going to standby.
+=======
+== Command: start
+Miner #9 (chloride) is starting.
+== Command: detect
+Steam blasting...
+Salinity detector activated.
+Concentration vector of NaCl detected.
+== Command: collect
+Impact hammer positioned.
+Impact hammer activated for 15 seconds.
+Debris scoop activated.
+Debris elevator activated.
+Debris collection complete.
+== Command: stop
+Miner #9 (chloride) is going to standby.

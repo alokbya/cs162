@@ -1,0 +1,20 @@
+The Java compiler is a program called javac. It should already be on your path
+but if it's not you can find it in /usr/jkd/bin.
+
+In order to compiler a java program you type:
+
+javac MyFile.java
+
+This will result in a file called MyFile.class
+
+In order to run this program (assuming that it has a Main() method) you type:
+
+java MyFile
+
+Notice that you don't include ".class" when calling java to run a program.
+
+You can compile multiple Java files in the same directory with one command line:
+
+javac *.java
+
+

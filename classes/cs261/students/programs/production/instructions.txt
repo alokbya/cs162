@@ -1,0 +1,61 @@
+== Programming Assignment ==
+
+For this assignment you will write a program that reads in mining production
+data from various stations and print a report of the data. Your program will
+rely on STL data structures of your choice (most like maps and vectors).
+
+The primary objective of this assignment is to use good object oriented design
+to handle complex data. A secondary objective is to learn how to use STL data
+structures.
+
+Your program should use good design methodologies and good abstraction. From
+the point of view of the showreport.cpp file you only need two classess:
+productiondb and reporter. The productiondb is an abstraction for holding all
+of the collected production data and the reporter is a class that can generate
+various reports from a given database.
+
+Your design and implementation of the productiondb class itself will probably
+require additional classes for organizing and managing the data. You have a
+lot of liberty in how you want to do the organize this. My solution has 4
+classes related to the production database:
+
+- productiondb -- the main database class that contains a mapping of station
+  name to stationdata.
+- stationdata -- a class that holds all data for a station organized by
+  year. For each year of data there is a yeardata object.
+- yeardata -- a class that holds all data for a year broken down by
+  months. This has an array of resourcecount objects, one per month.
+- resourcecount -- a class that holds a mapping between resource and amount of
+  that resource that has been seen so far.
+
+This is not the only way to organize the data. You are welcome to create any
+additional classes that you need.
+
+== Design Considerations ==
+
+The program needs to be completely data-driven. What that means is that the
+program cannot assume any station names, resource types, or years of
+production. The productiondb class should be able to work no matter what data
+is given to it. The reporter class should be able to generate a report no
+matter what data the productiondb has stored.
+
+The productiondb and reporter classes need to be designed well and with as
+loose a coupling as possible. This means that the productiondb should not make
+any assumptions about the type of reporting that the reporter class will
+generate. And likewise, the reporter class should not have any understanding
+of how the productiondb class is organizing and storing data.
+
+For example, the reporter will not have a list of stations. Instead, the
+reporter class will need to ask the productiondb class for a list of
+stations. That list should be returned as a new list (not something internal
+to the productiondb) that the reporter can use for creating a report.
+
+== Turning in the Assignment ==
+
+Use the turnin command to turn in your assignment. DO NOT TURN IT IN ON
+D2L. For isntructions on using turnin see
+~mike.noel/classes/all/turnin.txt. Note that since there are multiple files to
+be turned in, it is better to combine those files into a tar file and turn in
+that tar file.
+
+

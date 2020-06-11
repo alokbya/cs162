@@ -1,0 +1,242 @@
+================================================================================
+========================================================= Overview and Objective 
+
+For this assignment you will write a program that tracks the number of
+accesses each individual made for each of several ship systems. The program
+doesn't know the number, or names, of the systems nor does it know the number,
+or names, of the individual staff members. All of this information is provided
+via file data and commandline arguments. After tabulating all of the access
+data on a per-system basis, a report is generated for each system. The
+background.txt file gives the story behind these requirements.
+
+The objective of this assignment is to practice using the following concepts:
+
+- class and objects
+- dynamically allocated character arrays (*NEW*)
+- dynamically allocated arrays of objects (*NEW*)
+- pointers (*NEW*)
+- multiple files for compilation
+
+Your program will be evaluated based on both how it runs as well as how it was
+designed and coded. Pay attention to the "rubric.txt" file to see how it will
+be evaluated.
+
+Along with these instructions, I have provided data files and the EXACT
+expected output that corresponds to those data files. It is important that
+your program output matches EXACTLY. This includes spelling, whitespace, and
+punctuation.
+
+The rest of this document provides more details about the assignment. If you
+have any questions, be sure to post in the discussion group or send me
+email. Do not wait until the last minute to start this assignment.
+
+================================================================================
+======================================================================== Details 
+
+The following sections provides details about the requirements for the
+assignment.
+
+----------------------------------------------------------- running your program
+
+When your program is completed, you will run it from the command line and will
+provide two data files and the number of staff. All of the data that I
+provided is based on 11 staff members so you will use that number. For
+example, if your program is called "logs" then you might run:
+
+./logs small.txt systems.txt 11
+
+If you create your own test data that has a different number of staff members
+(hightly recommended) then you would supply a different number for the third
+argument.
+
+The output should be printed to the console (screen). The format of the output
+is described in a section below. You should study the provided output files to
+understand the output data and format.
+
+----------------------------------------------------------------------- logs.cpp
+
+This project is different than previous ones in that I am providing the code
+for the main function. This code is in logs.cpp. You are not permitted to
+change any of the code in logs.cpp. You should study this part of the program
+to get an example of how to create dyanmically allocated arrays. The main()
+function processes the command line arguments, reads in the system data file,
+allocates an array of system logs, reads in all of the access data, adds each
+access record to the system logs, and finally asks each system log to print
+out the report for that log. I know that sounds like a lot. The main() code is
+commented and written in a way that you should be able to understand.
+
+In order for this to work with your code you will need to create a syslog
+class and that class needs to have specific public methods. This is described
+in more detail below.
+
+------------------------------------------------------------------- syslog class
+
+The purpose of the syslog class is to count the number of accesses per user
+for a system. Each syslog object is for one particular system. For example,
+there will be a syslog object for the "scanning" system and a different syslog
+object for the "infosys" system. Each syslog contains a separate access count
+for each user. If the access log contained these entries:
+
+communications, Franklin Flagg
+scanning, Isaias Verdin
+scanning, Isaias Verdin
+communications, Isaias Verdin
+
+Then the syslog object for the communications system would contain these
+counts:
+
+Franklin Flagg	1
+Isaias Verdin	1
+
+And the syslog object for the scanning system would contain these counts:
+
+Isaias Verdin  2
+
+In order to keep this data, the syslog class needs to contain a data member
+that identifies the type of system the log is for. This should be a
+dynamically allocated character array. Also, the syslog class needs to define
+a data member to keep track of the access counts for each individual. This
+will be an array but you need to know how many possible individuals there
+are. This will be passed to you in the class constructor.
+
+The syslog class needs the following public methods.
+
+    syslog(char* sys,const int num);
+
+The constructor takes in the system name and the number of individuals that
+might access this system. The system name should be stored in the data member
+of the class. The number of individuals is used to know the size of the array
+to create for storing access counts.
+
+    ~syslog();
+
+The destructor is needed in order to deallocate the dynamically allocated
+arrays that are created in the constructor.
+
+    void addEntry(const char* sys,const char* who);
+
+This method takes a system name and an individual. The method checks to see if
+the passed in system name matches the name for the object. If so, then it
+finds the entry in the array of counts for the given individual and increments
+the access count for that individual. If the system name doesn't match, then
+this method doesn't do anything else.
+
+    void printAll();
+
+This method prints the summarized access data for the system. It prints the
+system name, the name of the staff member who accessed the system the most,
+the name of the staff member who accessed the system the second most, and then
+number of accesses by each staff member (with a percentage). For example:
+
+System: propulsion
+  Top: Angelica Milliken
+  Second: Isaias Verdin
+  All:
+    Angelica Milliken 299 (22%)
+    Antonio Schaefer 91 (6%)
+    Ramiro Thomson 99 (7%)
+    Demi Vallejo 107 (8%)
+    Issac Rangel 106 (8%)
+    Phoenix Mondragon 99 (7%)
+    Cason Porterfield 108 (8%)
+    Temperance Burris 94 (7%)
+    Hailey Rigsby 108 (8%)
+    Isaias Verdin 114 (8%)
+    Franklin Flagg 90 (6%)
+
+Be sure to study the provided output files to ensure that you understand the
+output format. Remember that the output that your program produces must match
+the expected output exactly, including capitalization, whitespace, and
+punctuation. 
+
+----------------------------------------------------------- the array of entries
+
+As mentioned above, the syslog will contain an array of entries that it uses
+to count the number of accesses per staff member. Each slot in the array needs
+to have both a name and a count for that name. There are multiple ways to
+implement this but for this assignment, in order to get practice using arrays
+of objects, you are required to make the array of entries an array of class
+objects. You should define a class that holds the staff member name and
+associated count and then define the entries array to be an array of those
+entries.
+
+Also, since each entry is an object, that entry should do the work of
+incrementing its own count. Remember, the data members in classes should be
+private. 
+
+--------------------------------------- assignment operator and copy constructor
+
+Now that we're dealing with classes that have pointer data, we have to deal
+with copy constructors and assignment operators. Please review the section in
+the book that talks about copy constructors and assignment operators (pages
+849 - 858 in the 8th edition Malik). Note that you won't learn about
+overloading operators until chapter 13 so it is not necessary to do that for
+this project.
+
+-------------------------------------------------------- memory leaks and errors
+
+Up till now we have always been using static declared memory. When using
+statically declared memory, the compiler ensures that there are no memory
+leaks and that there is no memory corruption. However, as soon as we introduce
+dynamic memory, we are now responsible for safeguarding against these issues.
+
+Memory leaks are caused when memory is dynamically allocated at one point in
+the program and then not deleted later. Memory corruption is caused when the
+program accesses invalid memory locations. Both of these are significant
+problems and C++ programmers must be extra diligent to find and eliminate
+these problems.
+
+You must use valgrind to ensure that there are no memory leaks or invalid
+memory accesses. See ~mike.noel/classes/all/memory_check.txt for basic
+information on using valgrind. See online tutorials for more indepth
+information. 
+
+------------------------------------------------------------------------ classes
+
+The above sections have described the minimal set of classes that you need to
+have in your program. You are free to create additional classes if you
+wish. Keep in mind the following necessary items when implmenting classes:
+
+- the class definition should be in the header file
+- the class implementation should be in the cpp file
+- each class should be in its own set of files
+- all data members should be private
+- if the class contains data members that are pointers then the class must
+  have a copy constructor, an assignment operator, and a destructor
+
+----------------------------------------------------------------- error checking
+
+You do not have to do any error checking with this program.
+
+---------------------------------------------------------------------- test data
+
+Other that the small, medium, large, and full data sets, I have not provided
+any additional test data for this assignment. I highly recommend that you
+create additional small, targetting test files for your own use in
+implementing and debugging your program.
+
+------------------------------------------------------------------- Requirements
+
+All of the details describe above should be followed. See the rubric.txt file
+for the specific grading guidelines.
+
+================================================================================
+========================================================================= Design
+
+The design of your program is just as important as the functionality of the
+program. Make sure that your program structure makes sense and is clear. Make
+good use of functions and classes to organize your program.
+
+================================================================================
+========================================================================= Turnin
+
+You must use the "turnin" program to turn in your assignment. DO NOT USE D2L
+TO TURN IN YOUR ASSIGNMENT. Assignments turned in using D2L will not be
+counted. For information on using the "turnin" program see
+~mike.noel/classes/all/turnin.txt.
+
+IMPORTANT: If the program fails to compile, crashes, or hangs then the program
+automatically gets a 0.
+
+Use the turnin program to turn in only the *.cpp and *.h files that you
+created. Do not turn in additional files.

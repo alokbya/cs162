@@ -1,0 +1,301 @@
+================================================================================
+========================================================= Overview and Objective 
+
+For this assignment you will write a program that assigns people to the
+shuttle they will ride to the Martian surface. There are 7 shuttle vehicles,
+with varying capacities, and there are 350 people that need to get to the
+surface. In order to get everyone down to the surface, the shuttles will have
+to go through a number of waves. The background.txt file gives the story
+behind these requirements.
+
+The objective of this assignment is to practice using the following concepts:
+
+- class and objects (*NEW*)
+- reading data from a file
+- arrays
+- arrays of objects (*NEW*)
+- character arrays for strings
+- user-defined functions
+- multiple files for compilation
+
+Your program will be evaluated based on both how it runs as well as how it was
+designed and coded. Pay attention to the "rubric.txt" file to see how it will
+be evaluated.
+
+Along with these instructions, I have provided data files and the EXACT
+expected output that corresponds to those data files. It is important that
+your program output matches EXACTLY. This includes spelling, whitespace, and
+punctuation.
+
+The rest of this document provides more details about the assignment. If you
+have any questions, be sure to post in the discussion group or send me
+email. Do not wait until the last minute to start this assignment.
+
+================================================================================
+======================================================================== Details 
+
+The following sections provides details about the requirements for the
+assignment.
+
+----------------------------------------------------------- running your program
+
+When you program is completed, you will run it from the command line and will
+provide two data files. One data file lists the shuttles that your program has
+to work with and the second data file lists the people that need to go on the
+shuttles. Your program will decide who goes on which shuttle based on the
+order of shuttle data in the shuttle file, the order of people in the data
+file and the capacity of each shuttle.
+
+If your program is called "shuttles" then you would run it like this:
+
+./shuttles shuttle.txt persons.txt
+
+The output should be printed to the console (screen). The format of the output
+is described in a section below. You can also look at the provided output file
+to see the output.
+
+------------------------------------------------------------------- shuttle data
+
+Each shuttle is configured with a name and capacity. This data is provided in
+the shuttle.txt file. The data in the shuttle.txt file is as follows:
+
+IMC_TWO_SHUTTLE_01 13
+
+That is, the name of the shuttle (with no spaces), a space, and an integer
+that is the capacity of that particular shuttle. The shuttle name is
+guaranteed to be shorter than 100 characters.
+
+For this program you can assume that there are exactly 7 shuttles. Each
+shuttle should be represented using a class. The collection of all 7 shuttles
+should be stored in an array of shuttle objects. The shuttle class will be
+described in more detail in a later section.
+
+-------------------------------------------------------------------- person data
+
+Each person has a first and last name. None of the first or last names contain
+spaces in them. Each person's name is in the persons.txt file as follows:
+
+Joselyn Colby
+
+For this program you can assume that there are exactly 350 people. Each
+person's full name (first + space + last) is guaranteed to be shorter than 100
+characters. 
+
+--------------------------------------------------------------- program behavior
+
+Your program's main algorithm will be something like this:
+
+First, read the shuttle data file and store the contents in the array of
+shuttle objects.
+
+Next, you need to start putting people in shuttles. People will be put in
+shuttles in a round-robin sequence as long as a shuttle has room. If a shuttle
+doesn't have room, the sorting algorithm skips that shuttle and goes to the
+next. If all shuttles are full, then a "wave" is printed. That is, a list of
+all the passengers in each shuttle. Once the wave is printed, all the shuttles
+are cleared and if there are still passengers to be placed, the algorithm
+repeats.
+
+This continues for as many waves as necessary to get all passengers on a
+shuttle.
+
+Here's an example with a much smaller data set. Assume three shuttles with
+this data:
+
+shuttle1 2
+shuttle2 3
+shuttle3 1
+
+Assume these people:
+
+person1
+person2
+person3
+person4
+person5
+person6
+person7
+
+The algorithm will start with shuttle1 and person1. Since shuttle1 has room
+(currently 0/2 seats taken), person1 is added to shuttle1 and the "active
+shuttle" moves to shuttle2 (remember, round-robin). Then person2 is
+processed. Since shuttle2 has room, person2 is added to shuttle2. The "active
+shuttle" moves to shuttle3. Again, shuttle3 has room so person3 is addded to
+shuttle3. After adding to shuttle3, the "active shuttle" wraps around to
+shuttle1. At this point the shuttles look like this:
+
+shuttle1 (1/2): person1
+shuttle2 (1/3): person2
+shuttle3 (1/1): person3
+
+The algorithm continues with person4. Since shuttle1 still has room, person4
+is added to shuttle1. Then we advance to person5. Shuttle2 has room so person5
+is added to shuttle2. When we ask shuttle3 if there is room, shuttle3 says it
+is full. So person6 cannot be added to shuttle3, instead, we try
+shuttle1. Shuttle1 is also full, so we move to shuttle2. Shuttle2 has room so
+it accepts person6. We move to person7 and ask shuttle3. It's full. We ask
+shuttle1. It's full. We ask shuttle2. It's also full. All shuttles are
+full. This is the status:
+
+shuttle1 (2/2): person1, person4
+shuttle2 (3/3): person2, person5, person6
+shuttle3 (1/1): person3
+
+Since all shuttles are full, we print the wave info (I'm not printing it here)
+and then clear all of the shuttles. Now, we try person7 again, starting at
+shuttle1. Since the passengers are not on the shuttle anymore, shuttle1 has
+room. That is the last person and the final status is:
+
+shuttle1 (1/2): person7
+shuttle2 (0/3): 
+shuttle3 (0/1): 
+
+We print the wave info for this wave and then the program ends.
+
+------------------------------------------------------------------ output format
+
+When printing out the passenger list for a wave the output should be as
+follows.
+
+A banner for the wave number:
+
+======================================================================
+============================== Wave  1 ===============================
+======================================================================
+
+A line with the shuttle name and the current number of passengers and total
+capacity:
+
+IMC_TWO_SHUTTLE_01 (13/13)
+
+A list of the passengers. The list should be printed with five passenger names
+per line with commas between names on the same line. The passenger list should
+start with the word "Passengers:". It should match the following:
+
+Passengers:
+  Joselyn Colby, Addison Parry, Russell Morin, Marvin Curran, Zachariah Mares
+  Rihanna Clemons, Roger Stacey, Phoenix Mondragon, Trevor Grantham, Danielle Murdock
+  Leona Bustamante, Laney Venable, Victoria Goliss
+
+There should be a blank line between each shuttle's information.
+
+The output in the provided output files is the definitive description of what
+the output should look like.
+
+------------------------------------------------------------------------ classes
+
+As mentioned above, one of the primary objectives of this assignment is to
+gain experience using classes and objects in C++. For this program you must
+use a class to represent each shuttle. The shuttle class will have four data
+members:
+
+- name
+- capacity
+- current count (how many passengers are current on the shuttle)
+- passenger list (an array with a maximum of 35 passengers)
+
+A class is more than just data members. It also has methods that control its
+behavior. The shuttle class will have the following methods:
+
+- default value constructor
+- setName, setCapacity -- set the name and capacity of the shuttle
+- hasRoom -- returns true if there is still room in the shuttle, false otherwise
+- addPassenger -- adds a passenger to the passenger list (only if there is room)
+- printPassengerList -- print the list of passengers (see format above)
+- clearPassengerList -- remove all passengers from the shuttle
+
+Notice that a default value constructor is in the list of required
+methods. This is required in order to have an array of shuttle objects. We
+will learn other techniques in a couple weeks that would avoid this
+problem. Because you will have a default value constructor that creates all of
+the objects before any data is read from the data file, you will need
+additional methods for setting the name and capacity of each shuttle.
+
+These are the minimum data members and methods that you must have. You can
+have additional data members and methods if that works best for your
+implementation. 
+
+Make sure that your data members are private and the only access to that data
+is through methods that your class provides.
+
+------------------------------------------------------------------ more classes?
+
+You are free to define additional classes if you feel that it would make your
+program better. It is not necessary but you can if you want.
+
+----------------------------------------------------------------- error checking
+
+You do not have to do any error checking with this program.
+
+---------------------------------------------------------------- using functions
+
+Just as with the previous project, the main algorithm is too complex to have
+in one function. You should break down your program functionality into
+smaller, more manageable units that are captured in functions. 
+
+One of the requirements for this assignment is that your main() function can
+be no longer than 50 lines long when the file is formated in a sensible way. 
+
+What I mean by formatted in a sensible way is that the code is what you would
+normally expect to see in an editor. The following is an example of code that
+IS NOT formatted in a sensible way:
+
+for (int i=0;i<num;i++) { if (i%2)==0 { cout << "even" << endl; } else { cout << "odd" << endl; } }
+
+You cannot squish all the code into long lines just to reduce the number of
+lines.
+
+For reference, the main() function in my solution is 23 lines long.
+
+The function prototypes need to be in a header file and function
+implementations need to be in a separate cpp file.
+
+---------------------------------------------------------------------- test data
+
+In order to help you make sure your program is running correctly, I've
+included two special data files: seq_shuttles.txt, seq_person.txt. These data
+files have fake shuttle and person data that is strictly in order. When you
+use these two files you should end up with the output in seq_output.txt. Using
+sequential data like this can make it easier to debug problems.
+
+---------------------------------------------------------- External Requirements
+
+- Comply with all of the details listed in the above sections.
+- When run on the shuttles.txt and persons.txt file, the output matches
+  real_output.txt exactly.
+
+---------------------------------------------------- Implementation Requirements
+
+- use a class to define the shuttle
+- the shuttle class has the data members as described above
+- the shuttle class has the methods as described above
+- the passengers for a shuttle are stored in an array
+- all class data members are private
+- all class definitions are in header files
+- all class implementations are in cpp files
+- use an array of shuttle objects
+- the main() function is less than 50 lines long (with proper formatting)
+- extra functions are defined with prototypes in a header file
+- extra functions are defined with implementation defined in a cpp file
+- character strings need to be represented using char arrays
+
+================================================================================
+========================================================================= Design
+
+The design of your program is just as important as the functionality of the
+program. Make sure that your program structure makes sense and is clear. Make
+good use of functions and classes to organize your program.
+
+================================================================================
+========================================================================= Turnin
+
+You must use the "turnin" program to turn in your assignment. DO NOT USE D2L
+TO TURN IN YOUR ASSIGNMENT. Assignments turned in using D2L will not be
+counted. For information on using the "turnin" program see
+~mike.noel/classes/all/turnin.txt.
+
+IMPORTANT: If the program fails to compile, crashes, or hangs then the program
+automatically gets a 0.
+
+Use the turnin program to turn in only the *.cpp and *.h files that you
+created. Do not turn in additional files.

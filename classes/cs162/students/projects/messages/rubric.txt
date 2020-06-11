@@ -1,0 +1,35 @@
+This is the grading rubric for the Messages programming assignment.
+
+================
+If the program fails to compile, crashes, or hangs then the program
+automatically gets a 0.
+================
+
+Functionality	     5
+ - output for large.txt matches large.output.txt 100% (including
+   spelling, whitespace, and punctuation).
+ - your program should run on large.txt in less than 5 seconds.
+
+Implementation	    10
+
+ - use a class to hold message data
+ - the recipient in message should be a dynamically allocated character array
+ - the message class does not contain a default constructor
+ - use a class to hold the list of messages
+ - message list class supports the four operations: add, list person, list
+   all, delete
+ - the list of messages should be implemented as a linked list
+ - the main function should not create message objects
+ - no memory leaks or errors (as reported by valgrind)
+
+Design		     3
+ - class definition and implementation are in separate files
+ - helper functions are implemented in separate files
+ - all class data members are private
+ - no global variables
+
+Style		     2
+ - at most 1 return statement per function or method
+ - doesn't use of "break" or "continue" in a loop
+
+Total:		    20
