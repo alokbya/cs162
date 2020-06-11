@@ -32,8 +32,11 @@ entries::~entries()
 
 void entries::setName(const char *n)
 {
-    delete [] name;                         // delete old name before setting new one
-    name = new char[strlen(n) + 1];         // create name to be the same size as passed in char* n
+    
+    if(name && n)
+        delete [] name;                         // delete old name before setting new one
+    name = nullptr;
+    name = new char[strlen(n) + 1];             // create name to be the same size as passed in char* n
     strcpy(name, n);
 }
 

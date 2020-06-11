@@ -16,7 +16,6 @@ private:
 	Node * head, * tail;
 public:
 	LinkedList();
-	~LinkedList();
 	bool addAtBeginning(int val);
 	bool remove(int val);
 	void printForward() const;

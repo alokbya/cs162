@@ -1,0 +1,23 @@
+Fixing project 4
+
+Where does the passed in value go (11)?
+	This is <num staff>, where is it being used?
+	
+	build a syslog for each system
+	each syslog is <num staff> size
+
+<access log file> first row yields number of relevant rows
+	Passed in as argv[1] == logfile <char*>
+	Read in numEntries <int>								// total number of access file entries
+	Read in for x(numEntries):
+		system, who
+		
+		For x(numSystems)
+			
+			
+			
+			
+			
+			
+In syslog.cpp, entriesList is the 
+entriesList = new entries[num + 1];   
